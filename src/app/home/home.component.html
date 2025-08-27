@@ -1,0 +1,18 @@
+<div class="header">
+  <h2 class="title">Hướng dẫn sử dụng phần mềm bán hàng POS247</h2>
+</div>
+<div class="container">
+  <div class="solutions-grid">
+    <div *ngFor="let p of docs" class="solution-box">
+      <h3 class="solution-title">{{ p.data?.['title']}}</h3>
+      <ul>
+        <li
+          *ngFor="let item of p.children"
+          (click)="navigator(item.path || '', p.path || '')"
+        >
+          <span class="icon">📄</span> {{ item.data?.['title'] }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

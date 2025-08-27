@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.guide-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-right: 16px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background: wheat;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+}
+
+.section .row {
+  display: flex;
+  gap: 8px;
+}
+
+.section .row .icon {
+  color: orange;
+}
+.note {
+  font-style: italic;
+  font-weight: 400;
+}
+.guide-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table header */
+.guide-container table thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.guide-container table thead th {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* Table body */
+.guide-container table tbody tr {
+  background-color: #f9f9f9;
+  transition: background 0.3s;
+}
+
+.guide-container table tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.guide-container table tbody tr:hover {
+  background-color: #e0f0ff;
+}
+
+.guide-container table tbody td {
+  padding: 10px 15px;
+  vertical-align: top;
+}
+.show-image {
+  font-style: italic;
+}
+.show-image:hover {
+  cursor: pointer;
+}
+.play{
+  padding-left: 12px;
+}
+.btn-image{
+  width: auto;
+  height: auto;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none;
+  border:gey solid 1px;
+}
+/* Responsive chung */
+@media (max-width: 768px) {
+  .guide-container {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .guide-container {
+    padding: 8px;
+  }
+  .guide-container table {
+    display: block;
+    overflow-x: auto;
+    white-space: wrap;
+  }
+}

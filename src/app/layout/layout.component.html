@@ -1,0 +1,35 @@
+<div class="container">
+  <!-- Sidebar -->
+  <div class="directory">
+    <ul>
+      <li>
+        <a (click)="navigator('/home','')">Trang chủ</a>
+      </li>
+      <li *ngFor="let p of docs">
+        <a routerLink="/">{{ p.data?.['title'] }}</a>
+        <ul>
+          <li *ngFor="let i of p.children" (click)="navigator(i.path || '', p.path || '')"><a routerLink="/">{{ i.data?.['title'] }}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="directory-inline">
+      <i class="fa-solid fa-house"></i> Trang chủ > {{ currentP.data?.['title'] }} > {{ currentC.data?.['title'] }}
+    </div>
+    <div class="infor">
+      <router-outlet />
+    </div>
+  </div>
+</div>
+<div #overlay class="overlay">
+  <div class="btn-close">
+    <button (click)="closeImage()"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="image">
+    <img [src]="imageDataSrc" />
+  </div>
+  <div class="image-title">{{ imageDataTitle }}</div>
+</div>

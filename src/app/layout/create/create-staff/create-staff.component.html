@@ -1,0 +1,98 @@
+<div class="guide-container">
+  <h2>👥 4. Khởi tạo nhân sự (thêm nhân viên)</h2>
+  <p>
+    <strong>Mô tả:</strong> Tính năng Khởi tạo nhân sự giúp bạn thêm mới nhân
+    viên, thiết lập <strong>mã PIN</strong> đăng nhập và
+    <strong>phân quyền</strong> theo vai trò.
+  </p>
+  <p class="note">
+    (Lưu ý: Nếu là cửa hàng mới, cần tạo tài khoản <strong>Quản lý</strong> đầu
+    tiên để quản trị hệ thống.)
+  </p>
+  <div class="section">
+    <h3>
+      a. Thêm nhân viên mới.
+      <button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-staff-1.PNG',
+            'Ảnh thêm mới nhân viên'
+          )
+        "
+        ><i class="fa-solid fa-image"></i> Xem ảnh</button
+      >
+    </h3>
+
+    <div class="row">
+      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1: Vào mục
+        <strong><i class="fa-regular fa-gears"></i>Hoạt động</strong>, chọn
+        <strong>Nhân sự</strong>.
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 2: Nhấn vào dấu <strong><i class="fa-solid fa-plus"></i></strong> ở
+        góc trên bên phải để thêm nhân viên mới.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 3: Màn hình sẽ hiển thị QR để nhân viên có thể quét và tải App về
+        máy, sau đó ấn vào biểu tượng
+        <strong><i class="fa-regular fa-pen-to-square"></i></strong>.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 4: Nhập thông tin nhân viên: <strong>Họ tên</strong>,
+        <strong>mã PIN</strong>, và <strong>phân quyền</strong> (Lưu ý: Nếu là
+        cửa hàng mới, cần tạo tài khoản <strong>Quản lý</strong> đầu tiên).
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 5: Nhấn biểu tượng
+        <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn tất.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>
+      b. Chỉnh sửa nhân viên.
+      <button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-staff-2.PNG',
+            'Ảnh chỉnh sửa nhân viên'
+          )
+        "
+        ><i class="fa-solid fa-image"></i> Xem ảnh</button
+      >
+    </h3>
+    <div class="row">
+      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1: Chọn nhân viên muốn sửa, sau đó nhập lại các thông tin rồi ấn
+        <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn tất.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 2: Nếu muốn xóa nhân viên, ấn nhân viên cần xóa rồi nhấn biểu tượng
+        <strong><i class="fa-solid fa-trash"></i></strong>.
+      </div>
+    </div>
+  </div>
+</div>
