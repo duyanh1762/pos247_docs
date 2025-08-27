@@ -90,12 +90,34 @@
   padding: 4px;
   border-radius: 4px;
   outline: none;
-  border:gey solid 1px;
+  /* border:grey solid 1px; */
 }
 /* Responsive chung */
 @media (max-width: 768px) {
   .guide-container {
     padding: 12px;
+  }
+
+  .guide-container h2{
+    font-size: 16px;
+  }
+  .guide-container p{
+    font-size: 14px;
+  }
+  .section .row .line{
+    font-size: 12px;
+  }
+
+  .section h3{
+    font-size: 14px;
+  }
+
+  .note{
+    font-size: 12px;
+  }
+  .image-title{
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 

@@ -17,7 +17,7 @@
   <!-- Content -->
   <div class="content">
     <div class="directory-inline">
-      <i class="fa-solid fa-house"></i> Trang chủ > {{ currentP.data?.['title'] }} > {{ currentC.data?.['title'] }}
+      <b (click)="navigator('/home','')"><i class="fa-solid fa-house"></i> Trang chủ</b> > <b>{{ currentP.data?.['title'] }}</b> > <b>{{ currentC.data?.['title'] }}</b>
     </div>
     <div class="infor">
       <router-outlet />

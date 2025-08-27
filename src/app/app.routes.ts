@@ -23,6 +23,7 @@ import { ExportBillsComponent } from './layout/operate/export-bills/export-bills
 import { ActivityComponent } from './layout/report/activity/activity.component';
 import { GoodsIEComponent } from './layout/report/goods-ie/goods-ie.component';
 import { FinanceComponent } from './layout/report/finance/finance.component';
+import { ClockOutComponent } from './layout/operate/clock-out/clock-out.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -50,6 +51,7 @@ export const routes: Routes = [
     {path:"payment",data:{title:"Quy trình thanh toán"},component:PaymentComponent},
     {path:"voucher",data:{title:"Thêm phụ phí và giảm giá"},component:VoucherComponent},
     {path:"accounting",data:{title:"Quy trinh thu chi"},component:AccountingComponent},
+    {path:"clock-out",data:{title:"Quy trình chốt ca"},component:ClockOutComponent},
     {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác"},component:OrderGoodsComponent},
     {path:"settlement",data:{title:"Quy trình quyết toán "},component:SettlementComponent},
     {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử"},component:ExportBillsComponent}
