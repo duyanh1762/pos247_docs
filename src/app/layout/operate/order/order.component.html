@@ -7,49 +7,43 @@
 
   <div class="section">
     <h3>
-      a. Truy cập và đăng nhập.<button
-        class="btn-image"
-        (click)="
+      a. Truy cập và đăng nhập.<button class="btn-image" (click)="
           emitShowImageEvent(
             'assets/images/order-1.PNG',
             'Ảnh đăng nhập nhân sự'
           )
-        "
-      >
+        ">
         <i class="fa-solid fa-image"></i> Xem ảnh
       </button>
     </h3>
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 1: Vào mục
-        <b><i class="fa-regular fa-cash-register"></i>Bán hàng</b> trên giao
-        diện phần mềm.
+        <div class="line">
+          Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, sau đó truy cập
+          <strong>Bán hàng</strong>.
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Đăng nhập bằng <b>mã PIN</b> của nhân viên.
+      <div class="row">
+        <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+        <div class="line">
+          Bước 2: Đăng nhập bằng <b>mã PIN</b> của nhân viên.
+        </div>
       </div>
     </div>
   </div>
-
   <div class="section">
     <h3>b. Thao tác gọi món</h3>
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
         Bước 3.1: <b>Tạo hóa đơn mới</b>: Chọn một bàn trống → thêm món → nhấn
-        <b><i class="fa-regular fa-floppy-disk"></i></b>.<button
-          class="btn-image"
-          (click)="
+        <b><i class="fa-regular fa-floppy-disk"></i></b>.<button class="btn-image" (click)="
             emitShowImageEvent(
               'assets/images/order-2.PNG',
               'Ảnh quy trình order'
             )
-          "
-        >
+          ">
           <i class="fa-solid fa-image"></i> Xem ảnh
         </button>
       </div>
@@ -58,16 +52,14 @@
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
         Bước 3.2: <b>Chỉnh sửa hóa đơn</b>: Chọn bàn đang có hóa đơn → nhấn biểu
-        tượng <b><i class="fa-regular fa-pen"></i></b> → sửa món → nhấn
-        <b><i class="fa-regular fa-floppy-disk"></i></b>.<button
-          class="btn-image"
-          (click)="
+        tượng <b><i class="fa-regular fa-pen"></i></b> → sửa món(ấn <b><i class="fa-solid fa-plus"></i></b> để thêm món)
+        → nhấn
+        <b><i class="fa-regular fa-floppy-disk"></i></b>.<button class="btn-image" (click)="
             emitShowImageEvent(
               'assets/images/order-3.PNG',
               'Ảnh quy trình chỉnh sửa và xem thông tin hoá đơn'
             )
-          "
-        >
+          ">
           <i class="fa-solid fa-image"></i> Xem ảnh
         </button>
       </div>
@@ -76,15 +68,12 @@
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
         Bước 3.3: <b>Xem tổng hóa đơn</b>: Nhấn vào bàn hoặc hóa đơn để xem chi
-        tiết tổng tiền, số lượng món, và trạng thái thanh toán.<button
-          class="btn-image"
-          (click)="
+        tiết tổng tiền, số lượng món, và trạng thái thanh toán.<button class="btn-image" (click)="
             emitShowImageEvent(
               'assets/images/order-3.PNG',
               'Ảnh quy trình chỉnh sửa và xem thông tin hoá đơn'
             )
-          "
-        >
+          ">
           <i class="fa-solid fa-image"></i> Xem ảnh
         </button>
       </div>
@@ -94,15 +83,12 @@
       <div class="line">
         Bước 3.4: <b>Thanh toán hóa đơn</b>: Khi khách yêu cầu thanh toán, nhấn
         <b><i class="fa-regular fa-dollar-sign"></i></b>, chọn phương thức thanh
-        toán và xác nhận.<button
-          class="btn-image"
-          (click)="
+        toán và xác nhận.<button class="btn-image" (click)="
             emitShowImageEvent(
               'assets/images/order-4.PNG',
               'Ảnh quy trình thanh toán hoá đơn'
             )
-          "
-        >
+          ">
           <i class="fa-solid fa-image"></i> Xem ảnh
         </button>
       </div>
@@ -119,7 +105,8 @@
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 4.2: <b>Nhấn giữ</b> bàn đang có hoá đơn và <b>di chuyển</b> sang khu vực khác để <b>tách bàn</b> hoặc <b>gộp bàn</b>.
+        Bước 4.2: <b>Nhấn giữ</b> bàn đang có hoá đơn và <b>di chuyển</b> sang khu vực khác để <b>tách bàn</b> hoặc
+        <b>gộp bàn</b>.
       </div>
     </div>
   </div>
