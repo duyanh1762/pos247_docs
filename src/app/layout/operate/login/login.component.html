@@ -28,15 +28,30 @@
         người dùng
       </div>
     </div>
-    <b style="font-style: italic;">(Lưu ý: Yêu cầu đăng nhập có thể rơi vào thư rác hoặc spam)</b>
+    <b style="font-style: italic"
+      >(Lưu ý: Yêu cầu đăng nhập có thể rơi vào thư rác hoặc spam)</b
+    >
   </div>
 
   <div class="section">
-    <h3>b. Đăng nhập nhân viên</h3>
+    <h3>
+      b. Đăng nhập nhân viên.<button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/login-staff.png',
+            'Ảnh đăng nhập nhân sự'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </button>
+    </h3>
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 1: Trên màn hình sau khi truy cập cửa hàng, chọn nhân viên muốn đăng nhập.
+        Bước 1: Trên màn hình sau khi truy cập cửa hàng, chọn nhân viên muốn
+        đăng nhập.
       </div>
     </div>
     <div class="row">
@@ -51,11 +66,35 @@
         báo cáo.
       </div>
     </div>
+  </div>
+
+  <div class="section">
+    <h3>
+      c. Đăng xuất nhân viên.<button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/logout-staff.png',
+            'Ảnh đăng xuất nhân sự'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </button>
+    </h3>
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 4: Nếu muốn đăng xuất, nhấn vào biểu tượng <b><i class="fa-solid fa-bars"></i></b> ở góc trên bên trái, sau đó chọn tên nhân viên
-        rồi chọn biểu tượng <b><i class="fa-solid fa-power-off"></i></b>.
+        Bước 1: Nhấn vào biểu tượng
+        <b><i class="fa-solid fa-bars"></i></b> ở góc trên bên trái, sau đó chọn
+        tên nhân viên.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 2: Chọn biểu tượng
+        <b><i class="fa-solid fa-power-off"></i></b> để đăng xuất nhân viên hiện tại.
       </div>
     </div>
   </div>

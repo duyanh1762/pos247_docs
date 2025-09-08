@@ -27,6 +27,8 @@ import { ClockOutComponent } from './layout/operate/clock-out/clock-out.componen
 import { CreateIncomeComponent } from './layout/create/create-income/create-income.component';
 import { IeActivityComponent } from './layout/operate/ie-activity/ie-activity.component';
 import { CheckInventoryComponent } from './layout/operate/check-inventory/check-inventory.component';
+import { OutletsComponent } from './layout/in-app/outlets/outlets.component';
+import { WorkspaceComponent } from './layout/in-app/workspace/workspace.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -37,36 +39,38 @@ export interface Point extends Routes {
 export const routes: Routes = [
   {path:"home",component:HomeComponent},
   {path:"home/create",component:LayoutComponent,data:{title:"Hướng dẫn khởi tạo"},children:[
-    {path:"store",data:{title:"Khởi tạo cửa hàng(chưa có video)"},component:CreateStoreComponent},
-    {path:"setting",data:{title:"Các cài đặt chính"},component:CreateSettingComponent},
-    {path:"menu",data:{title:"Khởi tạo menu(chưa có video)"},component:CreateMenuComponent},
-    {path:"staff",data:{title:"Khởi tạo nhân sự"},component:CreateStaffComponent},
-    {path:"area",data:{title:"Khởi tạo sơ đồ bàn(chưa có video)"},component:CreateAreaComponent},
-    {path:"bar",data:{title:"Khởi tạo Bar & Bếp(chưa có video)"},component:CreateKitchenComponent},
-    {path:"good",data:{title:"Khởi tạo hàng hóa(chưa có video)"},component:CreateGoodsComponent},
-    {path:"partner",data:{title:"Khởi tạo đối tác(chưa có video) "},component:CreatePartnerComponent},
-    {path:"fee",data:{title:"Khởi tạo thuế & phí(chưa có video và chưa hoàn thiện)"},component:CreateFeeComponent},
-    {path:"income",data:{title:"Khởi tạo nguồn thu(chưa có video)"},component:CreateIncomeComponent},
+    {path:"outlets",data:{title:"Khởi tạo cửa hàng"},component:CreateStoreComponent},
+    {path:"settings",data:{title:"Các cài đặt chính"},component:CreateSettingComponent},
+    {path:"menu-items",data:{title:"Khởi tạo menu"},component:CreateMenuComponent},
+    {path:"staffs",data:{title:"Khởi tạo nhân sự"},component:CreateStaffComponent},
+    {path:"areas",data:{title:"Khởi tạo sơ đồ bàn"},component:CreateAreaComponent},
+    {path:"processors",data:{title:"Khởi tạo Bar & Bếp"},component:CreateKitchenComponent},
+    {path:"goods",data:{title:"Khởi tạo hàng hóa"},component:CreateGoodsComponent},
+    {path:"partners",data:{title:"Khởi tạo đối tác"},component:CreatePartnerComponent},
+    {path:"fee",data:{title:"Khởi tạo thuế & phí(chưa xong)"},component:CreateFeeComponent},
+    {path:"incomes",data:{title:"Khởi tạo nguồn thu"},component:CreateIncomeComponent},
   ]},
   {path:"home/operate",component:LayoutComponent,data:{title:"Hướng dẫn vận hành"},children:[
-    {path:"login",data:{title:"Đăng nhập hệ thống(chưa có video)"},component:LoginComponent},
-    {path:"order",data:{title:"Quy trình order(chưa có video)"},component:OrderComponent},
-    {path:"cooking",data:{title:"Quy trình pha chế(chưa có video)"},component:BartendingComponent},
-    {path:"payment",data:{title:"Quy trình thanh toán(chưa có video)"},component:PaymentComponent},
-    {path:"voucher",data:{title:"Thêm phụ phí và giảm giá(chưa có video)"},component:VoucherComponent},
-    {path:"accounting",data:{title:"Quy trinh thu chi(chưa có video)"},component:AccountingComponent},
-    {path:"clock-out",data:{title:"Quy trình chốt ca(chưa có video)"},component:ClockOutComponent},
-    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác(chưa có video)"},component:OrderGoodsComponent},
-    {path:"settlement",data:{title:"Quy trình quyết toán(chưa có video)"},component:SettlementComponent},
-    {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử(chưa có video)"},component:ExportBillsComponent},
-    {path:"ie-activity",data:{title:"Quy trình xuất/nhập hàng (chưa có video)"},component:IeActivityComponent},
-    {path:"check-invetory",data:{title:"Quy trình kiểm kê(chưa có video)"},component:CheckInventoryComponent}
+    {path:"login",data:{title:"Đăng nhập hệ thống"},component:LoginComponent},
+    {path:"workspace",data:{title:"Quy trình order"},component:OrderComponent},
+    {path:"monitor",data:{title:"Quy trình chế biến"},component:BartendingComponent},
+    {path:"payment",data:{title:"Quy trình thanh toán"},component:PaymentComponent},
+    {path:"voucher",data:{title:"Thêm phụ phí và giảm giá"},component:VoucherComponent},
+    {path:"payments",data:{title:"Quy trinh thu chi"},component:AccountingComponent},
+    {path:"clock-out",data:{title:"Quy trình chốt ca"},component:ClockOutComponent},
+    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác(chưa xong)"},component:OrderGoodsComponent},
+    {path:"settlement",data:{title:"Quy trình quyết toán(chưa xong)"},component:SettlementComponent},
+    {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử"},component:ExportBillsComponent},
+    {path:"good-invoices",data:{title:"Quy trình xuất/nhập hàng"},component:IeActivityComponent},
+    {path:"check-invetory",data:{title:"Quy trình kiểm kê(chưa xong)"},component:CheckInventoryComponent}
   ]},
   {path:"home/report",component:LayoutComponent,data:{title:"Hướng dẫn báo cáo"},children:[
-    {path:"activity",data:{title:"Báo cáo hoạt động"},component:ActivityComponent},
+    {path:"operation",data:{title:"Báo cáo hoạt động"},component:ActivityComponent},
     {path:"goods",data:{title:"Báo cáo hàng hoá"},component:GoodsIEComponent},
     {path:"finance",data:{title:"Báo cáo tài chính"},component:FinanceComponent}
   ]},
+  {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
+  {path:"in-app/workspace",component:WorkspaceComponent,data:{title:"Hướng dẫn bán hàng"}},
   {path:"",redirectTo:"home",pathMatch:"full"},
-  {path:"**",redirectTo:"",pathMatch:"full"}
+  {path:"**",redirectTo:"",pathMatch:"full"},
 ];

@@ -25,8 +25,9 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit(): void {
     this.docs = routes.filter((p: Route) => {
-      return p.path != 'home';
+      return p.path != 'home' && p.path?.indexOf("in-app") === -1 && p.path.length > 0 && p.path != "**";
     });
+    console.log(this.docs.length);
     this.getDirectory();
     this.imageEvent.childEvent$.subscribe((data:AppImageData)=>{
       this.imageDataSrc = data.imageSrc;
@@ -37,6 +38,7 @@ export class LayoutComponent implements OnInit {
 
   navigator(c_path: string, p_path: string) {
     this.router.navigate([`${p_path}/${c_path}`]);
+    console.log(`${p_path}/${c_path}`);
     this.getDirectory();
   }
 

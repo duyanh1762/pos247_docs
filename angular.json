@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/docs/",
             "outputPath": "dist/pos247_document",
             "index": "src/index.html",
             "browser": "src/main.ts",

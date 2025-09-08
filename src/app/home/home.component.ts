@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.docs = routes.filter((p:Route)=>{
-      return p.path != "home";
+      return p.path != 'home' && p.path?.indexOf("in-app") === -1 && p.path.length > 0 && p.path != "**";;
     });
   }
 

@@ -1,105 +1,267 @@
 <div class="guide-container">
-    <h2>📦 10. Quy trình xuất & nhập</h2>
-    <p>
-        <strong>Mô tả:</strong>Hướng dẫn cửa hàng nhập/xuất từ các đối tác, đảm bảo nhập hàng đầy đủ, chính xác và kịp
-        thời.
-    </p>
+  <h2>📦 10. Quy trình xuất & nhập</h2>
+  <p>
+    <strong>Mô tả:</strong>Hướng dẫn cửa hàng nhập/xuất từ các đối tác, đảm bảo
+    nhập hàng đầy đủ, chính xác và kịp thời.
+  </p>
 
-    <div class="section">
-        <h3>a. Truy cập mục Xuất & Nhập.</h3>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
-                cùng, sau đó truy cập
-                <strong>Xuất & Nhập</strong>.
-            </div>
-        </div>
-        <!-- <div class="row">
+  <div class="section">
+    <h3>a. Truy cập mục Xuất & Nhập.<button
+          class="btn-image"
+          (click)="
+            emitShowImageEvent(
+              'assets/images/ie-0.png',
+              'Ảnh truy cập Xuất nhập'
+            )
+          "
+        >
+          <i class="fa-solid fa-image"></i> Xem ảnh
+        </button></h3>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1: Chọn biểu tượng
+        <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+        cùng,chọn <b>Vận hành</b> sau đó truy cập <strong>Xuất & Nhập</strong>.
+      </div>
+    </div>
+    <!-- <div class="row">
         <div class="icon"><i class="fas fa-hand-point-right"></i></div>
         <div class="line">Bước 2: Nhấn vào biểu tượng <b><i class="fa-solid fa-plus"></i></b>
         </div>
       </div> -->
-    </div>
+  </div>
 
-    <div class="section">
-        <h3>b. Tạo đơn nhập.</h3>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 1: Nhấn vào biểu tượng <b><i class="fa-solid fa-plus"></i>Nhập hàng</b>
-            </div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 2: Chọn <b>Đối tác</b> mà cửa hàng muốn nhập hàng.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 3: Nhấn <b>Tạo đơn</b> để bắt đầu lập đơn nhập.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 4: Chọn <b>Hàng mới</b> rồi chọn các mặt hàng cần nhập ở <b>Danh sách hàng hóa</b> và điền <b>Số lượng</b>, <b>Đơn giá</b> tương ứng.Để xóa 1 mặt hàng khỏi đơn, chọn biểu tượng <b><i class="fa-solid fa-trash"></i></b> ở mỗi mặt hàng.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 5: Chọn loại đơn <b>đã trả tiền</b> hoặc <b>chưa trả tiền.</b></div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 6: Nhấn nút <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu đơn nhập.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 7: Đế sửa đơn nhập,trong danh sách đơn nhập/xuất, chọn biểu tượng <b><i class="fa-solid fa-gear"></i></b> của đơn hàng.Sau đó chỉnh sửa rồi ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu lại.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 8: Đế xóa đơn nhập,trong danh sách đơn nhập/xuất, chọn biểu tượng <b><i class="fa-solid fa-gear"></i></b> của đơn hàng.Sau đó chọn tượng <b><i class="fa-solid fa-trash"></i></b> ở góc trên bên phải để xóa.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 9: Đế xác nhận đơn nhập,trong danh sách đơn nhập/xuất, chọn biểu tượng <b><i class="fa-solid fa-gear"></i></b> của đơn hàng.Sau đó chọn <b>Xác nhận</b> ở góc trên bên phải để xác nhận đơn.</div>
-        </div>
+  <div class="section">
+    <h3>b. Tạo đơn nhập.<button
+          class="btn-image"
+          (click)="
+            emitShowImageEvent(
+              'assets/images/ie-1.png',
+              'Ảnh tạo đơn nhập'
+            )
+          "
+        >
+          <i class="fa-solid fa-image"></i> Xem ảnh
+        </button></h3>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1:Chọn biểu tượng <b><i class="fa-solid fa-file"></i></b>, nhấn vào
+        biểu tượng <b><i class="fa-solid fa-plus"></i></b> và chọn
+        <b>Nhập hàng</b>
+      </div>
     </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 2: Chọn <b>Đối tác</b> mà cửa hàng muốn nhập hàng.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 3: Nhấn <b>Tạo đơn</b> để bắt đầu lập đơn nhập.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 4: Chọn <b>Hàng mới hoặc các lựa chọn khác</b> rồi chọn các mặt
+        hàng cần nhập ở <b>Danh sách hàng hóa</b> và điền <b>Số lượng</b>,
+        <b>Đơn giá</b> tương ứng.Để xóa 1 mặt hàng khỏi đơn, chọn biểu tượng
+        <b><i class="fa-solid fa-trash"></i></b> ở mỗi mặt hàng.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 5: Chọn loại đơn <b>đã trả tiền</b> hoặc <b>chưa trả tiền.</b>
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 6: Nhấn nút <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu
+        đơn nhập.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 7: Đế sửa đơn nhập,trong danh sách đơn nhập, chọn
+        <b>đơn hàng</b> hoặc biểu tượng
+        <b><i class="fa-solid fa-pen-to-square"></i></b> ở đơn muốn sửa .Sau đó
+        chỉnh sửa rồi ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu
+        lại.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 8: Đế xóa đơn nhập,trong danh sách đơn nhập, chọn
+        <b>đơn hàng</b> hoặc biểu tượng
+        <b><i class="fa-solid fa-pen-to-square"></i></b> ở đơn muốn xoá.Sau đó
+        chọn tượng <b><i class="fa-solid fa-trash"></i></b> ở góc trên bên phải
+        để xóa.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 9: Đế xác nhận đơn nhập,trong danh sách đơn nhập, chọn
+        <b>đơn hàng</b> hoặc biểu tượng
+        <b><i class="fa-solid fa-pen-to-square"></i></b> ở đơn muốn xác nhận.Sau
+        đó chọn <b>Xác nhận</b> để xác nhận đơn.
+      </div>
+    </div>
+  </div>
 
-    <div class="section">
-        <h3>c. Tạo đơn xuất.</h3>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 1: Nhấn vào biểu tượng <b><i class="fa-solid fa-plus"></i>Xuất hàng</b>
-            </div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 2: Chọn <b>Đối tác</b> mà cửa hàng muốn xuất hàng.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 3: Nhấn <b>Tạo đơn</b> để bắt đầu lập đơn xuất.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 4: Chọn <b>Trả hàng</b> rồi chọn các mặt hàng cần xuất ở <b>Danh sách hàng hóa</b> và điền <b>Số lượng</b>, <b>Đơn giá</b> tương ứng.Để xóa 1 mặt hàng khỏi đơn, chọn biểu tượng <b><i class="fa-solid fa-trash"></i></b> ở mỗi mặt hàng.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 5: Chọn loại đơn <b>đã trả tiền</b> hoặc <b>chưa trả tiền.</b></div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 6: Nhấn nút <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu đơn xuất.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 7: Đế sửa đơn xuất,trong danh sách đơn nhập/xuất, chọn biểu tượng <b><i class="fa-solid fa-gear"></i></b> của đơn hàng.Sau đó chỉnh sửa rồi ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu lại.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 8: Đế xóa đơn xuất,trong danh sách đơn nhập/xuất, chọn biểu tượng <b><i class="fa-solid fa-gear"></i></b> của đơn hàng.Sau đó chọn <b><i class="fa-solid fa-trash"></i></b> ở góc trên bên phải để xóa.</div>
-        </div>
-        <div class="row">
-            <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-            <div class="line">Bước 9: Đế xác nhận đơn xuất,trong danh sách đơn nhập/xuất, chọn biểu tượng <b><i class="fa-solid fa-gear"></i></b> của đơn hàng.Sau đó chọn <b>Xác nhận</b> ở góc trên bên phải để xác nhận đơn.</div>
-        </div>
+  <div class="section">
+    <h3>c. Tạo đơn xuất.<button
+          class="btn-image"
+          (click)="
+            emitShowImageEvent(
+              'assets/images/ie-2.png',
+              'Ảnh tạo đơn xuất'
+            )
+          "
+        >
+          <i class="fa-solid fa-image"></i> Xem ảnh
+        </button></h3>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1:Chọn biểu tượng <b><i class="fa-solid fa-file"></i></b>, nhấn vào
+        biểu tượng <b><i class="fa-solid fa-plus"></i></b> và chọn
+        <b>Xuất hàng</b>
+      </div>
     </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 2: Chọn <b>Đối tác</b> mà cửa hàng muốn xuất hàng.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 3: Nhấn <b>Tạo đơn</b> để bắt đầu lập đơn xuất.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 4: Chọn <b>Trả hàng hoặc các lựa chọn khác</b> rồi chọn các mặt
+        hàng cần xuất ở <b>Danh sách hàng hóa</b> và điền <b>Số lượng</b>,
+        <b>Đơn giá</b> tương ứng.Để xóa 1 mặt hàng khỏi đơn, chọn biểu tượng
+        <b><i class="fa-solid fa-trash"></i></b> ở mỗi mặt hàng.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 5: Chọn loại đơn <b>đã trả tiền</b> hoặc <b>chưa trả tiền.</b>
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 6: Nhấn nút <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu
+        đơn xuất.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 7: Đế sửa đơn xuất,trong danh sách đơn xuất, chọn
+        <b>đơn hàng</b> hoặc biểu tượng
+        <b><i class="fa-solid fa-pen-to-square"></i></b> ở đơn muốn sửa.Sau đó
+        chỉnh sửa rồi ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu
+        lại.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 8: Đế xóa đơn xuất,trong danh sách đơn xuất, chọn
+        <b>đơn hàng</b> hoặc biểu tượng
+        <b><i class="fa-solid fa-pen-to-square"></i></b> ở đơn muốn xoá.Sau đó
+        chọn <b><i class="fa-solid fa-trash"></i></b> ở góc trên bên phải để
+        xóa.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 9: Đế xác nhận đơn xuất,trong danh sách đơn xuất, chọn
+        <b>đơn hàng</b> hoặc biểu tượng
+        <b><i class="fa-solid fa-pen-to-square"></i></b> ở đơn muốn xác nhận.Sau
+        đó chọn <b>Xác nhận</b> để xác nhận đơn.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>d. Xem hàng sử dụng.<button
+          class="btn-image"
+          (click)="
+            emitShowImageEvent(
+              'assets/images/ie-4.png',
+              'Ảnh mục Sử dụng'
+            )
+          "
+        >
+          <i class="fa-solid fa-image"></i> Xem ảnh
+        </button></h3>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1:Chọn biểu tượng <b><i class="fa-solid fa-file"></i></b>.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">Bước 2: Chọn mục <b>Sử dụng</b>.</div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">Bước 3: Chọn các <b>Hoá đơn</b> để xem chi tiết hàng sử dụng cho chế biến.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>e. Xem xuất nhập tồn.<button
+          class="btn-image"
+          (click)="
+            emitShowImageEvent(
+              'assets/images/ie-3.png',
+              'Ảnh truy cập xuất-nhập tồn'
+            )
+          "
+        >
+          <i class="fa-solid fa-image"></i> Xem ảnh
+        </button></h3>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1:Chọn biểu tượng <b><i class="fa-solid fa-boxes-stacked"></i></b>.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 2:Xem các thông tin về việc xuất-nhập-tồn hàng hoá.Trong đó:
+        <ul>
+          <li>
+            <b>Tồn kho:</b> Số lượng hàng còn lại trong kho(sau khi trừ đi số
+            lượng hàng đã sử dụng cho chế biến).
+          </li>
+          <li><b>Chờ nhập:</b> Số lượng hàng nhập chưa xác nhận.</li>
+          <li><b>Chờ xuất:</b> Số lượng hàng xuất chưa xác nhận.</li>
+          <li><b>Ước tính còn:</b> Tồn kho + Chờ nhập - Chờ xuất.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

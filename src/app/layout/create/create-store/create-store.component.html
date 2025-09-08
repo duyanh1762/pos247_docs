@@ -3,28 +3,27 @@
   <p>
     <strong>Mô tả:</strong> Tính năng Khởi tạo cửa hàng giúp bạn nhanh chóng tạo
     mới một cửa hàng và thiết lập các thông tin cơ bản ban đầu. Người dùng có
-    thể thêm tên cửa hàng, địa chỉ,... và dễ dàng truy cập phần
-    <strong><i class="fa-regular fa-sliders"></i>Cấu hình</strong> >
-    <strong>Cài đặt</strong> để chỉnh sửa thêm.
+    thể thêm tên cửa hàng, địa chỉ,... và dễ dàng truy cập phần <b>Quản lý</b> >
+    <strong>Cấu hình</strong> >
+    <strong>Cửa hàng</strong> để chỉnh sửa thêm.
   </p>
   <div class="section">
-    <h3>a. Tạo cửa hàng mới</h3>
+    <h3>a. Tạo cửa hàng mới.<button class="btn-image" (click)="
+            emitShowImageEvent(
+              'assets/images/create-store-1.png',
+              'Ảnh khởi tạo cửa hàng'
+            )
+          "><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
     <div class="row">
       <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 1: Mở ứng dụng, nhìn xuống góc dưới bên trái, chọn biểu tượng
+        Bước 1: Mở ứng dụng, chọn biểu tượng
         <strong><i class="fa-solid fa-plus"></i></strong> và  chọn <strong>Tạo cửa hàng mới</strong>.
-        <button class="btn-image" (click)="
-            emitShowImageEvent(
-              'assets/images/create-store-1.PNG',
-              'Ảnh khởi tạo cửa hàng'
-            )
-          "><i class="fa-solid fa-image"></i> Xem ảnh</button>
       </div>
     </div>
     <div class="row">
       <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Nhập tên cửa hàng và địa chỉ vào ô trống.<button class="btn-image" (click)="emitShowImageEvent('assets/images/create-store-2.PNG','Ảnh nhập thông tin cửa hàng')"><i class="fa-solid fa-image"></i> Xem ảnh</button></div>
+      <div class="line">Bước 2: Nhập tên cửa hàng và địa chỉ vào ô trống.</div>
     </div>
     <div class="row">
       <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
@@ -33,21 +32,26 @@
   </div>
 
   <div class="section">
-    <h3>b. Truy cập phần cài đặt của cửa hàng</h3>
+    <h3>b. Truy cập phần cài đặt của cửa hàng.<button class="btn-image" (click)="
+            emitShowImageEvent(
+              'assets/images/create-store-2.png',
+              'Ảnh truy cập cài đặt cửa hàng'
+            )
+          "><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
     <div class="row">
       <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
       <div class="line">
         Bước 1: Sau khi tạo xong, chọn biểu tượng
         <strong><i class="fa-regular fa-cash-register"></i></strong> để truy cập
-        vào cửa hàng vừa tạo.<button class="btn-image" (click)="emitShowImageEvent('assets/images/create-store-3.PNG','Ảnh truy cập cửa hàng')"><i class="fa-solid fa-image"></i> Xem ảnh</button>
+        vào cửa hàng vừa tạo.
       </div>
     </div>
     <div class="row">
       <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
       <div class="line">
         Bước 2: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, sau đó truy cập
-        <strong><i class="fa-regular fa-sliders"></i>Cấu hình</strong>, rồi chọn
-        <strong>Cửa hàng</strong>.<button class="btn-image" (click)="emitShowImageEvent('assets/images/create-store-4.PNG','Ảnh truy cập Cài đặt thông tin cửa hàng')"><i class="fa-solid fa-image"></i> Xem ảnh</button>
+        <strong>Quản lý</strong>, chọn <b>Cấu hình</b>, rồi chọn
+        <strong>Cửa hàng</strong>.
       </div>
     </div>
   </div>

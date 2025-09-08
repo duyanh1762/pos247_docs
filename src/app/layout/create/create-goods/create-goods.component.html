@@ -6,19 +6,32 @@
   </p>
 
   <div class="section a">
-    <h3>Thêm mới hàng hóa.<button class="btn-image" (click)="emitShowImageEvent('assets/images/create-goods-1.PNG','Ảnh thêm mới hàng hoá')"><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
+    <h3>
+      a.Thêm mới hàng hóa.<button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-goods-1.png',
+            'Ảnh thêm hàng hoá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </button>
+    </h3>
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, sau đó truy cập
-        <strong>Hàng hóa</strong>.
+        Bước 1: Chọn biểu tượng
+        <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
+        chọn <b>Quản lý</b> sau đó truy cập <strong>Hàng hóa</strong>.
       </div>
     </div>
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i>Mặt hàng</b>, nhập
-        thông tin hàng hóa (tên, đơn vị tính, giá…).
+        Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm mặt
+        hàng, nhập thông tin hàng hóa (tên, đơn vị tính, giá…).
       </div>
     </div>
     <div class="row">
@@ -28,9 +41,49 @@
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 4: Nhấn biểu tượng <b><i class="fa-solid fa-floppy-disk"></i></b> ở
-        góc trên bên phải để lưu lại toàn bộ thao tác.
+        Bước 4: Nhấn biểu tượng
+        <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu lại toàn bộ thao
+        tác.
       </div>
+    </div>
+  </div>
+
+  <div class="section a">
+    <h3>
+      b. Chỉnh sửa hàng hoá.<button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-goods-2.png',
+            'Ảnh Chỉnh sửa hàng hoá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </button>
+    </h3>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 1: Để sửa thông tin, chọn <b>nhóm hàng hoá</b>, chọn
+        <b>chủng loại</b> rồi chọn <b>hàng hoá</b> muốn sửa, sau đó sửa lại
+        thông tin mặt hàng và ấn Cập nhật rồi lưu để hoàn tất.
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+      <div class="line">
+        Bước 2: Để xoá hàng hoá, chọn <b>nhóm hàng hoá</b>, chọn
+        <b>chủng loại</b> rồi chọn <b>hàng hoá</b> muốn xoá, sau đó ấn biểu
+        tượng <b><i class="fa-solid fa-trash"></i></b> rồi lưu để hoàn tất.
+      </div>
+    </div>
+    <div class="note">
+      <p>
+        (<b>Lưu ý:</b> Ấn vào biểu tượng
+        <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm nhanh
+        theo tên hàng hoá.)
+      </p>
     </div>
   </div>
 </div>

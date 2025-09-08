@@ -7,17 +7,31 @@
   </p>
   <!-- a. Tạo menu món ăn -->
   <div class="section">
-    <h3>a. Tạo menu món ăn. <button class="btn-image" (click)="emitShowImageEvent('assets/images/create-menu-1.PNG','Ảnh khởi tạo menu')"><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
+    <h3>
+      a. Tạo menu món ăn.
+      <button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-menu-1.png',
+            'Ảnh khởi tạo món'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </button>
+    </h3>
 
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">
-        Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, sau đó truy cập
-        <strong>Thực đơn</strong>.
+        Bước 1: Chọn biểu tượng
+        <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
+        sau đó truy cập <b>Quản lý</b> và chọn <strong>Thực đơn</strong>.
       </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
       <div class="line">Bước 2: Tạo nhóm món:</div>
     </div>
@@ -32,15 +46,17 @@
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
       <div class="line">Nhấn <b>Cập nhật</b> để lưu nhóm.</div>
-    </div>
+    </div> -->
 
     <div class="row">
       <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Thêm món vào nhóm:</div>
+      <div class="line">Bước 2: Tạo món:</div>
     </div>
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
-      <div class="line">Nhấn <b><i class="fa-solid fa-plus"></i></b> để <b>thêm món</b>.</div>
+      <div class="line">
+        Nhấn <b><i class="fa-solid fa-plus"></i></b> và chọn <b>Tạo món</b>.
+      </div>
     </div>
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
@@ -58,24 +74,51 @@
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
       <div class="line">
-        Sau khi tạo xong nhóm và món, nhấn biểu tượng <b><i class="fa-solid fa-floppy-disk"></i></b> ở góc trên bên
-        phải màn hình để hoàn tất.
+        Sau khi tạo xong nhóm và món, nhấn biểu tượng
+        <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.
       </div>
     </div>
   </div>
 
   <!-- b. <i class="fa-regular fa-sliders"></i>Cấu hình món ăn -->
   <div class="section">
-    <h3>b.Cấu hình món ăn theo ý muốn.<button class="btn-image" (click)="emitShowImageEvent('assets/images/create-menu-2.PNG','Ảnh chỉnh sửa món')"><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
+    <h3>
+      b.Cấu hình món ăn theo ý muốn.<button
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-menu-2.png',
+            'Ảnh chỉnh sửa món'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </button>
+    </h3>
 
     <div class="row">
       <div class="icon"><i class="fas fa-cogs"></i></div>
-      <div class="line"><b>Thêm công thức cho món/lựa chọn.</b><button class="btn-image" (click)="emitShowImageEvent('assets/images/create-menu-3.PNG','Ảnh chỉnh sửa công thức')"><i class="fa-solid fa-image"></i> Xem ảnh</button></div>
+      <div class="line">
+        <b>Thêm công thức cho món/lựa chọn.</b
+        ><button
+          class="btn-image"
+          (click)="
+            emitShowImageEvent(
+              'assets/images/create-menu-3.png',
+              'Ảnh chỉnh sửa công thức'
+            )
+          "
+        >
+          <i class="fa-solid fa-image"></i> Xem ảnh
+        </button>
+      </div>
     </div>
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
       <div class="line">
-        Bước 1: Nhấn vào biểu tượng <strong><i class="fa-regular fa-gear"></i></strong> nằm dưới tên món/lựa chọn.
+        Bước 1: Nhấn vào biểu tượng
+        <strong><i class="fa-regular fa-gear"></i></strong> nằm dưới tên món/lựa
+        chọn.
       </div>
     </div>
     <div class="row sub">
@@ -91,24 +134,41 @@
     </div>
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
-      <div class="line">Bước 4: Nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> ở góc trên bên phải.</div>
+      <div class="line">
+        Bước 4: Nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> ở góc trên
+        bên phải.
+      </div>
     </div>
 
     <div class="row">
       <div class="icon"><i class="fas fa-cogs"></i></div>
       <div class="line">
-        <b>Thêm lựa chọn cho món</b> (ví dụ: size lớn/nhỏ, nóng/lạnh…).<button class="btn-image" (click)="emitShowImageEvent('assets/images/create-menu-4.PNG','Ảnh chỉnh sửa lựa chọn')"><i class="fa-solid fa-image"></i> Xem ảnh</button>
+        <b>Thêm lựa chọn cho món</b> (ví dụ: size lớn/nhỏ, nóng/lạnh…).<button
+          class="btn-image"
+          (click)="
+            emitShowImageEvent(
+              'assets/images/create-menu-4.png',
+              'Ảnh chỉnh sửa lựa chọn'
+            )
+          "
+        >
+          <i class="fa-solid fa-image"></i> Xem ảnh
+        </button>
       </div>
     </div>
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
       <div class="line">
-        Bước 1: Nhấn vào biểu tượng <strong><i class="fa-regular fa-gear"></i></strong> dưới tên món.
+        Bước 1: Nhấn vào biểu tượng
+        <strong><i class="fa-regular fa-gear"></i></strong> dưới tên món.
       </div>
     </div>
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
-      <div class="line">Bước 2: Chọn biểu tượng <b><i class="fa-solid fa-plus"></i></b> góc trên bên trái để <b>thêm lựa chọn</b>.</div>
+      <div class="line">
+        Bước 2: Chọn biểu tượng <b><i class="fa-solid fa-plus"></i></b> góc trên
+        bên trái để <b>thêm lựa chọn</b>.
+      </div>
     </div>
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
@@ -119,8 +179,17 @@
     <div class="row sub">
       <div class="icon"><i class="fas fa-angle-right"></i></div>
       <div class="line">
-        Bước 4: Nhấn <b>Cập nhật</b>, rồi ấn <b><i class="fa-solid fa-floppy-disk"></i></b> ở góc trên bên phải để lưu.
+        Bước 4: Nhấn <b>Cập nhật</b>, rồi ấn
+        <b><i class="fa-solid fa-floppy-disk"></i></b> ở góc trên bên phải để
+        lưu.
       </div>
+    </div>
+    <div class="note">
+      <p>
+        (<b>Lưu ý:</b> Ấn vào biểu tượng
+        <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm nhanh
+        theo tên món.)
+      </p>
     </div>
   </div>
 </div>

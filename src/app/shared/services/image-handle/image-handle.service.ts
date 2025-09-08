@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { ElementRef, Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
 export interface AppImageData{
@@ -17,5 +17,9 @@ export class ImageHandleService {
 
   emitShowImagedEvent(data:AppImageData) {
     this._childEvent.next(data);
+  }
+
+  showElement(element:ElementRef){
+    element.nativeElement.style.display = "block"
   }
 }
