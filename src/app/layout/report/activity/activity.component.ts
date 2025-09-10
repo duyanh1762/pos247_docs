@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ImageHandleService } from '../../../shared/services/image-handle/image-handle.service';
+import { StepBoxComponent } from '../../../shared/component/step-box/step-box.component';
 
 @Component({
   selector: 'app-activity',
   standalone: true,
-  imports: [],
+  imports: [StepBoxComponent],
   templateUrl: './activity.component.html',
   styleUrl: './activity.component.css'
 })

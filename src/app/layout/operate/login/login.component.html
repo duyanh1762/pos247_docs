@@ -1,41 +1,47 @@
 <div class="guide-container">
-  <h2>🧑‍💻 1. Đăng nhập hệ thống</h2>
+  <h2>1. Đăng nhập hệ thống</h2>
   <p>
     <strong>Mô tả:</strong>Hướng dẫn cách đăng nhập vào phần mềm và cho nhân
     viên sử dụng hệ thống một cách nhanh chóng và an toàn.
   </p>
 
   <div class="section">
-    <h3>a. Đăng nhập phần mềm</h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Truy cập trang web <b>https://fnb.pos247.app</b> để tải ứng dụng
-        về thiết bị.
+    <app-step-box>
+      <h3 header>a. Đăng nhập phần mềm</h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Truy cập trang web <b>https://fnb.pos247.app</b> để tải ứng
+            dụng về thiết bị.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhập email để đăng ký hoặc đăng nhập vào hệ thống và ấn
+            <strong>Xác thực</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3:Sau khi xác thực ,hệ thống sẽ gửi yêu cầu đăng nhập về gmail
+            của người dùng
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nhập email để đăng ký hoặc đăng nhập vào hệ thống và ấn
-        <strong>Xác thực</strong>.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3:Sau khi xác thực ,hệ thống sẽ gửi yêu cầu đăng nhập về gmail của
-        người dùng
-      </div>
-    </div>
-    <b style="font-style: italic"
-      >(Lưu ý: Yêu cầu đăng nhập có thể rơi vào thư rác hoặc spam)</b
-    >
+      <b style="font-style: italic"
+        >(Lưu ý: Yêu cầu đăng nhập có thể rơi vào thư rác hoặc spam)</b
+      >
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      b. Đăng nhập nhân viên.<button
+    <app-step-box>
+      <h3 header>b. Đăng nhập nhân viên</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -45,32 +51,36 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Trên màn hình sau khi truy cập cửa hàng, chọn nhân viên muốn
-        đăng nhập.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Trên màn hình sau khi truy cập cửa hàng, chọn nhân viên muốn
+            đăng nhập.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">Bước 2: Nhập mã PIN để vào phần mềm.</div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Khi đăng nhập thành công, màn hình chính sẽ hiển thị các
+            chức năng theo quyền hạn của nhân viên, bao gồm quản lý đơn hàng,
+            thực đơn và báo cáo.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Nhập mã PIN để vào phần mềm.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Khi đăng nhập thành công, màn hình chính sẽ hiển thị các chức
-        năng theo quyền hạn của nhân viên, bao gồm quản lý đơn hàng, thực đơn và
-        báo cáo.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      c. Đăng xuất nhân viên.<button
+    <app-step-box>
+      <h3 header>c. Đăng xuất nhân viên</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -80,22 +90,25 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Nhấn vào biểu tượng
-        <b><i class="fa-solid fa-bars"></i></b> ở góc trên bên trái, sau đó chọn
-        tên nhân viên.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Nhấn vào biểu tượng
+            <b><i class="fa-solid fa-bars"></i></b> ở góc trên bên trái, sau đó
+            chọn tên nhân viên.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn biểu tượng
+            <b><i class="fa-solid fa-power-off"></i></b> để đăng xuất nhân viên
+            hiện tại.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Chọn biểu tượng
-        <b><i class="fa-solid fa-power-off"></i></b> để đăng xuất nhân viên hiện tại.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 </div>

@@ -1,54 +1,89 @@
 <div class="guide-container">
-  <h2>🧾 9. Quy trình xuất hóa đơn điện tử (HĐĐT)</h2>
+  <h2>9. Quy trình xuất hóa đơn điện tử</h2>
   <p>
-    <strong>Mô tả:</strong>Hướng dẫn nhân viên và quản lý xuất hóa đơn điện tử nhanh chóng, đảm bảo tuân thủ quy định về
-    kế toán và thuế.
+    <strong>Mô tả:</strong>Hướng dẫn nhân viên và quản lý xuất hóa đơn điện tử
+    nhanh chóng, đảm bảo tuân thủ quy định về kế toán và thuế.
   </p>
 
   <div class="section">
-    <h3>a. Truy cập cài đặt HĐĐT.<button class="btn-image" (click)="
-            emitShowImageEvent(
-              'assets/images/export-bills-1.png',
-              'Ảnh truy cập cài đặt xuất hoá đơn'
-            )
-          "><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line"> Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, chọn <b>Quản lý</b>
-        sau đó truy cập
-        <strong>Cấu hình</strong> và chọn <b>Hóa đơn</b>.
+    <app-step-box>
+      <h3 header>a. Truy cập cài đặt HĐĐT</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/export-bills-1.png',
+            'Ảnh truy cập cài đặt xuất hoá đơn'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b>
+            sau đó truy cập
+            <strong>Cấu hình</strong> và chọn <b>Hóa đơn</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn đơn vị cung cấp dịch vụ, sau đó nhập các thông tin từ
+            dữ liệu do đơn vị đó cung cấp.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line"> Bước 2: Chọn đơn vị cung cấp dịch vụ, sau đó nhập các thông tin từ dữ liệu do đơn vị đó cung cấp.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>b. Chọn hóa đơn và xuất.<button class="btn-image" (click)="
-            emitShowImageEvent(
-              'assets/images/export-bills-2.png',
-              'Ảnh xuất hoá đơn điện tử'
-            )
-          "><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Chọn bàn hoặc hóa đơn cần xuất HĐĐT:
-        <ul>
-          <li>Có thể chọn trong <b>lịch sử bán hàng</b> hoặc ngay khi <b>thanh toán</b>.</li>
-        </ul>
+    <app-step-box>
+      <h3 header>b. Chọn hóa đơn và xuất</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/export-bills-2.png',
+            'Ảnh xuất hoá đơn điện tử'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn bàn hoặc hóa đơn cần xuất HĐĐT:
+            <ul>
+              <li>
+                Có thể chọn trong <b>lịch sử bán hàng</b> hoặc ngay khi
+                <b>thanh toán</b>.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Nhấn nút <b>Xuất hóa đơn màu đỏ</b> để hoàn tất thao tác.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Hệ thống sẽ tự động tạo hóa đơn điện tử, đồng thời lưu trữ
+            thông tin trên phần mềm của bên cung cấp dịch vụ để quản lý.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Nhấn nút <b>Xuất hóa đơn màu đỏ</b> để hoàn tất thao tác.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 4: Hệ thống sẽ tự động tạo hóa đơn điện tử, đồng thời lưu trữ thông tin trên phần mềm của
-        bên cung cấp dịch vụ để quản lý.</div>
-    </div>
+    </app-step-box>
   </div>
 </div>

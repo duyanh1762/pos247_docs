@@ -1,53 +1,68 @@
 <div class="guide-container">
-    <h2>💰 10. Khởi tạo nguồn thu</h2>
-    <p><strong>Mô tả:</strong>Khởi tạo thêm các đầu mục thu cho cửa hàng.</p>
+  <h2>10. Khởi tạo nguồn thu</h2>
+  <p><strong>Mô tả:</strong>Khởi tạo thêm các đầu mục thu cho cửa hàng.</p>
 
-    <div class="section">
-      <h3>Hướng dẫn thực hiện.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/create-income-1.png',
-              'Ảnh thao tác với nguồn thu'
-            )
-          "
-        >
-          <i class="fa-solid fa-image"></i> Xem ảnh
-        </button></h3>
-
+  <div class="section">
+    <app-step-box>
+          <h3 header>Hướng dẫn thực hiện</h3>
+    <h3
+      icon
+      class="btn-image"
+      (click)="
+        emitShowImageEvent(
+          'assets/images/create-income-1.png',
+          'Ảnh thao tác với nguồn thu'
+        )
+      "
+    >
+      <i class="fa-solid fa-image"></i> Xem ảnh
+    </h3>
+    <div class="modal">
       <div class="row">
         <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-        <div class="line">Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, chọn <b>Quản lý</b> sau đó truy cập
-          <strong>Nguồn thu</strong>.</div>
+        <div class="line">
+          Bước 1: Chọn biểu tượng
+          <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
+          chọn <b>Quản lý</b> sau đó truy cập <strong>Nguồn thu</strong>.
+        </div>
       </div>
 
       <div class="row">
         <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-        <div class="line">Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm mới.</div>
+        <div class="line">
+          Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm mới.
+        </div>
       </div>
 
       <div class="row">
         <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-        <div class="line">Bước 3: Nhập thông tin nguồn thu (<i>tên khoản thu, mô tả…</i>).</div>
+        <div class="line">
+          Bước 3: Nhập thông tin nguồn thu (<i>tên khoản thu, mô tả…</i>).
+        </div>
       </div>
 
       <div class="row">
         <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-        <div class="line">Bước 4: Nhấn <b>Cập nhật</b>, sau đó nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất thao tác.</div>
+        <div class="line">
+          Bước 4: Nhấn <b>Cập nhật</b>, sau đó nhấn
+          <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất thao tác.
+        </div>
       </div>
-          <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 5: Nhấn <b>tên nguồn thu</b>
-         để chỉnh sửa thông tin nguồn thu.
+      <div class="row">
+        <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+        <div class="line">
+          Bước 5: Nhấn <b>tên nguồn thu</b>
+          để chỉnh sửa thông tin nguồn thu.
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+        <div class="line">
+          Bước 6: Nhấn biểu tượng
+          <strong><i class="fa-solid fa-trash"></i></strong> để xoá nguồn thu.
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 6: Nhấn biểu tượng
-        <strong><i class="fa-solid fa-trash"></i></strong> để xoá nguồn thu.
-      </div>
-    </div>
-    </div>
+    </app-step-box>
   </div>
+</div>

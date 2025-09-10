@@ -1,5 +1,5 @@
 <div class="guide-container">
-  <h2>🍳 6. Khởi tạo Bar & Bếp</h2>
+  <h2>6. Khởi tạo Bar & Bếp</h2>
   <p>
     <strong>Mô tả:</strong>Tính năng này giúp bạn tạo ra các quầy Bar hoặc khu
     vực Bếp để phân loại quy trình chế biến. Ví dụ:
@@ -8,8 +8,10 @@
   </p>
 
   <div class="section">
-    <h3>
-      a. Thêm Bar & Bếp.<button
+    <app-step-box>
+      <h3 header>a. Thêm Bar & Bếp</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -19,39 +21,45 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn biểu tượng
-        <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
-        chọn <b>Quản lý</b> sau đó truy cập <strong>Bar & Bếp</strong>.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b> sau đó truy cập
+            <strong>Bar & Bếp</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn <strong><i class="fa-solid fa-plus"></i></strong>, nhập
+            thông tin (ví dụ: Quầy pha chế, Bếp chính...).
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">Bước 3: Nhấn <strong>Cập nhật</strong> để lưu.</div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Nhấn biểu tượng
+            <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
+            tất.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nhấn <strong><i class="fa-solid fa-plus"></i></strong>, nhập
-        thông tin (ví dụ: Quầy pha chế, Bếp chính...).
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Nhấn <strong>Cập nhật</strong> để lưu.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4: Nhấn biểu tượng
-        <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn tất.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      b.Chỉnh sửa Bar/Bếp.<button
+    <app-step-box>
+      <h3 header>b.Chỉnh sửa Bar/Bếp</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -61,36 +69,39 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Nhấn <b>tên bar/bếp</b> để chỉnh sửa khu vực/món mà Bar/Bếp sê
-        tiếp nhận.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Nhấn <b>tên bar/bếp</b> để chỉnh sửa khu vực/món mà Bar/Bếp
+            sê tiếp nhận.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn biểu tượng
+            <strong><i class="fa-regular fa-pen"></i></strong> để chỉnh sửa
+            thông tin Bar/Bếp.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Nhấn biểu tượng
+            <strong><i class="fa-solid fa-trash"></i></strong> để xoá Bar/Bếp.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Nhấn biểu tượng
+            <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
+            tất.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nhấn biểu tượng
-        <strong><i class="fa-regular fa-pen"></i></strong> để chỉnh sửa thông
-        tin Bar/Bếp.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Nhấn biểu tượng
-        <strong><i class="fa-solid fa-trash"></i></strong> để xoá Bar/Bếp.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4: Nhấn biểu tượng
-        <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn tất.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 </div>

@@ -1,56 +1,92 @@
 <div class="guide-container">
-  <h2>➕ 5. Thêm phụ phí hoặc giảm giá</h2>
+  <h2>5. Thêm phụ phí hoặc giảm giá</h2>
   <p>
-    <strong>Mô tả:</strong>Hướng dẫn nhân viên hoặc quản lý áp dụng các khoản phụ phí hoặc giảm giá cho món ăn, bàn hoặc hóa đơn tổng.
+    <strong>Mô tả:</strong>Hướng dẫn nhân viên hoặc quản lý áp dụng các khoản
+    phụ phí hoặc giảm giá cho món ăn, bàn hoặc hóa đơn tổng.
   </p>
 
   <div class="section">
-    <h3>a. Chọn bàn và truy cập tính năng.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/voucher-1.png',
-              'Ảnh chọn bàn và các thao tác'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        ></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 1: Chọn bàn cần thao tác trên giao diện phần mềm.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Nhấn vào mục <b><i class="fa-solid fa-plus"></i>Khuyến mãi</b>, <b>Phụ thu</b> cho món hoặc bàn.</div>
-    </div>
+    <app-step-box>
+      <h3 header>a. Chọn bàn và truy cập tính năng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/voucher-1.png',
+            'Ảnh chọn bàn và các thao tác'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn bàn cần thao tác trên giao diện phần mềm.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn vào mục
+            <b><i class="fa-solid fa-plus"></i>Khuyến mãi</b>,
+            <b>Phụ thu</b> cho món hoặc bàn.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>b. Nhập thông tin và lưu.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/voucher-1.png',
-              'Ảnh chọn bàn và các thao tác'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        ></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Nhập thông tin cần thêm, ví dụ: phí phục vụ, giảm giá món hoặc giảm tổng hóa đơn.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 4: Nhấn <b>Cập nhật</b> để áp dụng thay đổi.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 5: Nhấn biểu tượng <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất thao tác.</div>
-    </div>
+    <app-step-box>
+      <h3 header>b. Nhập thông tin và lưu</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/voucher-1.png',
+            'Ảnh chọn bàn và các thao tác'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
         <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 6: Để xoá khuyến mãi/phụ thu nhấn biểu tượng <b><i class="fa-solid fa-trash"></i></b> ở ghi chú khuyến mãi/phụ thu, sau đó chọn biểu tượng <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất thao tác.</div>
-    </div>
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Nhập thông tin cần thêm, ví dụ: phí phục vụ, giảm giá món
+            hoặc giảm tổng hóa đơn.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Nhấn <b>Cập nhật</b> để áp dụng thay đổi.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Nhấn biểu tượng
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất thao
+            tác.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 6: Để xoá khuyến mãi/phụ thu nhấn biểu tượng
+            <b><i class="fa-solid fa-trash"></i></b> ở ghi chú khuyến mãi/phụ
+            thu, sau đó chọn biểu tượng
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất thao
+            tác.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
   </div>
 </div>

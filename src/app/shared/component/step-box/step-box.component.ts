@@ -11,5 +11,4 @@ import { Component, ElementRef, Input } from '@angular/core';
 export class StepBoxComponent {
   @Input()
   public expanded: boolean = false;
-
 }

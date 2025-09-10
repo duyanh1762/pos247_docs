@@ -1,128 +1,158 @@
 <div class="guide-container">
-  <h2>💰 3. Hướng dẫn xem Báo cáo Tài chính</h2>
+  <h2>3. Hướng dẫn xem Báo cáo Tài chính</h2>
   <p>
-    <strong>Mô tả:</strong>Hướng dẫn quản lý và nhân viên xem báo cáo tài chính, bao gồm doanh thu, chi
-    phí, công nợ và các khoản thu chi khác.
+    <strong>Mô tả:</strong>Hướng dẫn quản lý và nhân viên xem báo cáo tài chính,
+    bao gồm doanh thu, chi phí, công nợ và các khoản thu chi khác.
   </p>
 
   <div class="section">
-    <h3>a. Mở báo cáo và chọn thời gian.<button class="btn-image" (click)="
-            emitShowImageEvent(
-              'assets/images/report-finance-1.PNG',
-              'Ảnh truy cập báo cáo tài chính'
-            )
-          "><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
-        sau đó truy cập
-        <strong>Báo cáo</strong> và chọn <b>Báo cáo tài chính</b>.
+    <app-step-box>
+      <h3 header>a. Mở báo cáo và chọn thời gian</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/report-finance-1.PNG',
+            'Ảnh truy cập báo cáo tài chính'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, sau đó truy cập <strong>Báo cáo</strong> và chọn
+            <b>Báo cáo tài chính</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn thời gian cần xem:
+            <ul>
+              <li>
+                Nhấn vào biểu tượng
+                <b><i class="fa-regular fa-calendar"></i></b>.
+              </li>
+              <li>
+                Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng
+                thời gian đó.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Chọn thời gian cần xem:
-        <ul>
-          <li>Nhấn vào biểu tượng <b><i class="fa-regular fa-calendar"></i></b>.</li>
-          <li>
-            Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng thời
-            gian đó.
-          </li>
-        </ul>
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>b. Xem các thông tin chính.<button class="btn-image" (click)="
-            emitShowImageEvent(
-              'assets/images/report-finance-2.PNG',
-              'Ảnh thao tác với báo cáo tài chính'
-            )
-          "><i class="fa-solid fa-image"></i> Xem ảnh</button></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Xem các thông tin chính:
-        <table border="1" cellspacing="0" cellpadding="5">
-          <thead>
-            <tr>
-              <th>📌 Mục báo cáo</th>
-              <th>💬 Ý nghĩa</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Doanh thu</td>
-              <td>Tổng tiền thu được từ bán hàng và các phiếu thu</td>
-            </tr>
-            <tr>
-              <td>Chi phí & Công nợ trong kỳ</td>
-              <td>
-                Tổng tiền đã chi và các khoản nợ như lương, tiền hàng chưa thanh
-                toán
-              </td>
-            </tr>
-            <tr>
-              <td>Còn lại</td>
-              <td>
-                Số tiền còn lại sau khi lấy Doanh thu trừ Chi phí & Công nợ
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4: Lọc theo hình thức thanh toán: nhấn vào biểu tượng <strong><i class="fa-regular fa-filter"></i></strong>
-        để chọn
-        cách thanh toán mà bạn muốn xem (tiền mặt, VietQR, chuyển khoản, v.v.).
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 5: Chọn kiểu báo cáo tài chính bằng cách ấn vào biểu tượng <strong><i
-            class="fa-light fa-chart-pie"></i></strong>, gồm:
-        <ul>
-          <li><b>Thu chi theo ngày</b>: Xem thu và chi từng ngày.</li>
-          <li>
-            <b>Thu chi theo đối tác</b>: Xem thu chi liên quan đến từng nhà cung
-            cấp hoặc khách hàng.
-          </li>
-          <li>
-            <b>Thu chi theo chốt ca</b>: Xem thu chi theo từng ca làm việc trong
-            ngày.
-          </li>
-          <li>
-            <b>Thu chi theo hạng mục</b>: Xem thu chi theo từng loại hoạt động
-            (bán hàng, dịch vụ…)
-          </li>
-          <li><b>Công nợ</b>: Xem các khoản chưa thanh toán</li>
-        </ul>
-        <p style="font-style: italic;">**Ý nghĩa các từ khoá:**</p>
+    <app-step-box>
+      <h3 header>b. Xem các thông tin chính</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/report-finance-2.PNG',
+            'Ảnh thao tác với báo cáo tài chính'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Xem các thông tin chính:
+            <table border="1" cellspacing="0" cellpadding="5">
+              <thead>
+                <tr>
+                  <th>📌 Mục báo cáo</th>
+                  <th>💬 Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Doanh thu</td>
+                  <td>Tổng tiền thu được từ bán hàng và các phiếu thu</td>
+                </tr>
+                <tr>
+                  <td>Chi phí & Công nợ trong kỳ</td>
+                  <td>
+                    Tổng tiền đã chi và các khoản nợ như lương, tiền hàng chưa
+                    thanh toán
+                  </td>
+                </tr>
+                <tr>
+                  <td>Còn lại</td>
+                  <td>
+                    Số tiền còn lại sau khi lấy Doanh thu trừ Chi phí & Công nợ
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Lọc theo hình thức thanh toán: nhấn vào biểu tượng
+            <strong><i class="fa-regular fa-filter"></i></strong>
+            để chọn cách thanh toán mà bạn muốn xem (tiền mặt, VietQR, chuyển
+            khoản, v.v.).
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Chọn kiểu báo cáo tài chính bằng cách ấn vào biểu tượng
+            <strong><i class="fa-light fa-chart-pie"></i></strong>, gồm:
+            <ul>
+              <li><b>Thu chi theo ngày</b>: Xem thu và chi từng ngày.</li>
+              <li>
+                <b>Thu chi theo đối tác</b>: Xem thu chi liên quan đến từng nhà
+                cung cấp hoặc khách hàng.
+              </li>
+              <li>
+                <b>Thu chi theo chốt ca</b>: Xem thu chi theo từng ca làm việc
+                trong ngày.
+              </li>
+              <li>
+                <b>Thu chi theo hạng mục</b>: Xem thu chi theo từng loại hoạt
+                động (bán hàng, dịch vụ…)
+              </li>
+              <li><b>Công nợ</b>: Xem các khoản chưa thanh toán</li>
+            </ul>
+            <p style="font-style: italic">**Ý nghĩa các từ khoá:**</p>
 
-        <ul>
-          <li><b>Phát sinh</b>: khoản chi/công nợ phát sinh ngoài kế hoạch.</li>
-          <li>
-            <b>Định kỳ</b>: khoản chi/công nợ phải trả đều đặn (như tiền thuê,
-            lương…)
-          </li>
-          <li><b>Tồn đọng</b>: Nợ từ kỳ trước chưa trả.</li>
-          <li><b>Đã trả</b>: Khoản nợ đã thanh toán.</li>
-        </ul>
+            <ul>
+              <li>
+                <b>Phát sinh</b>: khoản chi/công nợ phát sinh ngoài kế hoạch.
+              </li>
+              <li>
+                <b>Định kỳ</b>: khoản chi/công nợ phải trả đều đặn (như tiền
+                thuê, lương…)
+              </li>
+              <li><b>Tồn đọng</b>: Nợ từ kỳ trước chưa trả.</li>
+              <li><b>Đã trả</b>: Khoản nợ đã thanh toán.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 6: Xuất báo cáo ra file Excel: nhấn vào biểu tượng
+            <b><i class="fa-regular fa-file-xmark"></i></b> để tải báo cáo về
+            máy dưới dạng bảng tính.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 6: Xuất báo cáo ra file Excel: nhấn vào biểu tượng <b><i class="fa-regular fa-file-xmark"></i></b> để
-        tải báo cáo về máy dưới dạng bảng tính.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 </div>

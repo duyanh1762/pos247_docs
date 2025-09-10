@@ -1,60 +1,89 @@
 <div class="guide-container">
-  <h2>💵 4. Quy trình thanh toán</h2>
+  <h2>4. Quy trình thanh toán</h2>
   <p>
-    <strong>Mô tả:</strong>Hướng dẫn nhân viên thực hiện thanh toán hóa đơn cho khách nhanh chóng, chính xác và an toàn.
+    <strong>Mô tả:</strong>Hướng dẫn nhân viên thực hiện thanh toán hóa đơn cho
+    khách nhanh chóng, chính xác và an toàn.
   </p>
 
   <div class="section">
-    <h3>a. Chọn bàn và bắt đầu thanh toán.
-      <button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/payment-1.png',
-              'Ảnh chọn bàn và tính tiền'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        >
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 1: Chọn bàn cần thanh toán trên giao diện phần mềm.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Nhấn vào nút <b><i class="fa-solid fa-dollar-sign"></i></b> và chọn <b>Tính tiền</b>.</div>
-    </div>
+    <app-step-box>
+      <h3 header>a. Chọn bàn và bắt đầu thanh toán</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/payment-1.png',
+            'Ảnh chọn bàn và tính tiền'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn bàn cần thanh toán trên giao diện phần mềm.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn vào nút
+            <b><i class="fa-solid fa-dollar-sign"></i></b> và chọn
+            <b>Tính tiền</b>.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>b. Chọn phương thức và xác nhận.
-      <button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/payment-2.png',
-              'Ảnh thanh toán hoá đơn bằng phương thức khác'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        >
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3.1: Nếu khách thanh toán bằng tiền mặt, chọn <b>Tiền mặt</b>.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3.2: Nếu khách thanh toán qua <b>Grab</b>, <b>QR ngân hàng</b> hoặc ví điện tử khác, chọn đúng phương thức thanh toán và nhấn <b>Xác nhận giao dịch</b>.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3.3: Khi thanh toán thành công, hệ thống sẽ tự động in mã QR theo phương thức thanh toán trên hoá đơn.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3.4: Hoàn tất thanh toán, trạng thái hóa đơn sẽ chuyển sang <b>Đã thanh toán</b> và bàn sẽ được giải phóng cho khách tiếp theo.</div>
-    </div>
+    <app-step-box>
+      <h3 header>b. Chọn phương thức và xác nhận</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/payment-2.png',
+            'Ảnh thanh toán hoá đơn bằng phương thức khác'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3.1: Nếu khách thanh toán bằng tiền mặt, chọn <b>Tiền mặt</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3.2: Nếu khách thanh toán qua <b>Grab</b>,
+            <b>QR ngân hàng</b> hoặc ví điện tử khác, chọn đúng phương thức
+            thanh toán và nhấn <b>Xác nhận giao dịch</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3.3: Khi thanh toán thành công, hệ thống sẽ tự động in mã QR
+            theo phương thức thanh toán trên hoá đơn.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3.4: Hoàn tất thanh toán, trạng thái hóa đơn sẽ chuyển sang
+            <b>Đã thanh toán</b> và bàn sẽ được giải phóng cho khách tiếp theo.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
   </div>
 </div>

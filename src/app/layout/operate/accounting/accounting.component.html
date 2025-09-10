@@ -1,13 +1,15 @@
 <div class="guide-container">
-  <h2>📥 6. Quy trình thu chi</h2>
+  <h2>6. Quy trình thu chi</h2>
   <p>
     <strong>Mô tả:</strong>Hướng dẫn nhân viên hoặc quản lý tạo và quản lý các
     phiếu thu, phiếu chi và chốt ca bán hàng.
   </p>
 
   <div class="section">
-    <h3>
-      a. Truy cập mục Thu & Chi.<button
+    <app-step-box>
+      <h3 header>a. Truy cập mục Thu & Chi</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -17,30 +19,35 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        <div class="line">
-          Bước 1: Chọn biểu tượng
-          <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
-          chọn <b>Vận hành</b> sau đó truy cập <strong>Thu chi</strong>.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            <div class="line">
+              Bước 1: Chọn biểu tượng
+              <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+              cùng, chọn <b>Vận hành</b> sau đó truy cập
+              <strong>Thu chi</strong>.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để tạo
+            phiếu mới.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để tạo phiếu
-        mới.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      b. Tạo và quản lý phiếu thu/chi.<button
+    <app-step-box>
+      <h3 header>b. Tạo và quản lý phiếu thu/chi</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -50,48 +57,50 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Chọn loại phiếu: <b>Phiếu thu</b> hoặc <b>Phiếu chi</b>.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Chọn loại phiếu: <b>Phiếu thu</b> hoặc <b>Phiếu chi</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Nhập thông tin vào biểu mẫu và nhấn <b>Cập nhật</b> để lưu
+            phiếu.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Nếu muốn xóa phiếu, chọn biểu tượng
+            <b><i class="fa-solid fa-trash"></i></b> và xác nhận thao tác.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 6: Nếu muốn sửa phiếu, ấn vào phiếu muốn sửa, sau đó sửa phiếu
+            và ấn <b>Cập nhật</b> để lưu lại.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 7: Sau khi tạo phiếu, hệ thống sẽ cập nhật số liệu thu chi,
+            giúp quản lý dễ dàng theo dõi báo cáo tài chính.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo loại phiếu.)
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4: Nhập thông tin vào biểu mẫu và nhấn <b>Cập nhật</b> để lưu
-        phiếu.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 5: Nếu muốn xóa phiếu, chọn biểu tượng
-        <b><i class="fa-solid fa-trash"></i></b> và xác nhận thao tác.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 6: Nếu muốn sửa phiếu, ấn vào phiếu muốn sửa, sau đó sửa phiếu và
-        ấn <b>Cập nhật</b> để lưu lại.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 7: Sau khi tạo phiếu, hệ thống sẽ cập nhật số liệu thu chi, giúp
-        quản lý dễ dàng theo dõi báo cáo tài chính.
-      </div>
-    </div>
-    <div class="note">
-      <p>
-        (<b>Lưu ý:</b> Ấn vào biểu tượng
-        <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm nhanh
-        theo loại phiếu.)
-      </p>
-    </div>
+    </app-step-box>
   </div>
 </div>

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ImageHandleService } from '../../../shared/services/image-handle/image-handle.service';
+import { StepBoxComponent } from '../../../shared/component/step-box/step-box.component';
 
 @Component({
   selector: 'app-create-income',
   standalone: true,
-  imports: [],
+  imports: [StepBoxComponent],
   templateUrl: './create-income.component.html',
   styleUrl: './create-income.component.css'
 })

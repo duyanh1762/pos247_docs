@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
-import { title } from 'process';
 import { CreateStoreComponent } from './layout/create/create-store/create-store.component';
 import { CreateSettingComponent } from './layout/create/create-setting/create-setting.component';
 import { CreateMenuComponent } from './layout/create/create-menu/create-menu.component';
@@ -29,6 +28,23 @@ import { IeActivityComponent } from './layout/operate/ie-activity/ie-activity.co
 import { CheckInventoryComponent } from './layout/operate/check-inventory/check-inventory.component';
 import { OutletsComponent } from './layout/in-app/outlets/outlets.component';
 import { WorkspaceComponent } from './layout/in-app/workspace/workspace.component';
+import { MonitorComponent } from './layout/in-app/monitor/monitor.component';
+import { PaymentsComponent } from './layout/in-app/payments/payments.component';
+import { GoodInvoicesComponent } from './layout/in-app/good-invoices/good-invoices.component';
+import { ReportActivityComponent } from './layout/in-app/report-activity/report-activity.component';
+import { ReportFinanceComponent } from './layout/in-app/report-finance/report-finance.component';
+import { ReportGoodsComponent } from './layout/in-app/report-goods/report-goods.component';
+import { StaffInAppComponent } from './layout/in-app/staff-in-app/staff-in-app.component';
+import { MenuItemsComponent } from './layout/in-app/menu-items/menu-items.component';
+import { AreaInAppComponent } from './layout/in-app/area-in-app/area-in-app.component';
+import { ProcessorsComponent } from './layout/in-app/processors/processors.component';
+import { IncomesInAppComponent } from './layout/in-app/incomes-in-app/incomes-in-app.component';
+import { GoodsInAppComponent } from './layout/in-app/goods-in-app/goods-in-app.component';
+import { PartnerInAppComponent } from './layout/in-app/partner-in-app/partner-in-app.component';
+import { SettingInAppComponent } from './layout/in-app/setting-in-app/setting-in-app.component';
+import { DocsNotfoundComponent } from './layout/docs-notfound/docs-notfound.component';
+import { CollectionsComponent } from './layout/in-app/collections/collections.component';
+import { ReconciliationsComponent } from './layout/in-app/reconciliations/reconciliations.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -38,6 +54,7 @@ export interface Point extends Routes {
 
 export const routes: Routes = [
   {path:"home",component:HomeComponent},
+
   {path:"home/create",component:LayoutComponent,data:{title:"Hướng dẫn khởi tạo"},children:[
     {path:"outlets",data:{title:"Khởi tạo cửa hàng"},component:CreateStoreComponent},
     {path:"settings",data:{title:"Các cài đặt chính"},component:CreateSettingComponent},
@@ -59,7 +76,7 @@ export const routes: Routes = [
     {path:"payments",data:{title:"Quy trinh thu chi"},component:AccountingComponent},
     {path:"clock-out",data:{title:"Quy trình chốt ca"},component:ClockOutComponent},
     {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác(chưa xong)"},component:OrderGoodsComponent},
-    {path:"settlement",data:{title:"Quy trình quyết toán(chưa xong)"},component:SettlementComponent},
+    {path:"settlement",data:{title:"Quy trình quyết toán"},component:SettlementComponent},
     {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử"},component:ExportBillsComponent},
     {path:"good-invoices",data:{title:"Quy trình xuất/nhập hàng"},component:IeActivityComponent},
     {path:"check-invetory",data:{title:"Quy trình kiểm kê(chưa xong)"},component:CheckInventoryComponent}
@@ -69,8 +86,27 @@ export const routes: Routes = [
     {path:"goods",data:{title:"Báo cáo hàng hoá"},component:GoodsIEComponent},
     {path:"finance",data:{title:"Báo cáo tài chính"},component:FinanceComponent}
   ]},
+
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
   {path:"in-app/workspace",component:WorkspaceComponent,data:{title:"Hướng dẫn bán hàng"}},
+  {path:"in-app/monitor",component:MonitorComponent,data:{title:"Hướng dẫn chế biến"}},
+  {path:"in-app/payments",component:PaymentsComponent,data:{title:"Hướng dẫn thu chi"}},
+  {path:"in-app/good-invoices",component:GoodInvoicesComponent,data:{title:"Hướng dẫn xuất nhập hàng"}},
+  {path:"in-app/reports/operation",component:ReportActivityComponent,data:{title:"Hướng dẫn báo cáo hoạt động"}},
+  {path:"in-app/reports/finance",component:ReportFinanceComponent,data:{title:"Hướng dẫn báo cáo tài chính"}},
+  {path:"in-app/reports/goods",component:ReportGoodsComponent,data:{title:"Hướng dẫn báo cáo hàng hoá"}},
+  {path:"in-app/staffs",component:StaffInAppComponent,data:{title:"Hướng dẫn quản lý nhân sự"}},
+  {path:"in-app/menu-items",component:MenuItemsComponent,data:{title:"Hướng dẫn quản lý thực đơn"}},
+  {path:"in-app/areas",component:AreaInAppComponent,data:{title:"Hướng dẫn quản lý sơ đồ bàn"}},
+  {path:"in-app/processors",component:ProcessorsComponent,data:{title:"Hướng dẫn quản lý Bar bếp"}},
+  {path:"in-app/incomes",component:IncomesInAppComponent,data:{title:"Hướng dẫn quản lý nguồn thu"}},
+  {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý nguồn thu"}},
+  {path:"in-app/partners",component:PartnerInAppComponent,data:{title:"Hướng dẫn quản lý đối tác"}},
+  {path:"in-app/settings",component:SettingInAppComponent,data:{title:"Hướng dẫn cấu hình"}},
+  {path:"in-app/collections",component:CollectionsComponent,data:{title:"Hướng dẫn chốt ca"}},
+  {path:"in-app/reconciliations",component:ReconciliationsComponent,data:{title:"Hướng dẫn quyết toán"}},
+
+
   {path:"",redirectTo:"home",pathMatch:"full"},
-  {path:"**",redirectTo:"",pathMatch:"full"},
+  {path:"**",component:DocsNotfoundComponent},
 ];

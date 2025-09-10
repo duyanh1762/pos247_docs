@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ImageHandleService } from '../../../shared/services/image-handle/image-handle.service';
+import { StepBoxComponent } from '../../../shared/component/step-box/step-box.component';
 
 @Component({
   selector: 'app-create-staff',
   standalone: true,
-  imports: [],
+  imports: [StepBoxComponent],
   templateUrl: './create-staff.component.html',
   styleUrl: './create-staff.component.css'
 })

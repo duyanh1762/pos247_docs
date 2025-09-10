@@ -1,122 +1,144 @@
 <div class="guide-container">
-  <h2>📊 1. Hướng dẫn xem Báo cáo hoạt động</h2>
+  <h2>1. Hướng dẫn xem Báo cáo hoạt động</h2>
   <p>
-    <strong>Mô tả:</strong>Hướng dẫn nhân viên hoặc quản lý xem báo cáo chi tiết về hoạt động bán hàng,
-    giúp theo dõi doanh thu và tình hình phục vụ.
+    <strong>Mô tả:</strong>Hướng dẫn nhân viên hoặc quản lý xem báo cáo chi tiết
+    về hoạt động bán hàng, giúp theo dõi doanh thu và tình hình phục vụ.
   </p>
 
   <div class="section">
-    <h3>a. Mở báo cáo và chọn thời gian.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/report-activity-1.PNG',
-              'Ảnh truy cập báo cáo hoạt động'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        ></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, sau đó truy cập
-        <strong>Báo cáo</strong> và chọn <b>Báo cáo hoạt động</b>.
+    <app-step-box>
+      <h3 header>a. Mở báo cáo và chọn thời gian</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/report-activity-1.PNG',
+            'Ảnh truy cập báo cáo hoạt động'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, sau đó truy cập <strong>Báo cáo</strong> và chọn
+            <b>Báo cáo hoạt động</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn thời gian cần xem:
+            <ul>
+              <li>
+                Nhấn vào biểu tượng
+                <b><i class="fa-regular fa-calendar"></i></b>.
+              </li>
+              <li>
+                Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng
+                thời gian đó.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Chọn thời gian cần xem:
-        <ul>
-          <li>
-            Nhấn vào biểu tượng <b><i class="fa-regular fa-calendar"></i></b>.
-          </li>
-          <li>
-            Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng thời
-            gian đó.
-          </li>
-        </ul>
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>b. Xem các loại báo cáo.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/report-activity-2.PNG',
-              'Ảnh thao tác với báo cáo hoạt động'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        ></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Xem các loại báo cáo về thông tin hoạt động:
-        <table border="1" cellspacing="0" cellpadding="5">
-          <thead>
-            <tr>
-              <th>📌 Mục báo cáo</th>
-              <th>💬 Ý nghĩa</th>
-              <th>🔍 Xem chi tiết</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Đã thu</td>
-              <td>Tổng tiền đã thanh toán từ khách</td>
-              <td>
-                Nhấn biểu tượng
-                <strong><i class="fa-chisel fa-regular fa-user"></i></strong>
-                bên phải để xem theo từng nhân viên
-              </td>
-            </tr>
-            <tr>
-              <td>Đang phục vụ</td>
-              <td>Tổng tiền của các món chưa thanh toán/các bàn đang ngồi</td>
-              <td>
-                Nhấn biểu tượng
-                <strong><i class="fa-regular fa-bars"></i></strong> bên phải để
-                xem chi tiết các món đang phục vụ
-              </td>
-            </tr>
-            <tr>
-              <td>Tổng doanh thu</td>
-              <td>Tổng tiền của các món/hoá đơn đã thanh toán</td>
-              <td>
-                Nhấn biểu tượng
-                <strong><i class="fa-regular fa-trophy"></i></strong> bên phải để
-                xem chi tiết doanh số/số lượng món đã bá
-              </td>
-            </tr>
-            <tr>
-              <td>Tổng huỷ</td>
-              <td>Tổng tiền của các món bị huỷ</td>
-              <td>
-                Nhấn biểu tượng
-                <strong><i class="fa-regular fa-bars"></i></strong> bên phải để
-                xem món nào bị huỷ
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <app-step-box>
+      <h3 header>b. Xem các loại báo cáo</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/report-activity-2.PNG',
+            'Ảnh thao tác với báo cáo hoạt động'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Xem các loại báo cáo về thông tin hoạt động:
+            <table border="1" cellspacing="0" cellpadding="5">
+              <thead>
+                <tr>
+                  <th>📌 Mục báo cáo</th>
+                  <th>💬 Ý nghĩa</th>
+                  <th>🔍 Xem chi tiết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Đã thu</td>
+                  <td>Tổng tiền đã thanh toán từ khách</td>
+                  <td>
+                    Nhấn biểu tượng
+                    <strong
+                      ><i class="fa-chisel fa-regular fa-user"></i
+                    ></strong>
+                    bên phải để xem theo từng nhân viên
+                  </td>
+                </tr>
+                <tr>
+                  <td>Đang phục vụ</td>
+                  <td>
+                    Tổng tiền của các món chưa thanh toán/các bàn đang ngồi
+                  </td>
+                  <td>
+                    Nhấn biểu tượng
+                    <strong><i class="fa-regular fa-bars"></i></strong> bên phải
+                    để xem chi tiết các món đang phục vụ
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tổng doanh thu</td>
+                  <td>Tổng tiền của các món/hoá đơn đã thanh toán</td>
+                  <td>
+                    Nhấn biểu tượng
+                    <strong><i class="fa-regular fa-trophy"></i></strong> bên
+                    phải để xem chi tiết doanh số/số lượng món đã bá
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tổng huỷ</td>
+                  <td>Tổng tiền của các món bị huỷ</td>
+                  <td>
+                    Nhấn biểu tượng
+                    <strong><i class="fa-regular fa-bars"></i></strong> bên phải
+                    để xem món nào bị huỷ
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Xem lịch sử hóa đơn: ở phía dưới màn hình, chọn ngày cụ thể
+            để xem chi tiết các hóa đơn trong ngày đó.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Xuất báo cáo ra file Excel: nhấn vào biểu tượng
+            <b><i class="fa-regular fa-file-xmark"></i></b> để tải báo cáo về
+            máy dưới dạng bảng tính.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4: Xem lịch sử hóa đơn: ở phía dưới màn hình, chọn ngày cụ thể để
-        xem chi tiết các hóa đơn trong ngày đó.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 5: Xuất báo cáo ra file Excel: nhấn vào biểu tượng <b><i class="fa-regular fa-file-xmark"></i></b> để
-        tải báo cáo về máy dưới dạng bảng tính.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 </div>

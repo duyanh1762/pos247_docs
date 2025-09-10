@@ -1,5 +1,5 @@
 <div class="guide-container">
-  <h2>👥 4. Khởi tạo nhân sự</h2>
+  <h2>4. Khởi tạo nhân sự</h2>
   <p>
     <strong>Mô tả:</strong> Tính năng Khởi tạo nhân sự giúp bạn thêm mới nhân
     viên, thiết lập <strong>mã PIN</strong> đăng nhập và
@@ -10,9 +10,10 @@
     tiên để quản trị hệ thống.)
   </p>
   <div class="section">
-    <h3>
-      a. Thêm nhân viên mới.
-      <button
+    <app-step-box>
+      <h3 header>a.Thêm nhân viên mới</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -22,27 +23,26 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b> sau đó truy cập <strong>Nhân sự</strong>.
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn biểu tượng
-        <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
-        chọn <b>Quản lý</b> sau đó truy cập <strong>Nhân sự</strong>.
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nhấn vào dấu
-        <strong><i class="fa-solid fa-plus"></i></strong> để
-        <b>thêm nhân viên mới</b>.
-      </div>
-    </div>
-    <!-- <div class="row">
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn vào dấu
+            <strong><i class="fa-solid fa-plus"></i></strong> để
+            <b>thêm nhân viên mới</b>.
+          </div>
+        </div>
+        <!-- <div class="row">
       <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
       <div class="line">
         Bước 3: Màn hình sẽ hiển thị QR để nhân viên có thể quét và tải App về
@@ -50,28 +50,33 @@
         <strong><i class="fa-regular fa-pen-to-square"></i></strong>.
       </div>
     </div> -->
-    <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Nhập thông tin nhân viên: <strong>Họ tên</strong>,
-        <strong>mã PIN</strong>, và <strong>phân quyền</strong> (Lưu ý: Nếu là
-        cửa hàng mới, cần tạo tài khoản <strong>Quản lý</strong> đầu tiên).
-      </div>
-    </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Nhập thông tin nhân viên: <strong>Họ tên</strong>,
+            <strong>mã PIN</strong>, và <strong>phân quyền</strong> (Lưu ý: Nếu
+            là cửa hàng mới, cần tạo tài khoản <strong>Quản lý</strong> đầu
+            tiên).
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4: Nhấn biểu tượng
-        <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn tất.
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Nhấn biểu tượng
+            <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
+            tất.
+          </div>
+        </div>
       </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      b. Chỉnh sửa nhân viên.
-      <button
+    <app-step-box>
+      <h3 header>b. Chỉnh sửa nhân viên</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -81,28 +86,33 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn nhân viên muốn sửa, sau đó nhập lại các thông tin rồi ấn
-        <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn tất.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn nhân viên muốn sửa, sau đó nhập lại các thông tin rồi
+            ấn
+            <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
+            tất.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nếu muốn xóa nhân viên, ấn nhân viên cần xóa rồi nhấn biểu
+            tượng
+            <strong><i class="fa-solid fa-trash"></i></strong>.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên nhân sự.)
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nếu muốn xóa nhân viên, ấn nhân viên cần xóa rồi nhấn biểu tượng
-        <strong><i class="fa-solid fa-trash"></i></strong>.
-      </div>
-    </div>
-    <div class="note">
-      <p>
-        (<b>Lưu ý:</b> Ấn vào biểu tượng
-        <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm nhanh
-        theo tên nhân sự.)
-      </p>
-    </div>
+    </app-step-box>
   </div>
 </div>

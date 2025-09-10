@@ -1,13 +1,15 @@
 <div class="guide-container">
-  <h2>🪑 5. Khởi tạo sơ đồ bàn</h2>
+  <h2>5. Khởi tạo sơ đồ bàn</h2>
   <p>
     <strong>Mô tả:</strong> Thiết lập các khu vực (như Tầng 1, Sân vườn,...) và
     thêm bàn để quản lý không gian phục vụ hiệu quả hơn.
   </p>
 
   <div class="section">
-    <h3>
-      a. Tạo khu vực.<button
+    <app-step-box>
+      <h3 header>a. Tạo khu vực</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -15,32 +17,39 @@
             'Ảnh thêm mới khu vực'
           )
         "
-        ><i class="fa-solid fa-image"></i> Xem ảnh</button
       >
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, chọn <b>Quản lý</b> sau đó truy cập
-        <strong>Sơ đồ bàn</strong>.
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b> sau đó truy cập
+            <strong>Sơ đồ bàn</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn biểu tượng <b><i class="fa-regular fa-plus"></i></b> để
+            <b>thêm khu vực</b>, nhập tên khu vực (ví dụ:
+            <i>Tầng 1, Sân vườn...</i>).
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">Bước 3: Nhấn <b>Cập nhật</b> để lưu khu vực.</div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Chọn biểu tượng <b><i class="fa-regular fa-plus"></i></b> để <b>thêm khu vực</b>, nhập tên khu vực (ví dụ:
-        <i>Tầng 1, Sân vườn...</i>).
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Nhấn <b>Cập nhật</b> để lưu khu vực.</div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      b. Tạo bàn.<button
+    <app-step-box>
+      <h3 header>b. Tạo bàn</h3>
+      <h3 icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -48,25 +57,32 @@
             'Ảnh thêm mới bàn'
           )
         "
-        ><i class="fa-solid fa-image"></i> Xem ảnh</button
       >
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn khu vực vừa tạo, chọn biểu tượng <b><i class="fa-regular fa-plus"></i></b> và chọn <b>Tạo bàn mới</b> và nhập thông tin (Có
-        thể tạo 1 bàn hoặc nhiều bàn cùng lúc).
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn khu vực vừa tạo, chọn biểu tượng
+            <b><i class="fa-regular fa-plus"></i></b> và chọn
+            <b>Tạo bàn mới</b> và nhập thông tin (Có thể tạo 1 bàn hoặc nhiều
+            bàn cùng lúc).
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">Bước 2: Nhấn <b>Cập nhật</b> để lưu bàn.</div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Nhấn biểu tượng
+            <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
+            tất.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Nhấn <b>Cập nhật</b> để lưu bàn.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Nhấn biểu tượng
-        <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn tất.
-      </div>
+    </app-step-box>
   </div>
 </div>

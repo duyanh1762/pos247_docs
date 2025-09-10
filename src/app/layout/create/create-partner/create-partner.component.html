@@ -1,5 +1,5 @@
 <div class="guide-container">
-  <h2>🤝 8. Khởi tạo đối tác (nhà cung cấp, …)</h2>
+  <h2>8. Khởi tạo đối tác (nhà cung cấp, …)</h2>
   <p>
     <strong>Mô tả:</strong>Thiết lập danh sách đối tác giúp bạn quản lý nhà cung
     cấp, khách hàng hoặc đối tác dịch vụ một cách đầy đủ và thuận tiện. Hãy làm
@@ -7,8 +7,10 @@
   </p>
 
   <div class="section">
-    <h3>
-      a.Thêm đối tác.<button
+    <app-step-box>
+      <h3 header>a.Thêm đối tác</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -18,34 +20,40 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ành
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn biểu tượng
-        <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
-        chọn <b>Quản lý</b> sau đó truy cập <strong>Đối tác</strong>.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b> sau đó truy cập <strong>Đối tác</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm
+            mới.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Nhập thông tin đối tác (tên, số điện thoại, địa chỉ…) rồi
+            nhấn
+            <b>Cập nhật</b> để lưu.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm mới.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 3: Nhập thông tin đối tác (tên, số điện thoại, địa chỉ…) rồi nhấn
-        <b>Cập nhật</b> để lưu.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      b.Cấu hình chi tiết cho đối tác.<button
+    <app-step-box>
+      <h3 header>b.Cấu hình chi tiết cho đối tác</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
@@ -55,46 +63,51 @@
         "
       >
         <i class="fa-solid fa-image"></i> Xem ành
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4.1: Nhấn vào <b>tên đối tác</b> muốn chỉnh sửa.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4.1: Nhấn vào <b>tên đối tác</b> muốn chỉnh sửa.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4.2: Chọn biểu tượng
+            <b><i class="fa-regular fa-circle-info"></i></b> để sửa thông tin
+            đối tác, sau dó ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để
+            hoàn tất
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4.3: Chọn biểu tượng
+            <b><i class="fa-regular fa-bolt"></i></b> để thêm dịch vụ của đối
+            tác, sau đó ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để
+            hoàn tất
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4.4: Chọn biểu tượng
+            <b><i class="fa-sharp fa-light fa-boxes-stacked"></i></b> để thêm
+            hàng hoá của đối tác, sau đó ấn
+            <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4.5: Chọn biểu tượng
+            <b><i class="fa-regular fa-house"></i></b> để thêm tài khoản ngân
+            hàng của đối tác, sau đó ấn
+            <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4.2: Chọn biểu tượng
-        <b><i class="fa-regular fa-circle-info"></i></b> để sửa thông tin đối
-        tác, sau dó ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn
-        tất
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4.3: Chọn biểu tượng
-        <b><i class="fa-regular fa-bolt"></i></b> để thêm dịch vụ của đối tác,
-        sau đó ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4.4: Chọn biểu tượng
-        <b><i class="fa-sharp fa-light fa-boxes-stacked"></i></b> để thêm hàng hoá của đối tác,
-        sau đó ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4.5: Chọn biểu tượng
-        <b><i class="fa-regular fa-house"></i></b> để thêm tài khoản ngân hàng của đối tác,
-        sau đó ấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất
-      </div>
-    </div>
+    </app-step-box>
   </div>
 </div>

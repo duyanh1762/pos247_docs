@@ -2,3 +2,7 @@
   display: flex;
   flex-direction: column;
 }
+.title-tutorial{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,5 +1,8 @@
 <div>
-  <div (click)="expanded = !expanded"><ng-content select="[header]"></ng-content></div>
+  <div (click)="expanded = !expanded" class="title-tutorial">
+    <ng-content select="[header]"></ng-content>
+    <ng-content select="[icon]"></ng-content>
+  </div>
   <div *ngIf="expanded">
     <ng-content></ng-content>
   </div>

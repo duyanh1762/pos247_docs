@@ -1,5 +1,5 @@
 <div class="guide-container">
-  <h2>📥 6. Quy trình chốt ca</h2>
+  <h2>7. Quy trình chốt ca</h2>
   <p>
     <strong>Mô tả:</strong>Hướng dẫn nhân viên chốt ca sau khi hết ca làm việc
     để xác định/kiểm soát các hoá đơn và phương thức thanh toán mà nhân viên đó
@@ -7,87 +7,88 @@
   </p>
 
   <div class="section">
-    <h3>
-      a. Truy cập mục Thu & Chi.<button
+    <app-step-box>
+      <h3 header>a. Truy cập mục Chốt ca</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
-            'assets/images/thu-chi-1.png',
+            'assets/images/clock-out-1.png',
             'Ảnh truy cập chốt ca'
           )
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 1: Chọn biểu tượng
-        <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng,
-        chọn <b>Vận hành</b> sau đó truy cập <strong>Thu chi</strong>.
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Vận hành</b> sau đó truy cập <strong>Chốt ca</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm
+            phiếu chốt ca.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b>.
-      </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>
-      b. Thao tác với quy trình chốt ca.<button
+    <app-step-box>
+      <h3 header>b. Thao tác với phiếu chốt ca</h3>
+      <h3
+        icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
-            'assets/images/clock-out-1.png',
+            'assets/images/clock-out-2.png',
             'Ảnh thao tác chốt ca.'
           )
         "
       >
         <i class="fa-solid fa-image"></i> Xem ảnh
-      </button>
-    </h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Chọn <b>Chốt ca bán hàng</b>.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 4:Chọn <b><i class="fa-solid fa-plus"></i></b> để thêm chốt ca(Nếu
-        đã có lịch sử chốt ca).
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn <b><i class="fa-solid fa-check"></i></b> để thêm hoá
+            đơn mà bản thân đã xử lý, nếu chọn nhầm có thể ấn
+            <b><i class="fa-solid fa-xmark"></i></b> để bỏ.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn
+            tất.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Ở danh sách chốt ca, chọn ngày và tìm phiếu cần duyệt rồi
+            chọn
+            <b><i class="fa-solid fa-check"></i></b> để xác nhận/duyệt phiếu
+            chốt ca.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo ngày, nhân sự.)
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 5:Chọn <b><i class="fa-solid fa-check"></i></b> để thêm hoá đơn mà
-        bản thân đã xử lý, nếu chọn nhầm có thể ấn
-        <b><i class="fa-solid fa-xmark"></i></b> để bỏ.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 6:Nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.
-      </div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">
-        Bước 7:Ở bảng lịch sử chốt ca, chọn
-        <b><i class="fa-solid fa-check"></i></b> để xác nhận chốt ca.
-      </div>
-    </div>
-    <div class="note">
-      <p>
-        (<b>Lưu ý:</b> Ấn vào biểu tượng
-        <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm nhanh
-        theo tên món.)
-      </p>
-    </div>
+    </app-step-box>
   </div>
 </div>

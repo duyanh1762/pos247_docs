@@ -1,0 +1,16 @@
+/* not-found.component.css */
+.not-found {
+  text-align: center;
+  padding: 50px;
+}
+
+.not-found h2 {
+  font-size: 72px;
+  margin: 0;
+  color: #fd7e14;
+}
+
+.not-found p {
+  font-size: 20px;
+  color: #555;
+}
