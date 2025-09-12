@@ -45,6 +45,9 @@ import { SettingInAppComponent } from './layout/in-app/setting-in-app/setting-in
 import { DocsNotfoundComponent } from './layout/docs-notfound/docs-notfound.component';
 import { CollectionsComponent } from './layout/in-app/collections/collections.component';
 import { ReconciliationsComponent } from './layout/in-app/reconciliations/reconciliations.component';
+import { QrScannerComponent } from './layout/in-app/qr-scanner/qr-scanner.component';
+import { AccountComponent } from './layout/in-app/account/account.component';
+import { QrOperateComponent } from './layout/operate/qr-operate/qr-operate.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -69,6 +72,7 @@ export const routes: Routes = [
   ]},
   {path:"home/operate",component:LayoutComponent,data:{title:"Hướng dẫn vận hành"},children:[
     {path:"login",data:{title:"Đăng nhập hệ thống"},component:LoginComponent},
+    {path:"qr",data:{title:"Quy trình Quét Qr"},component:QrOperateComponent},
     {path:"workspace",data:{title:"Quy trình order"},component:OrderComponent},
     {path:"monitor",data:{title:"Quy trình chế biến"},component:BartendingComponent},
     {path:"payment",data:{title:"Quy trình thanh toán"},component:PaymentComponent},
@@ -100,11 +104,13 @@ export const routes: Routes = [
   {path:"in-app/areas",component:AreaInAppComponent,data:{title:"Hướng dẫn quản lý sơ đồ bàn"}},
   {path:"in-app/processors",component:ProcessorsComponent,data:{title:"Hướng dẫn quản lý Bar bếp"}},
   {path:"in-app/incomes",component:IncomesInAppComponent,data:{title:"Hướng dẫn quản lý nguồn thu"}},
-  {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý nguồn thu"}},
+  {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý hàng hoá"}},
   {path:"in-app/partners",component:PartnerInAppComponent,data:{title:"Hướng dẫn quản lý đối tác"}},
   {path:"in-app/settings",component:SettingInAppComponent,data:{title:"Hướng dẫn cấu hình"}},
   {path:"in-app/collections",component:CollectionsComponent,data:{title:"Hướng dẫn chốt ca"}},
   {path:"in-app/reconciliations",component:ReconciliationsComponent,data:{title:"Hướng dẫn quyết toán"}},
+  {path:"in-app/utils/qr-scanner",component:QrScannerComponent,data:{title:"Hướng dẫn quét QR"}},
+  {path:"in-app/account",component:AccountComponent,data:{title:"Hướng dẫn tài khoản"}},
 
 
   {path:"",redirectTo:"home",pathMatch:"full"},

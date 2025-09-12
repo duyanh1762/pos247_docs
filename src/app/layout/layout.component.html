@@ -3,12 +3,12 @@
   <div class="directory">
     <ul>
       <li>
-        <a (click)="navigator('/home','')">Trang chủ</a>
+        <a (click)="navigator('home','')">Trang chủ</a>
       </li>
       <li *ngFor="let p of docs">
         <a routerLink="/">{{ p.data?.['title'] }}</a>
         <ul>
-          <li *ngFor="let i of p.children" (click)="navigator(i.path || '', p.path || '')"><a routerLink="/">{{ i.data?.['title'] }}</a></li>
+          <li *ngFor="let i of p.children"  (click)="navigator(i.path || '', p.path || '')" [ngClass]="{'active': selectedUrl === '/'+p.path+'/'+i.path}"><a routerLink="/">{{ i.data?.['title']  }}</a></li>
         </ul>
       </li>
     </ul>
@@ -17,7 +17,7 @@
   <!-- Content -->
   <div class="content">
     <div class="directory-inline">
-      <b (click)="navigator('/home','')"><i class="fa-solid fa-house"></i> Trang chủ</b> > <b>{{ currentP.data?.['title'] }}</b> > <b>{{ currentC.data?.['title'] }}</b>
+      <b (click)="navigator('home','')"><i class="fa-solid fa-house"></i> Trang chủ</b> > <b>{{ currentP.data?.['title'] }}</b> > <b>{{ currentC.data?.['title'] }}</b>
     </div>
     <div class="infor">
       <router-outlet />

@@ -1,0 +1,95 @@
+<div class="guide-container">
+  <h2>2. Quét QR đăng nhập</h2>
+  <p>
+    <strong>Mô tả:</strong> Hướng dẫn cách sử dụng chức năng quét QR trên thiết
+    bị để có thể liên kết nhân sự/cửa hàng.
+  </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>a. Truy cập chức năng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent('assets/images/qr-1.png', 'Ảnh truy cập quét QR')
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <b><i class="fa-solid fa-grid-2"></i></b> , sau đó chọn
+            <b>Danh sách cửa hàng</b>(nếu đang ở chức năng khác).
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn biểu tượng <b><i class="fa-solid fa-qrcode"></i></b> để
+            truy cập chức năng.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Thao tác với chức năng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/qr-2.png',
+            'Ảnh đăng thao tác với chức năng'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Cho phép phần mềm có quyền truy cập Camera của thiết bị.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Quét QR trên thiết bị khác đang sử dụng phần mềm để thực
+            hiện các thao tác tiếp theo.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng
+            <strong><i class="fa-solid fa-arrows-rotate"></i></strong> để đổi
+            chiều camera.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng
+            <strong><i class="fa-light fa-image"></i></strong> để chọn ảnh từ
+            thư viện ảnh.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng
+            <strong><i class="fa-solid fa-xmark"></i></strong> để thoát.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+</div>

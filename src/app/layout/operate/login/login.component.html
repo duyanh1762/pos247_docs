@@ -8,6 +8,18 @@
   <div class="section">
     <app-step-box>
       <h3 header>a. Đăng nhập phần mềm</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/login-1.png',
+            'Ảnh đăng nhập phần mềm'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
       <div class="modal">
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
@@ -19,27 +31,64 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 2: Nhập email để đăng ký hoặc đăng nhập vào hệ thống và ấn
-            <strong>Xác thực</strong>.
+            Bước 2: Nhập email để đăng ký/đăng nhập vào hệ thống và ấn
+            <strong>Xác thực</strong> hoặc sử dụng thiết bị của chủ cửa hàng để
+            quét QR đăng nhập và chọn biểu tượng <b><i class="fa-solid fa-link"></i></b> để liên kết cửa hàng với máy bán hàng hiện tại.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 3:Sau khi xác thực ,hệ thống sẽ gửi yêu cầu đăng nhập về gmail
-            của người dùng
+            Bước 3: Sau khi xác thực ,hệ thống sẽ gửi yêu cầu đăng nhập về hòm
+            thư Gmail của người dùng
           </div>
         </div>
       </div>
       <b style="font-style: italic"
-        >(Lưu ý: Yêu cầu đăng nhập có thể rơi vào thư rác hoặc spam)</b
+        >(Lưu ý: Yêu cầu đăng nhập bằng email được gửi về có thể rơi vào thư
+        rác/spam)</b
       >
     </app-step-box>
   </div>
 
   <div class="section">
     <app-step-box>
-      <h3 header>b. Đăng nhập nhân viên</h3>
+      <h3 header>b. Đăng xuất phần mềm</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/logout-1.png',
+            'Ảnh đăng xuất phần mềm'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <b><i class="fa-solid fa-grid-2"></i></b> , sau đó
+            chọn <b>Tài khoản</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn
+            <b>Đăng xuất</b> để đăng xuất khỏi phần mềm.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>c. Đăng nhập nhân viên</h3>
       <h3
         icon
         class="btn-image"
@@ -78,7 +127,7 @@
 
   <div class="section">
     <app-step-box>
-      <h3 header>c. Đăng xuất nhân viên</h3>
+      <h3 header>d. Đăng xuất nhân viên</h3>
       <h3
         icon
         class="btn-image"

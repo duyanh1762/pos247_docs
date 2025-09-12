@@ -55,7 +55,7 @@
         (click)="
           emitShowImageEvent(
             'assets/images/create-store-2.png',
-            'Ảnh truy cập cài đặt cửa hàng'
+            'Ảnh truy cập cửa hàng'
           )
         "
       >
@@ -76,7 +76,48 @@
             Bước 2: Chọn biểu tượng
             <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
             cùng, sau đó truy cập <strong>Quản lý</strong>, chọn
-            <b>Cấu hình</b>, rồi chọn <strong>Cửa hàng</strong>.
+            <b>Cấu hình</b>, rồi chọn <strong>Cửa hàng</strong> để điều chỉnh các thông tin về cửa hàng.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>c. Tạo nhóm cửa hàng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-store-3.png',
+            'Ảnh tạo nhóm cửa hàng'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            <b>Bước 1:</b> Chọn biểu tượng
+            <strong><i class="fa-solid fa-plus"></i></strong> và chọn
+            <strong>Tạo nhóm cửa hàng</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            <b>Bước 2:</b> Nhập tên nhóm, mô tả và thêm các cửa hàng vào nhóm từ
+            <b>Danh sách cửa hàng</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            <b>Bước 3:</b> Nhấn <strong>Cập nhật</strong> để lưu lại.
           </div>
         </div>
       </div>

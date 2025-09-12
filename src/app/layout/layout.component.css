@@ -117,6 +117,17 @@
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+@keyframes selectTag{
+  from{
+    box-shadow: none;
+  }to{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+.active{
+  background-color: orange;
+  animation:  selectTag 0.5s ease forwards;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .container {

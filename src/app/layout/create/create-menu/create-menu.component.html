@@ -87,7 +87,7 @@
   <!-- b. <i class="fa-regular fa-sliders"></i>Cấu hình món ăn -->
   <div class="section">
     <app-step-box>
-      <h3 header>b.Cấu hình món ăn theo ý muốn</h3>
+      <h3 header>b. Cấu hình món ăn theo ý muốn</h3>
 
       <h3
         icon
@@ -102,10 +102,8 @@
         <i class="fa-solid fa-image"></i> Xem ảnh
       </h3>
       <div class="modal">
-        <app-step-box style="margin-top: 16px;">
-          <h3 header>
-             <i class="fas fa-cogs"></i> Thêm công thức cho món
-          </h3>
+        <app-step-box style="margin-top: 16px">
+          <h3 header><i class="fas fa-cogs"></i> Thêm công thức cho món</h3>
           <h3
             icon
             class="btn-image"
@@ -149,9 +147,10 @@
           </div>
         </app-step-box>
 
-        <app-step-box style="margin-top: 16px;">
-          <h3 header> <i class="fas fa-cogs"></i> Thêm lựa chọn cho món</h3>
-          <h3 icon
+        <app-step-box style="margin-top: 16px">
+          <h3 header><i class="fas fa-cogs"></i> Thêm lựa chọn cho món</h3>
+          <h3
+            icon
             class="btn-image"
             (click)="
               emitShowImageEvent(
@@ -202,6 +201,37 @@
           <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm nhanh
           theo tên món.)
         </p>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section ">
+    <app-step-box>
+      <h3 header>c. Các thao tác khác</h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng
+            <strong><i class="fa-solid fa-arrow-left"></i></strong> để trở về
+            hành động trước đó.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng
+            <strong><i class="fa-solid fa-arrow-right"></i></strong> để hoàn tác
+            hành động trở về.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng
+            <strong><i class="fa-solid fa-sparkles"></i></strong> để hỏi AI.
+          </div>
+        </div>
       </div>
     </app-step-box>
   </div>
