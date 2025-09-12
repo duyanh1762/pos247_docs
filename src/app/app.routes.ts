@@ -58,6 +58,7 @@ export interface Point extends Routes {
 export const routes: Routes = [
   {path:"home",component:HomeComponent},
 
+  //Cây thư mục
   {path:"home/create",component:LayoutComponent,data:{title:"Hướng dẫn khởi tạo"},children:[
     {path:"outlets",data:{title:"Khởi tạo cửa hàng"},component:CreateStoreComponent},
     {path:"settings",data:{title:"Các cài đặt chính"},component:CreateSettingComponent},
@@ -91,6 +92,7 @@ export const routes: Routes = [
     {path:"finance",data:{title:"Báo cáo tài chính"},component:FinanceComponent}
   ]},
 
+  //Hướng dẫ trong app
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
   {path:"in-app/workspace",component:WorkspaceComponent,data:{title:"Hướng dẫn bán hàng"}},
   {path:"in-app/monitor",component:MonitorComponent,data:{title:"Hướng dẫn chế biến"}},
