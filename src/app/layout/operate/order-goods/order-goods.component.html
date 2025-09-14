@@ -1,66 +1,112 @@
 <div class="guide-container">
-  <h2>📦 7. Quy trình đặt hàng từ đối tác</h2>
+  <h2>9. Quy trình đặt hàng từ đối tác</h2>
   <p>
-    <strong>Mô tả:</strong>Hướng dẫn cửa hàng đặt hàng từ các đối tác, đảm bảo nhập hàng đầy đủ, chính xác và kịp thời.
+    <strong>Mô tả:</strong>Hướng dẫn cửa hàng đặt hàng từ các đối tác, đảm bảo
+    nhập hàng đầy đủ, chính xác và kịp thời.
   </p>
 
   <div class="section">
-    <h3>a. Truy cập mục Đặt hàng.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/order-goods-1.PNG',
-              'Ảnh truy cập hàng hoá'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        ></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 1: Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, chọn <b>Vận hành</b> sau đó truy cập
-        <strong>Đặt hàng</strong>.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Nhấn vào biểu tượng <b><i class="fa-solid fa-plus"></i></b>:
-        <!-- <ul>
+    <app-step-box>
+      <h3 header>a. Truy cập mục Đặt hàng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/order-goods-1.PNG',
+            'Ảnh truy cập hàng hoá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Vận hành</b> sau đó truy cập
+            <strong>Đặt hàng</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn vào biểu tượng <b><i class="fa-solid fa-plus"></i></b>:
+            <!-- <ul>
           <li>Nếu dùng màn hình lớn: góc trên bên phải.</li>
           <li>Nếu dùng màn hình nhỏ: góc dưới bên trái.</li>
         </ul> -->
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo đơn.)
+          </p>
+        </div>
       </div>
-    </div>
+    </app-step-box>
   </div>
 
   <div class="section">
-    <h3>b. Tạo đơn và chọn mặt hàng.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/order-goods-2.PNG',
-              'Ảnh thêm đơn đặt hàng'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        ></h3>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Chọn <b>Đối tác</b> mà cửa hàng muốn đặt hàng.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 4: Nhấn <b>Tạo đơn</b> để bắt đầu lập đơn hàng.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 5: Chọn các mặt hàng cần đặt và nhập <b>số lượng</b> tương ứng.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 6: Nhấn nút <b><i class="fa-solid fa-floppy-disk"></i></b> ở giữa phía dưới màn hình để hoàn tất đơn hàng.</div>
-    </div>
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 7: Hệ thống sẽ tự động gửi thông tin đơn hàng đến đối tác và cập nhật trạng thái đặt hàng trong phần mềm.</div>
-    </div>
+    <app-step-box>
+      <h3 header>b. Tạo đơn và chọn mặt hàng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/order-goods-2.PNG',
+            'Ảnh thêm đơn đặt hàng'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn <b>Đối tác</b> mà cửa hàng muốn đặt hàng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhấn <b>Tạo đơn</b> để bắt đầu lập đơn hàng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Chọn các mặt hàng cần đặt và nhập <b>số lượng</b> tương ứng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Nhấn nút <b><i class="fa-regular fa-floppy-disk"></i></b> để
+            lưu đơn đặt hàng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Hệ thống sẽ tự động gửi thông tin đơn hàng đến đối tác và
+            cập nhật trạng thái đặt hàng trong phần mềm.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên hàng hoá.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
   </div>
 </div>

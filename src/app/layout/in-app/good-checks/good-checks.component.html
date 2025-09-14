@@ -1,53 +1,15 @@
 <div class="guide-container">
-  <h2>14. Quy trình kiểm kê</h2>
-  <p>
-    <strong>Mô tả:</strong> Hướng dẫn nhân viên sử dụng chức năng kiểm kê hàng
-    hoá tại cửa hàng để quản lý hàng hoá hiệu quả, tránh thất thoát.
-  </p>
-
-  <div class="section">
-    <app-step-box>
-      <h3 header>a. Truy cập mục Kiểm kê</h3>
-      <h3
-        icon
-        class="btn-image"
-        (click)="
-          emitShowImageEvent(
-            'assets/images/kiem-ke-1.png',
-            'Ảnh truy cập kiểm kê.'
-          )
-        "
-      >
-        <i class="fa-solid fa-image"></i> Xem ảnh
-      </h3>
-      <div class="modal">
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            Bước 1: Chọn biểu tượng
-            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
-            cùng,chọn <b>Vận hành</b> sau đó truy cập <strong>Kiểm kê</strong>.
-          </div>
-        </div>
-      </div>
-    </app-step-box>
+  <div class="section in-app">
+    <p>
+      <strong>Mô tả:</strong> Hướng dẫn nhân viên sử dụng chức năng kiểm kê hàng
+      hoá tại cửa hàng để quản lý hàng hoá hiệu quả, tránh thất thoát.
+    </p>
   </div>
 
-  <div class="section">
+  <div class="section in-app">
     <app-step-box>
-      <h3 header>b. Hướng dẫn thao tác</h3>
-      <h3
-        icon
-        class="btn-image"
-        (click)="
-          emitShowImageEvent(
-            'assets/images/kiem-ke-2.png',
-            'Ảnh truy cập kiểm kê.'
-          )
-        "
-      >
-        <i class="fa-solid fa-image"></i> Xem ảnh
-      </h3>
+      <h3 header>Hướng dẫn thao tác</h3>
+      <i icon class="fa-solid fa-eye"></i>
       <div class="modal">
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
@@ -114,16 +76,33 @@
     </app-step-box>
   </div>
 
-  <div class="section">
+  <div class="section in-app">
     <app-step-box>
-      <h3 header>c. Một số thông tin</h3>
+      <h3 header>Các thao tác khác</h3>
+      <i icon class="fa-solid fa-eye"></i>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng <b><i class="fa-solid fa-search"></i></b> ở màn hình
+            danh sách đối tác để tìm công nợ theo đối tác.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section in-app">
+    <app-step-box>
+      <h3 header>Một số thông tin</h3>
+      <i icon class="fa-solid fa-eye"></i>
       <div class="modal">
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
             <b>Tồn đầu:</b> Số lượng hàng hoá còn lại trong kho/cửa hàng tại
-            thời điểm bắt đầu kỳ kiểm kê (ví dụ: đầu ngày, đầu tháng). Đây là
-            số liệu mang sang từ cuối kỳ kiểm kê trước.
+            thời điểm bắt đầu kỳ kiểm kê (ví dụ: đầu ngày, đầu tháng). Đây là số
+            liệu mang sang từ cuối kỳ kiểm kê trước.
           </div>
         </div>
         <div class="row">
@@ -176,11 +155,12 @@
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
             <b> Chênh lệch:</b> Phần khác nhau giữa <b>ước tính còn</b> và
-            <b>kiểm thực tế.</b><b>(Công thức tính: Chênh lệch = Kiểm thực tế - Ước
-            tính còn).</b>
+            <b>kiểm thực tế.</b
+            ><b>(Công thức tính: Chênh lệch = Kiểm thực tế - Ước tính còn).</b>
           </div>
         </div>
       </div>
     </app-step-box>
   </div>
+  <app-general-instructions></app-general-instructions>
 </div>

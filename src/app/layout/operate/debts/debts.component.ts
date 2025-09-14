@@ -3,13 +3,13 @@ import { StepBoxComponent } from '../../../shared/component/step-box/step-box.co
 import { ImageHandleService } from '../../../shared/services/image-handle/image-handle.service';
 
 @Component({
-  selector: 'app-check-inventory',
+  selector: 'app-debts',
   standalone: true,
   imports: [StepBoxComponent],
-  templateUrl: './check-inventory.component.html',
-  styleUrl: './check-inventory.component.css'
+  templateUrl: './debts.component.html',
+  styleUrl: './debts.component.css'
 })
-export class CheckInventoryComponent {
+export class DebtsComponent {
       constructor(private imageServices:ImageHandleService){}
 
       emitShowImageEvent(src:string,title:string){

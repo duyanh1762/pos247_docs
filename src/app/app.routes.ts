@@ -48,6 +48,10 @@ import { ReconciliationsComponent } from './layout/in-app/reconciliations/reconc
 import { QrScannerComponent } from './layout/in-app/qr-scanner/qr-scanner.component';
 import { AccountComponent } from './layout/in-app/account/account.component';
 import { QrOperateComponent } from './layout/operate/qr-operate/qr-operate.component';
+import { DebtsComponent } from './layout/operate/debts/debts.component';
+import { GoodOrdersComponent } from './layout/in-app/good-orders/good-orders.component';
+import { DebtsInAppComponent } from './layout/in-app/debts-in-app/debts-in-app.component';
+import { GoodChecksComponent } from './layout/in-app/good-checks/good-checks.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -80,11 +84,12 @@ export const routes: Routes = [
     {path:"voucher",data:{title:"Thêm phụ phí và giảm giá"},component:VoucherComponent},
     {path:"payments",data:{title:"Quy trinh thu chi"},component:AccountingComponent},
     {path:"clock-out",data:{title:"Quy trình chốt ca"},component:ClockOutComponent},
-    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác(chưa xong)"},component:OrderGoodsComponent},
+    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác"},component:OrderGoodsComponent},
     {path:"settlement",data:{title:"Quy trình quyết toán"},component:SettlementComponent},
     {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử"},component:ExportBillsComponent},
     {path:"good-invoices",data:{title:"Quy trình xuất/nhập hàng"},component:IeActivityComponent},
-    {path:"check-invetory",data:{title:"Quy trình kiểm kê(chưa xong)"},component:CheckInventoryComponent}
+    {path:"debts",data:{title:"Quy trình theo dõi công nợ(chưa xong)"},component:DebtsComponent},
+    {path:"check-invetory",data:{title:"Quy trình kiểm kê"},component:CheckInventoryComponent}
   ]},
   {path:"home/report",component:LayoutComponent,data:{title:"Hướng dẫn báo cáo"},children:[
     {path:"operation",data:{title:"Báo cáo hoạt động"},component:ActivityComponent},
@@ -113,7 +118,9 @@ export const routes: Routes = [
   {path:"in-app/reconciliations",component:ReconciliationsComponent,data:{title:"Hướng dẫn quyết toán"}},
   {path:"in-app/utils/qr-scanner",component:QrScannerComponent,data:{title:"Hướng dẫn quét QR"}},
   {path:"in-app/account",component:AccountComponent,data:{title:"Hướng dẫn tài khoản"}},
-
+  {path:"in-app/good-orders",component:GoodOrdersComponent,data:{title:"Hướng dẫn đặt hàng"}},
+  {path:"in-app/debts",component:DebtsInAppComponent,data:{title:"Hướng dẫn công nợ"}},
+  {path:"in-app/good-checks",component:GoodChecksComponent,data:{title:"Hướng dẫn kiểm kê"}},
 
   {path:"",redirectTo:"home",pathMatch:"full"},
   {path:"**",component:DocsNotfoundComponent},

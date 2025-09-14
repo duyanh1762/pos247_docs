@@ -1,20 +1,19 @@
 <div class="guide-container">
-  <h2>10. Quy trình quyết toán doanh thu</h2>
+  <h2>13. Quy trình xử lý công nợ</h2>
   <p>
-    <strong>Mô tả:</strong>Hướng dẫn quản lý kiểm tra và quyết toán doanh thu
-    cuối ngày, đảm bảo số liệu chính xác và đầy đủ.
+    <strong>Mô tả:</strong> Hướng dẫn nhân viên cách xem và xử lý các công phát sinh của cửa hàng trong quá trình vận hành.
   </p>
 
   <div class="section">
     <app-step-box>
-      <h3 header>a. Truy cập mục Quyết toán</h3>
+      <h3 header>a. Truy cập mục Công nợ</h3>
       <h3
         icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
-            'assets/images/quyet-toan-1.png',
-            'Ảnh truy cập Quyết toán tháng'
+            'assets/images/debts-1.png',
+            'Ảnh truy cập công nợ'
           )
         "
       >
@@ -26,9 +25,7 @@
           <div class="line">
             Bước 1: Chọn biểu tượng
             <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
-            cùng, chọn <b>Vận hành</b>
-            sau đó truy cập
-            <strong>Quyết toán tháng...</strong>.
+            cùng, chọn <b>Vận hành</b> sau đó truy cập <strong>Công nợ</strong>.
           </div>
         </div>
       </div>
@@ -37,14 +34,14 @@
 
   <div class="section">
     <app-step-box>
-      <h3 header>b. Thực hiện quyết toán</h3>
+      <h3 header>b. Xem thông tin công nợ</h3>
       <h3
         icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
-            'assets/images/quyet-toan-2.PNG',
-            'Ảnh quy trình quyết toán'
+            'assets/images/debts-2.png',
+            'Ảnh xem công nợ.'
           )
         "
       >
@@ -54,32 +51,30 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1: Kiểm tra thông tin về doanh số, thu/chi, công nợ.
+            Bước 1: Chọn <b><i class="fa-regular fa-files"></i></b> để xem chi tiết công nợ của đối tác.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 2: Chọn biểu tượng
-            <strong><i class="fa-solid fa-plus"></i></strong> thêm các phiếu
-            thu/chi ngược để cân đối số liệu nếu cần.
+            Bước 2: Chọn dữ liệu ở cột <b>Đã khấu trừ</b> để xem lịch sử khấu trừ nếu có.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 3: Nhấn nút <b><i class="fa-solid fa-check"></i></b> để hoàn
-            tất quyết toán doanh thu.
+            Bước 3: Chọn biểu tượng <b><i class="fa-regular fa-gear"></i></b> ở mỗi công nợ để xử lý đặt cọc(thêm khấu trừ công nợ nếu có đặt cọc trước đó).
           </div>
         </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            Bước 4: Hệ thống sẽ ghi nhận số liệu quyết toán, cập nhật báo cáo
-            tổng hợp và chuẩn bị dữ liệu cho báo cáo tài chính cuối ngày.
-          </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh đối tác/công nợ.)
+          </p>
         </div>
       </div>
     </app-step-box>
   </div>
 </div>
+
