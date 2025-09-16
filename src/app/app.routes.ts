@@ -52,6 +52,8 @@ import { DebtsComponent } from './layout/operate/debts/debts.component';
 import { GoodOrdersComponent } from './layout/in-app/good-orders/good-orders.component';
 import { DebtsInAppComponent } from './layout/in-app/debts-in-app/debts-in-app.component';
 import { GoodChecksComponent } from './layout/in-app/good-checks/good-checks.component';
+import { MenuPoliciesComponent } from './layout/create/menu-policies/menu-policies.component';
+import { MenuPoliciesInAppComponent } from './layout/in-app/menu-policies-in-app/menu-policies-in-app.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -74,6 +76,8 @@ export const routes: Routes = [
     {path:"partners",data:{title:"Khởi tạo đối tác"},component:CreatePartnerComponent},
     {path:"fee",data:{title:"Khởi tạo thuế & phí(chưa xong)"},component:CreateFeeComponent},
     {path:"incomes",data:{title:"Khởi tạo nguồn thu"},component:CreateIncomeComponent},
+    {path:"menu-policies",data:{title:"Khởi tạo chính sách giá"},component:MenuPoliciesComponent},
+    {path:"menu-policies",data:{title:"Khởi tạo chính sách xuất hàng"},component:MenuPoliciesComponent},
   ]},
   {path:"home/operate",component:LayoutComponent,data:{title:"Hướng dẫn vận hành"},children:[
     {path:"login",data:{title:"Đăng nhập hệ thống"},component:LoginComponent},
@@ -84,11 +88,11 @@ export const routes: Routes = [
     {path:"voucher",data:{title:"Thêm phụ phí và giảm giá"},component:VoucherComponent},
     {path:"payments",data:{title:"Quy trinh thu chi"},component:AccountingComponent},
     {path:"clock-out",data:{title:"Quy trình chốt ca"},component:ClockOutComponent},
-    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác"},component:OrderGoodsComponent},
+    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác(chưa xong"},component:OrderGoodsComponent},
     {path:"settlement",data:{title:"Quy trình quyết toán"},component:SettlementComponent},
     {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử"},component:ExportBillsComponent},
     {path:"good-invoices",data:{title:"Quy trình xuất/nhập hàng"},component:IeActivityComponent},
-    {path:"debts",data:{title:"Quy trình theo dõi công nợ(chưa xong)"},component:DebtsComponent},
+    {path:"debts",data:{title:"Quy trình theo dõi công nợ"},component:DebtsComponent},
     {path:"check-invetory",data:{title:"Quy trình kiểm kê"},component:CheckInventoryComponent}
   ]},
   {path:"home/report",component:LayoutComponent,data:{title:"Hướng dẫn báo cáo"},children:[
@@ -98,29 +102,40 @@ export const routes: Routes = [
   ]},
 
   //Hướng dẫ trong app
+  //in-app cho cửa hàng
+  {path:"in-app/outlet/workspace",component:WorkspaceComponent,data:{title:"Hướng dẫn bán hàng"}},
+  {path:"in-app/outlet/monitor",component:MonitorComponent,data:{title:"Hướng dẫn chế biến"}},
+  {path:"in-app/outlet/payments",component:PaymentsComponent,data:{title:"Hướng dẫn thu chi"}},
+  {path:"in-app/outlet/good-invoices",component:GoodInvoicesComponent,data:{title:"Hướng dẫn xuất nhập hàng"}},
+  {path:"in-app/outlet/reports/operation",component:ReportActivityComponent,data:{title:"Hướng dẫn báo cáo hoạt động"}},
+  {path:"in-app/outlet/reports/finance",component:ReportFinanceComponent,data:{title:"Hướng dẫn báo cáo tài chính"}},
+  {path:"in-app/outlet/reports/goods",component:ReportGoodsComponent,data:{title:"Hướng dẫn báo cáo hàng hoá"}},
+  {path:"in-app/outlet/staffs",component:StaffInAppComponent,data:{title:"Hướng dẫn quản lý nhân sự"}},
+  {path:"in-app/outlet/menu-items",component:MenuItemsComponent,data:{title:"Hướng dẫn quản lý thực đơn"}},
+  {path:"in-app/outlet/areas",component:AreaInAppComponent,data:{title:"Hướng dẫn quản lý sơ đồ bàn"}},
+  {path:"in-app/outlet/processors",component:ProcessorsComponent,data:{title:"Hướng dẫn quản lý Bar bếp"}},
+  {path:"in-app/outlet/incomes",component:IncomesInAppComponent,data:{title:"Hướng dẫn quản lý nguồn thu"}},
+  {path:"in-app/outlet/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý hàng hoá"}},
+  {path:"in-app/outlet/partners",component:PartnerInAppComponent,data:{title:"Hướng dẫn quản lý đối tác"}},
+  {path:"in-app/outlet/settings",component:SettingInAppComponent,data:{title:"Hướng dẫn cấu hình"}},
+  {path:"in-app/outlet/collections",component:CollectionsComponent,data:{title:"Hướng dẫn chốt ca"}},
+  {path:"in-app/outlet/reconciliations",component:ReconciliationsComponent,data:{title:"Hướng dẫn quyết toán"}},
+  {path:"in-app/outlet/good-orders",component:GoodOrdersComponent,data:{title:"Hướng dẫn đặt hàng"}},
+  {path:"in-app/outlet/debts",component:DebtsInAppComponent,data:{title:"Hướng dẫn công nợ"}},
+  {path:"in-app/outlet/good-checks",component:GoodChecksComponent,data:{title:"Hướng dẫn kiểm kê"}},
+  {path:"in-app/outlet/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
+
+  //in-app cho chuỗi cửa hàng
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
-  {path:"in-app/workspace",component:WorkspaceComponent,data:{title:"Hướng dẫn bán hàng"}},
-  {path:"in-app/monitor",component:MonitorComponent,data:{title:"Hướng dẫn chế biến"}},
-  {path:"in-app/payments",component:PaymentsComponent,data:{title:"Hướng dẫn thu chi"}},
-  {path:"in-app/good-invoices",component:GoodInvoicesComponent,data:{title:"Hướng dẫn xuất nhập hàng"}},
-  {path:"in-app/reports/operation",component:ReportActivityComponent,data:{title:"Hướng dẫn báo cáo hoạt động"}},
-  {path:"in-app/reports/finance",component:ReportFinanceComponent,data:{title:"Hướng dẫn báo cáo tài chính"}},
-  {path:"in-app/reports/goods",component:ReportGoodsComponent,data:{title:"Hướng dẫn báo cáo hàng hoá"}},
-  {path:"in-app/staffs",component:StaffInAppComponent,data:{title:"Hướng dẫn quản lý nhân sự"}},
-  {path:"in-app/menu-items",component:MenuItemsComponent,data:{title:"Hướng dẫn quản lý thực đơn"}},
-  {path:"in-app/areas",component:AreaInAppComponent,data:{title:"Hướng dẫn quản lý sơ đồ bàn"}},
-  {path:"in-app/processors",component:ProcessorsComponent,data:{title:"Hướng dẫn quản lý Bar bếp"}},
-  {path:"in-app/incomes",component:IncomesInAppComponent,data:{title:"Hướng dẫn quản lý nguồn thu"}},
-  {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý hàng hoá"}},
-  {path:"in-app/partners",component:PartnerInAppComponent,data:{title:"Hướng dẫn quản lý đối tác"}},
-  {path:"in-app/settings",component:SettingInAppComponent,data:{title:"Hướng dẫn cấu hình"}},
-  {path:"in-app/collections",component:CollectionsComponent,data:{title:"Hướng dẫn chốt ca"}},
-  {path:"in-app/reconciliations",component:ReconciliationsComponent,data:{title:"Hướng dẫn quyết toán"}},
   {path:"in-app/utils/qr-scanner",component:QrScannerComponent,data:{title:"Hướng dẫn quét QR"}},
   {path:"in-app/account",component:AccountComponent,data:{title:"Hướng dẫn tài khoản"}},
-  {path:"in-app/good-orders",component:GoodOrdersComponent,data:{title:"Hướng dẫn đặt hàng"}},
-  {path:"in-app/debts",component:DebtsInAppComponent,data:{title:"Hướng dẫn công nợ"}},
-  {path:"in-app/good-checks",component:GoodChecksComponent,data:{title:"Hướng dẫn kiểm kê"}},
+  {path:"in-app/menu-items",component:MenuItemsComponent,data:{title:"Hướng dẫn quản lý thực đơn"}},
+  {path:"in-app/incomes",component:IncomesInAppComponent,data:{title:"Hướng dẫn quản lý nguồn thu"}},
+  {path:"in-app/partners",component:PartnerInAppComponent,data:{title:"Hướng dẫn quản lý đối tác"}},
+  {path:"in-app/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
+  {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý hàng hoá"}},
+
+
 
   {path:"",redirectTo:"home",pathMatch:"full"},
   {path:"**",component:DocsNotfoundComponent},

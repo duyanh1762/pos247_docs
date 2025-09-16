@@ -1,0 +1,233 @@
+<div class="guide-container">
+  <h2>8. Khởi tạo chính sách giá</h2>
+  <p>
+    <strong>Mô tả:</strong> Hướng dẫn thiết lập các chính sách giá bán khác nhau
+    trong theo từng khoảng thời gian.
+  </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>a. Truy cập Chính sách giá</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/menu-policy-1.png',
+            'Ảnh truy câp chính sách giá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ành
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1.1: Để tạo chính sách giá cho chuỗi cửa hàng, chọn biểu tượng
+            <strong><i class="fa-solid fa-grid"></i></strong> góc phải trên
+            cùng, chọn <b>Chính sách chung</b> và chọn <b>Chính sách giá</b>..
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1.2: Để tạo chính sách giá cho cửa hàng, chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b>, chọn <b>Chính sách </b> và chọn <b>Chương trình</b>
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Thêm mới chính sách</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/menu-policy-2.png',
+            'Ảnh thêm mới chính sách giá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ành
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng <b><i class="fa-solid fa-plus"></i></b> để
+            thêm mới chính sách giá.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Để sửa chính sách giá, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn
+            <b>Sửa chính sách</b>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Để xoá chính sách giá, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn
+            <b>Xoá chính sách</b>
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>c. Thêm món</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/menu-policy-3.png',
+            'Ảnh cấu thêm món cho chính sách giá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ành
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn chính sách muốn cấu hình, chọn <b>Thực đơn</b> và chọn
+            biểu tượng <b><i class="fa-solid fa-plus"></i></b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Ở khung chọn món, chọn
+            <b><i class="fa-solid fa-list"></i></b> và tích vào các món muốn
+            thêm.Chọn <b><i class="fa-regular fa-circle-check"></i></b> để xem
+            những món đã chọn và <b><i class="fa-regular fa-circle"></i></b> để
+            xem các món chưa chọn.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Chọn <b><i class="fa-regular fa-floppy-disk"></i></b> để
+            thêm các món vừa chọn vào chính sách.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Để sửa món, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn <b>Sửa món</b> sau
+            đó điều chỉnh lại các thông tin như tên, giá tiền theo chính
+            sách,...
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Để xoá món, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn <b>Xoá món</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 6: Để khôi phục món về ban đầu, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn <b>Khôi phục</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 7: Chọn <b><i class="fa-regular fa-floppy-disk"></i></b> để lưu
+            lại các thao tác vừa thực hiện.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên món.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>d. Thêm cửa hàng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/menu-policy-4.png',
+            'Ảnh cấu thêm món cho chính sách giá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ành
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn chính sách muốn cấu hình, chọn <b>Cửa hàng</b> và chọn
+            biểu tượng <b><i class="fa-solid fa-plus"></i></b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Ở khung chọn cửa hàng, chọn
+            <b><i class="fa-solid fa-list"></i></b> và tích vào các cửa hàng
+            muốn thêm. Chọn <b><i class="fa-regular fa-circle-check"></i></b> để
+            xem những cửa hàng đã chọn và
+            <b><i class="fa-regular fa-circle"></i></b> để xem các cửa hàng chưa
+            chọn.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Chọn <b><i class="fa-regular fa-floppy-disk"></i></b> để
+            thêm các cửa hàng vừa chọn vào chính sách.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Để xoá cửa hàng, chọn biểu tượng
+            <b><i class="fa-solid fa-trash"></i></b> để xoá cửa hàng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Chọn <b><i class="fa-regular fa-floppy-disk"></i></b> để lưu
+            lại các thao tác vừa thực hiện.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên/địa chỉ cửa hàng.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+</div>

@@ -14,24 +14,48 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1: Chọn <b><i class="fa-regular fa-files"></i></b> để xem chi
-            tiết công nợ của đối tác.
+            Bước 1: Chọn <b>Công nợ</b> để xem danh sách công nợ của cửa hàng.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 2: Chọn dữ liệu ở cột <b>Đã khấu trừ</b> để xem lịch sử khấu
-            trừ nếu có.
+            Bước 2: Chọn <b>đối tác</b> và chọn biểu tượng
+            <b><i class="fa-solid fa-list"></i></b> để xem
+            <b>thông tin công nợ</b>. Sau đó, chọn biểu tượng
+            <b><i class="fa-regular fa-pen"></i></b> và nhập thông tin để có thể
+            tạo phiếu trả nợ cho đối tác.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 3: Chọn biểu tượng <b><i class="fa-regular fa-gear"></i></b> ở
-            mỗi công nợ để xử lý đặt cọc(thêm khấu trừ công nợ nếu có đặt cọc
-            trước đó).
+            Bước 3: Chọn <b>đối tác</b> và chọn biểu tượng
+            <b><i class="fa-solid fa-clock-rotate-left"></i></b> để xem chi tiết
+            <b>lịch sử công nợ</b>. Sau đó, chọn biểu tượng
+            <b><i class="fa-regular fa-pen"></i></b> và nhập thông tin để có thể
+            tạo thêm phiếu trả nợ cho đối tác. Đối với các phiếu
+            <b>trả nợ(chi công nợ)</b> đang chờ duyệt, người dùng có thể :
+            <ul style="margin-top: 6px;">
+              <li>
+                <b>Xác nhận</b>: Chọn biểu tượng
+                <b><i class="fa-regular fa-gear"></i></b> và chọn
+                <b>Xác nhận</b>.
+              </li>
+              <li>
+                <b>Xoá phiếu</b>: Chọn biểu tượng
+                <b><i class="fa-regular fa-gear"></i></b> và chọn
+                <b>Xoá phiếu</b>.
+              </li>
+            </ul>
           </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh đối tác/công nợ.)
+          </p>
         </div>
       </div>
     </app-step-box>
@@ -39,26 +63,56 @@
 
   <div class="section in-app">
     <app-step-box>
-      <h3 header>Xử lý đặt cọc</h3>
+      <h3 header>Xem thông tin đặt cọc</h3>
       <i icon class="fa-solid fa-eye"></i>
       <div class="modal">
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1: Chọn <b><i class="fa-regular fa-gear"></i></b> ở công nợ
-            muốn xử lý.
+            Bước 1: Chọn <b>Đặt cọc</b> để xem chi tiết các khoản cọc của cửa
+            hàng.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 2: Chọn tác vụ, nhập số tiền và ấn <b>Cập nhật</b>.
+            Bước 2: Chọn <b>đối tác</b> và chọn biểu tượng
+            <b><i class="fa-solid fa-list"></i></b> để xem
+            <b>thông tin đặt cọc</b>. Sau đó, chọn biểu tượng
+            <b><i class="fa-regular fa-pen"></i></b> và nhập thông tin để có thể
+            tạo phiếu nhận lại cọc từ đối tác.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Chọn <b>đối tác</b> và chọn biểu tượng
+            <b><i class="fa-solid fa-clock-rotate-left"></i></b> để xem chi tiết
+            <b>lịch sử đặt cọc</b>. Sau đó, chọn biểu tượng
+            <b><i class="fa-regular fa-pen"></i></b> và nhập thông tin để có thể
+            tạo thêm phiếu nhận lại cọc từ đối tác. Đối với các phiếu
+            <b>nhận lại cọc(thu hoàn cọc)</b> đang chờ duyệt, người dùng có thể
+            :
+            <ul style="margin-top: 6px;">
+              <li>
+                <b>Khoá phiếu</b>: Chọn biểu tượng
+                <b><i class="fa-regular fa-gear"></i></b> và chọn
+                <b>Khoá phiếu</b>.
+              </li>
+              <li>
+                <b>Xoá phiếu</b>: Chọn biểu tượng
+                <b><i class="fa-regular fa-gear"></i></b> và chọn
+                <b>Xoá phiếu</b>.
+              </li>
+            </ul>
           </div>
         </div>
         <div class="note">
           <p>
-            (<b>Lưu ý:</b> Công nợ sẽ chỉ được khấu trừ nếu đã có khoản đặt cọc
-            trước đó.)
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh đối tác/đặt cọc và các phiếu chi hoàn cọc sau khi khoá sẽ
+            không xoá được.)
           </p>
         </div>
       </div>
@@ -73,13 +127,8 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Chọn biểu tượng <b><i class="fa-solid fa-search"></i></b> ở màn hình danh sách đối tác để tìm công nợ theo đối tác.
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            Chọn biểu tượng <b><i class="fa-solid fa-search"></i></b> ở màn hình danh sách công nợ để tìm chi tiết công nợ của đối tác.
+            Chọn biểu tượng <b><i class="fa-solid fa-search"></i></b> ở màn hình
+            danh sách đối tác để tìm công nợ/đặt cọc theo đối tác.
           </div>
         </div>
       </div>
