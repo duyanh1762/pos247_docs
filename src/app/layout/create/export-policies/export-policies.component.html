@@ -1,0 +1,161 @@
+<div class="guide-container">
+  <h2>11. Khởi tạo chính sách xuất hàng</h2>
+  <p>
+    <strong>Mô tả:</strong> Hướng dẫn thiết lập các chính sách xuất hàng từ cửa
+    hàng hiện tại cho các cửa hàng khác trong hệ thống.
+  </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>a. Truy cập và thêm mới</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/export-policy-1.png',
+            'Ảnh truy câp chính sách xuất hàng'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ành
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Chính sách</b> và chọn <b>Xuất hàng</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn biểu tượng <b><i class="fa-solid fa-plus"></i></b> để
+            thêm mới chính sách xuất hàng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> để chỉnh sửa/xoá chính
+            sách.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Thêm hàng hoá xuất</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/export-policy-2.png',
+            'Ảnh thêm món cho chính sách'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ành
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn chính sách muốn thêm, chọn
+            <b><i class="fa-regular fa-boxes"></i></b>để thêm hàng hoá.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn các mặt hàng cho phép xuất ở
+            <b>danh sách hàng hoá</b> rồi nhập <b>đơn giá</b> và
+            <b>lô xuất</b> tương ứng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Để bỏ mặt hàng khỏi chính sách, chọn
+            <b><i class="fa-solid fa-trash"></i></b> của mặt hàng đó.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Chọn <b><i class="fa-regular fa-floppy-disk"></i></b> để
+            lưu.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên hàng.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>c. Thêm cửa hàng nhận</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/export-policy-3.png',
+            'Ảnh cấu thêm cửa hàng cho chính sách'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ành
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn chính sách muốn thêm, chọn
+            <b><i class="fa-regular fa-user"></i></b> để thêm cửa hàng.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Chọn các cửa hàng ở
+            <b>danh sách cửa hàng</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Để bỏ cửa hàng khỏi chính sách, chọn
+            <b><i class="fa-solid fa-trash"></i></b> của cửa hàng đó.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Chọn <b><i class="fa-regular fa-floppy-disk"></i></b> để
+            lưu.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên/địa chỉ cửa hàng.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+</div>

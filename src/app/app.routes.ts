@@ -54,6 +54,8 @@ import { DebtsInAppComponent } from './layout/in-app/debts-in-app/debts-in-app.c
 import { GoodChecksComponent } from './layout/in-app/good-checks/good-checks.component';
 import { MenuPoliciesComponent } from './layout/create/menu-policies/menu-policies.component';
 import { MenuPoliciesInAppComponent } from './layout/in-app/menu-policies-in-app/menu-policies-in-app.component';
+import { ExportPoliciesInAppComponent } from './layout/in-app/export-policies-in-app/export-policies-in-app.component';
+import { ExportPoliciesComponent } from './layout/create/export-policies/export-policies.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -77,7 +79,7 @@ export const routes: Routes = [
     {path:"fee",data:{title:"Khởi tạo thuế & phí(chưa xong)"},component:CreateFeeComponent},
     {path:"incomes",data:{title:"Khởi tạo nguồn thu"},component:CreateIncomeComponent},
     {path:"menu-policies",data:{title:"Khởi tạo chính sách giá"},component:MenuPoliciesComponent},
-    {path:"menu-policies",data:{title:"Khởi tạo chính sách xuất hàng"},component:MenuPoliciesComponent},
+    {path:"export-policies",data:{title:"Khởi tạo chính sách xuất hàng"},component:ExportPoliciesComponent},
   ]},
   {path:"home/operate",component:LayoutComponent,data:{title:"Hướng dẫn vận hành"},children:[
     {path:"login",data:{title:"Đăng nhập hệ thống"},component:LoginComponent},
@@ -88,7 +90,7 @@ export const routes: Routes = [
     {path:"voucher",data:{title:"Thêm phụ phí và giảm giá"},component:VoucherComponent},
     {path:"payments",data:{title:"Quy trinh thu chi"},component:AccountingComponent},
     {path:"clock-out",data:{title:"Quy trình chốt ca"},component:ClockOutComponent},
-    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác(chưa xong"},component:OrderGoodsComponent},
+    {path:"order-goods",data:{title:"Quy trinh đặt hàng từ đối tác"},component:OrderGoodsComponent},
     {path:"settlement",data:{title:"Quy trình quyết toán"},component:SettlementComponent},
     {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử"},component:ExportBillsComponent},
     {path:"good-invoices",data:{title:"Quy trình xuất/nhập hàng"},component:IeActivityComponent},
@@ -124,6 +126,7 @@ export const routes: Routes = [
   {path:"in-app/outlet/debts",component:DebtsInAppComponent,data:{title:"Hướng dẫn công nợ"}},
   {path:"in-app/outlet/good-checks",component:GoodChecksComponent,data:{title:"Hướng dẫn kiểm kê"}},
   {path:"in-app/outlet/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
+  {path:"in-app/outlet/export-policies",component:ExportPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách xuất hàng"}},
 
   //in-app cho chuỗi cửa hàng
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
