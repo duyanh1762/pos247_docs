@@ -7,14 +7,14 @@
 
   <div class="section">
     <app-step-box>
-      <h3 header>a. Thêm mới hàng hóa</h3>
+      <h3 header>a. Truy cập hàng hoá</h3>
       <h3
         icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
             'assets/images/create-goods-1.png',
-            'Ảnh thêm hàng hoá'
+            'Ảnh truy cập hàng hoá'
           )
         "
       >
@@ -24,29 +24,62 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1.1: Để tạo hàng hóa cho chuỗi cửa hàng, chọn biểu tượng
+            Bước 1.1: Để tạo thực đơn cho chuỗi cửa hàng, chọn biểu tượng
             <strong><i class="fa-solid fa-grid"></i></strong> góc phải trên
-            cùng, chọn <b>Chính sách chung</b> và chọn <b>Hàng hóa</b>.
+            cùng, chọn <b>Chính sách chung</b> và chọn
+            <strong>Thực đơn</strong>.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1.2: Để tạo hàng hóa cho cửa hàng, chọn biểu tượng
+            Bước 1.2: Để tạo thực đơn cho cửa hàng, chọn biểu tượng
             <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
-            cùng, chọn <b>Quản lý</b> sau đó truy cập <strong>Hàng hóa</strong>.
+            cùng, chọn <b>Quản lý</b> sau đó truy cập <strong>Thực đơn</strong>.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Thêm mới mặt hàng/sản phẩm</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-goods-2.png',
+            'Ảnh thêm mới hàng hoá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm mặt
+            hàng(chủng loại) nhập thông tin mặt hàng (ví dụ Bột Cacao, Bột
+            Mix,...).
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm mặt
-            hàng, nhập thông tin hàng hóa (tên, đơn vị tính,…).
+            Bước 2: Nhấn <b><i class="fa-solid fa-check"></i></b> để xác nhận.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">Bước 3: Nhấn <b>Cập nhật</b> để lưu mặt hàng.</div>
+          <div class="line">
+            Bước 3: Chọn mặt hàng vừa tạo, ở khung
+            <b>Danh mục sản phẩm</b>, chọn
+            <b><i class="fa-solid fa-plus"></i></b> để thêm sản phẩm của mặt
+            hàng( ví dụ Bột Cacao sẽ gồm Bột Cacao A, Bột Cacao B,...) và chọn
+            <b><i class="fa-solid fa-check"></i></b> để xác nhận.
+          </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
@@ -59,17 +92,16 @@
       </div>
     </app-step-box>
   </div>
-
   <div class="section">
     <app-step-box>
-      <h3 header>b. Chỉnh sửa hàng hoá</h3>
+      <h3 header>c. Chỉnh sửa sản phẩm</h3>
       <h3
         icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
-            'assets/images/create-goods-2.png',
-            'Ảnh Chỉnh sửa hàng hoá'
+            'assets/images/create-goods-3.png',
+            'Ảnh chính sửa sản phẩm'
           )
         "
       >
@@ -79,33 +111,36 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1: Để sửa thông tin, chọn <b>nhóm hàng hoá</b>, chọn
-            <b>chủng loại</b> rồi chọn <b>hàng hoá</b> muốn sửa, sau đó sửa lại
-            thông tin mặt hàng và ấn Cập nhật rồi lưu để hoàn tất.
+            Bước 1: Để sửa thông tin, chọn <b>nhóm hàng</b>, chọn
+            <b>mặt hàng(chủng loại)</b> rồi chọn <b>sản phẩm</b> muốn sửa, sau
+            đó sửa lại thông tin mặt hàng và ấn
+            <b><i class="fa-solid fa-check"></i></b> rồi chọn
+            <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 2: Để xoá hàng hoá, chọn <b>nhóm hàng hoá</b>, chọn
-            <b>chủng loại</b> rồi chọn <b>hàng hoá</b> muốn xoá, sau đó ấn biểu
-            tượng <b><i class="fa-solid fa-trash"></i></b> rồi lưu để hoàn tất.
+            Bước 2: Để xoá hàng hoá, chọn <b>nhóm hàng</b>, chọn
+            <b>mặt hàng(chủng loại)</b> rồi chọn <b>sản phẩm</b> muốn xoá, sau
+            đó ấn biểu tượng <b><i class="fa-solid fa-trash"></i></b> rồi chọn
+            <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.
           </div>
         </div>
+
         <div class="note">
           <p>
             (<b>Lưu ý:</b> Ấn vào biểu tượng
             <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
-            nhanh theo tên hàng hoá.)
+            nhanh theo tên sản phẩm.)
           </p>
         </div>
       </div>
     </app-step-box>
   </div>
-
   <div class="section">
     <app-step-box>
-      <h3 header>c. Các thao tác khác</h3>
+      <h3 header>e. Các thao tác khác</h3>
       <div class="modal">
         <div class="row">
           <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
@@ -121,6 +156,14 @@
             Chọn biểu tượng
             <strong><i class="fa-solid fa-arrow-right"></i></strong> để hoàn tác
             hành động trở về.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
+          <div class="line">
+            Chọn biểu tượng
+            <strong><i class="fa-solid fa-sparkles"></i></strong> để tạo nhanh
+            bằng AI.
           </div>
         </div>
       </div>

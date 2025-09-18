@@ -1,39 +1,101 @@
 <div class="guide-container">
-  <h2>💰 9. Khởi tạo thuế & phí</h2>
-  <p><strong>Mô tả:</strong>Khởi tạo các khoản thuế cần nộp hoặc các phụ phí thu thêm như phí dịch vụ, phi giao hàng,...</p>
+  <h2>9. Khởi tạo thuế phí</h2>
+  <p><strong>Mô tả:</strong>Khởi tạo thêm các đầu mục thuế phí cho cửa hàng.</p>
 
   <div class="section">
-    <h3>Hướng dẫn thực hiện.<button
-          class="btn-image"
-          (click)="
-            emitShowImageEvent(
-              'assets/images/create-fee-1.PNG',
-              'Ảnh thêm mới phụ thu'
-            )
-          "
-          ><i class="fa-solid fa-image"></i> Xem ảnh</button
-        ></h3>
+    <app-step-box>
+      <h3 header>a. Truy cập thuế phí</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-fee-1.PNG',
+            'Ảnh truy cập thuế phí'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn điều hướng, chọn <b>Chính sách</b> và truy cập
+            <b>Thuế phí</b>
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
 
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 1: Chọn biểu tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên cùng, sau đó truy cập
-        <strong>Thuế & Phí</strong>.</div>
-    </div>
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Hướng dẫn thực hiện</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-fee-2.png',
+            'Ảnh thao tác với thuế phí'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 1: Chọn biểu tượng <b><i class="fa-solid fa-plus"></i></b> để
+            thêm mới.
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 2: Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để thêm mới.</div>
-    </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 2: Nhập thông tin thuế phi (<i>tên, mô tả…</i>).
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 3: Nhập thông tin thuế hoặc phí (<i>tên, giá trị, Mô tả…</i>).</div>
-    </div>
-
-    <div class="row">
-      <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-      <div class="line">Bước 4: Nhấn <b>Cập nhật</b>, sau đó nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> ở góc trên bên phải để hoàn tất thao tác.</div>
-    </div>
-
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 3: Nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu
+            thông tin.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 4: Để xem danh sách áp dụng, chọn vào
+            <b>tên của thuế phí</b> đó.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 5: Để sửa thuế phí, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn <b>Chỉnh sửa</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
+          <div class="line">
+            Bước 6: Để xoá thuế phí, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn <b>Xoá phí</b>.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên thuế phí.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
   </div>
 </div>

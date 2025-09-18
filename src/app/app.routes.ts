@@ -56,6 +56,7 @@ import { MenuPoliciesComponent } from './layout/create/menu-policies/menu-polici
 import { MenuPoliciesInAppComponent } from './layout/in-app/menu-policies-in-app/menu-policies-in-app.component';
 import { ExportPoliciesInAppComponent } from './layout/in-app/export-policies-in-app/export-policies-in-app.component';
 import { ExportPoliciesComponent } from './layout/create/export-policies/export-policies.component';
+import { FeeInAppComponent } from './layout/in-app/fee-in-app/fee-in-app.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -76,7 +77,7 @@ export const routes: Routes = [
     {path:"processors",data:{title:"Khởi tạo Bar & Bếp"},component:CreateKitchenComponent},
     {path:"goods",data:{title:"Khởi tạo hàng hóa"},component:CreateGoodsComponent},
     {path:"partners",data:{title:"Khởi tạo đối tác"},component:CreatePartnerComponent},
-    {path:"fee",data:{title:"Khởi tạo thuế & phí(chưa xong)"},component:CreateFeeComponent},
+    {path:"fee-policies",data:{title:"Khởi tạo thuế & phí"},component:CreateFeeComponent},
     {path:"incomes",data:{title:"Khởi tạo nguồn thu"},component:CreateIncomeComponent},
     {path:"menu-policies",data:{title:"Khởi tạo chính sách giá"},component:MenuPoliciesComponent},
     {path:"export-policies",data:{title:"Khởi tạo chính sách xuất hàng"},component:ExportPoliciesComponent},
@@ -127,6 +128,7 @@ export const routes: Routes = [
   {path:"in-app/outlet/good-checks",component:GoodChecksComponent,data:{title:"Hướng dẫn kiểm kê"}},
   {path:"in-app/outlet/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
   {path:"in-app/outlet/export-policies",component:ExportPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách xuất hàng"}},
+  {path:"in-app/outlet/fee-policies",component:FeeInAppComponent,data:{title:"Hướng dẫn thuế & phí"}},
 
   //in-app cho chuỗi cửa hàng
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
