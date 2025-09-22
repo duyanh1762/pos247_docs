@@ -1,120 +1,69 @@
-<div class="guide-container">
-  <div class="description">
-    <p>
-       Hướng dẫn quản lý và chủ đầu tư xem báo cáo tài
-      chính, bao gồm doanh thu, chi phí, công nợ và các khoản thu chi khác.
-    </p>
-  </div>
-  <div class="section in-app">
-    <app-step-box>
-      <h3 header>Hướng dẫn báo cáo tài chính</h3>
-      <i icon class="fa-solid fa-chevron-down"></i>
-      <div class="modal">
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 1:</b> Chọn thời gian cần xem:
-            <ul>
-              <li>
-                Nhấn vào biểu tượng
-                <b><i class="fa-regular fa-calendar"></i></b>.
-              </li>
-              <li>
-                Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng
-                thời gian đó.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 2:</b> Xem các thông tin chính:
-            <table border="1" cellspacing="0" cellpadding="5">
-              <thead>
-                <tr>
-                  <th>📌 Mục báo cáo</th>
-                  <th>💬 Ý nghĩa</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Doanh thu</td>
-                  <td>Tổng tiền thu được từ bán hàng và các phiếu thu</td>
-                </tr>
-                <tr>
-                  <td>Chi phí & Công nợ trong kỳ</td>
-                  <td>
-                    Tổng tiền đã chi và các khoản nợ như lương, tiền hàng chưa
-                    thanh toán
-                  </td>
-                </tr>
-                <tr>
-                  <td>Còn lại</td>
-                  <td>
-                    Số tiền còn lại sau khi lấy Doanh thu trừ Chi phí & Công nợ
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 3:</b> Lọc theo hình thức thanh toán: nhấn vào biểu tượng
-            <strong><i class="fa-regular fa-filter"></i></strong>
-            để chọn cách thanh toán mà bạn muốn xem (tiền mặt, VietQR, chuyển
-            khoản, v.v.).
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 4:</b> Chọn kiểu báo cáo tài chính bằng cách ấn vào biểu
-            tượng <strong><i class="fa-light fa-chart-pie"></i></strong>, gồm:
-            <ul>
-              <li><b>Thu chi theo ngày</b>: Xem thu và chi từng ngày.</li>
-              <li>
-                <b>Thu chi theo đối tác</b>: Xem thu chi liên quan đến từng nhà
-                cung cấp hoặc khách hàng.
-              </li>
-              <li>
-                <b>Thu chi theo chốt ca</b>: Xem thu chi theo từng ca làm việc
-                trong ngày.
-              </li>
-              <li>
-                <b>Thu chi theo hạng mục</b>: Xem thu chi theo từng loại hoạt
-                động (bán hàng, dịch vụ…)
-              </li>
-              <li><b>Công nợ</b>: Xem các khoản chưa thanh toán</li>
-            </ul>
-            <p style="font-style: italic">**Ý nghĩa các từ khoá:**</p>
+<desc>
+  Hướng dẫn quản lý và chủ đầu tư xem báo cáo tài chính, bao gồm doanh thu, chi phí, công nợ và các khoản thu chi khác.
+</desc>
 
-            <ul>
-              <li>
-                <b>Phát sinh</b>: khoản chi/công nợ phát sinh ngoài kế hoạch.
-              </li>
-              <li>
-                <b>Định kỳ</b>: khoản chi/công nợ phải trả đều đặn (như tiền
-                thuê, lương…)
-              </li>
-              <li><b>Tồn đọng</b>: Nợ từ kỳ trước chưa trả.</li>
-              <li><b>Đã trả</b>: Khoản nợ đã thanh toán.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 5:</b> Xuất báo cáo ra file Excel: nhấn vào biểu tượng
-            <b><i class="fa-regular fa-file-xmark"></i></b> để tải báo cáo về
-            máy dưới dạng bảng tính.
-          </div>
-        </div>
-      </div>
-    </app-step-box>
-  </div>
+<how name="Xem báo cáo tài chính">
+  <step>
+    Chọn thời gian cần xem:
+    - Nhấn vào biểu tượng <i class="fa-regular fa-calendar"></i>
+    - Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng thời gian đó
+  </step>
 
-  <app-general-instructions></app-general-instructions>
-</div>
+  <step>
+    Xem các thông tin chính:
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th> Mục báo cáo</th>
+          <th> Ý nghĩa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Doanh thu</td>
+          <td>Tổng tiền thu được từ bán hàng và các phiếu thu</td>
+        </tr>
+        <tr>
+          <td>Chi phí & Công nợ trong kỳ</td>
+          <td>Tổng tiền đã chi và các khoản nợ như lương, tiền hàng chưa thanh toán</td>
+        </tr>
+        <tr>
+          <td>Còn lại</td>
+          <td>Số tiền còn lại sau khi lấy Doanh thu trừ Chi phí & Công nợ</td>
+        </tr>
+      </tbody>
+    </table>
+  </step>
+
+  <step>
+    Lọc theo hình thức thanh toán: nhấn vào biểu tượng <i class="fa-regular fa-filter"></i>
+    để chọn cách thanh toán mà bạn muốn xem (tiền mặt, VietQR, chuyển khoản, v.v.).
+  </step>
+
+  <step>
+    Chọn kiểu báo cáo tài chính bằng cách ấn vào biểu tượng <i class="fa-light fa-chart-pie"></i>, gồm:
+    <ul>
+      <li>-<b>Thu chi theo ngày</b>: Xem thu và chi từng ngày</li>
+      <li>-<b>Thu chi theo đối tác</b>: Xem thu và chi theo đối tác</li>
+      <li>-<b>Thu chi theo chốt ca</b>: Xem thu và chi theo từng ca làm việc trong ngày</li>
+      <li>-<b>Thu chi theo hạng mục</b>: Xem thu và chi theo từng loại hoạt động (bán hàng, dịch vụ…)</li>
+      <li>-<b>Công nợ</b>: Xem các khoản chưa thanh toán</li>
+    </ul>
+
+    <step>
+      Ý nghĩa các từ khoá:
+      <ul>
+        <li>-<b>Phát sinh</b>: khoản chi/công nợ phát sinh ngoài kế hoạch</li>
+        <li>-<b>Định kỳ</b>: khoản chi/công nợ phải trả đều đặn (như tiền thuê, lương…)</li>
+        <li>-<b>Tồn đọng</b>: Nợ từ kỳ trước chưa trả</li>
+        <li>-<b>Đã trả</b>: Khoản nợ đã thanh toán</li>
+      </ul>
+    </step>
+  </step>
+
+  <step>
+    Xuất báo cáo ra file Excel: nhấn vào biểu tượng <i class="fa-regular fa-file-xmark"></i> để tải báo cáo về máy dưới dạng bảng tính.
+  </step>
+</how>
+
+<app-general-instructions></app-general-instructions>

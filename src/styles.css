@@ -21,6 +21,17 @@
   padding: 14px;
 }
 
+step b, step strong, step i.fa-solid, step i.fa-regular {
+  color: #fd7e14 !important;
+  text-transform: uppercase;
+  margin: auto 2px;
+}
+
+step ul {
+
+  list-style: none;
+}
+
 .section {
   margin: 24px 10px 24px 10px;
   padding: 20px 20px 20px 20px;
@@ -60,7 +71,7 @@
   font-weight: 400;
   margin-top: 16px;
 }
-.guide-container table {
+step table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
@@ -72,31 +83,31 @@
 }
 
 /* Table header */
-.guide-container table thead {
+step table thead {
   background-color: #007bff;
   color: #fff;
 }
 
-.guide-container table thead th {
+step table thead th {
   padding: 10px 15px;
   text-align: left;
 }
 
 /* Table body */
-.guide-container table tbody tr {
+step table tbody tr {
   background-color: #f9f9f9;
   transition: background 0.3s;
 }
 
-.guide-container table tbody tr:nth-child(even) {
+step table tbody tr:nth-child(even) {
   background-color: #f1f1f1;
 }
 
-.guide-container table tbody tr:hover {
+step table tbody tr:hover {
   background-color: #e0f0ff;
 }
 
-.guide-container table tbody td {
+step table tbody td {
   padding: 10px 15px;
   vertical-align: top;
 }

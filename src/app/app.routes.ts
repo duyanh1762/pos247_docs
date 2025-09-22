@@ -104,7 +104,7 @@ export const routes: Routes = [
     {path:"finance",data:{title:"Báo cáo tài chính"},component:FinanceComponent}
   ]},
 
-  //Hướng dẫ trong app
+  //Hướng dẫn trong app
   //in-app cho cửa hàng
   {path:"in-app/outlet/workspace",component:WorkspaceComponent,data:{title:"Hướng dẫn bán hàng"}},
   {path:"in-app/outlet/monitor",component:MonitorComponent,data:{title:"Hướng dẫn chế biến"}},

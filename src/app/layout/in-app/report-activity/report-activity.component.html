@@ -1,113 +1,72 @@
-<div class="guide-container">
-  <div class="description">
-    <p>
-       Hướng dẫn nhân viên hoặc quản lý xem báo cáo chi
-      tiết về hoạt động bán hàng, giúp theo dõi doanh thu và tình hình phục vụ.
-    </p>
-  </div>
-  <div class="section in-app">
-    <app-step-box>
-      <h3 header>Hướng dẫn báo cáo hoạt động</h3>
-      <i icon class="fa-solid fa-chevron-down"></i>
-      <div class="modal">
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 1:</b> Chọn thời gian cần xem:
-            <ul>
-              <li>
-                Nhấn vào biểu tượng
-                <b><i class="fa-regular fa-calendar"></i></b>.
-              </li>
-              <li>
-                Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng
-                thời gian đó.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 2:</b> Xem các loại báo cáo về thông tin hoạt động:
-            <table border="1" cellspacing="0" cellpadding="5">
-              <thead>
-                <tr>
-                  <th>📌 Mục báo cáo</th>
-                  <th>💬 Ý nghĩa</th>
-                  <th>🔍 Xem chi tiết</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Đã thu</td>
-                  <td>Tổng tiền đã thanh toán từ khách</td>
-                  <td>
-                    Nhấn biểu tượng
-                    <strong
-                      ><i class="fa-chisel fa-regular fa-user"></i
-                    ></strong>
-                    bên phải để xem doanh thu theo từng nhân viên
-                  </td>
-                </tr>
-                <tr>
-                  <td>Đang phục vụ</td>
-                  <td>
-                    Tổng tiền của các món chưa thanh toán/các bàn đang ngồi
-                  </td>
-                  <td>
-                    Nhấn biểu tượng
-                    <strong><i class="fa-regular fa-bars"></i></strong> bên phải
-                    để xem chi tiết các món đang phục vụ
-                  </td>
-                </tr>
-                <tr>
-                  <td>Tổng doanh thu</td>
-                  <td>Tổng tiền của các món/hoá đơn đã thanh toán</td>
-                  <td>
-                    Nhấn biểu tượng
-                    <strong><i class="fa-regular fa-trophy"></i></strong> bên
-                    phải để xem chi tiết doanh số/số lượng món đã bá
-                  </td>
-                </tr>
-                <tr>
-                  <td>Tổng huỷ</td>
-                  <td>Tổng tiền của các món bị huỷ</td>
-                  <td>
-                    Nhấn biểu tượng
-                    <strong><i class="fa-regular fa-bars"></i></strong> bên phải
-                    để xem món nào bị huỷ
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 3:</b> Xem lịch sử hóa đơn: ở phía dưới màn hình, chọn ngày
-            cụ thể để xem chi tiết các hóa đơn trong ngày đó.
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 4:</b> Xuất báo cáo ra file Excel: nhấn vào biểu tượng
-            <b><i class="fa-regular fa-file-xmark"></i></b> để tải báo cáo về
-            máy dưới dạng bảng tính.
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fas fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 5:</b> In tổng kết bán hàng: chọn biểu tượng
-            <b><i class="fa-regular fa-print"></i></b> để in tổng kết bán hàng.
-          </div>
-        </div>
-      </div>
-    </app-step-box>
-  </div>
+<desc>
+  Hướng dẫn nhân viên hoặc quản lý xem báo cáo chi tiết về hoạt động bán hàng, giúp theo dõi doanh thu và tình hình phục vụ.
+</desc>
 
-  <app-general-instructions></app-general-instructions>
-</div>
+<how name="Xem báo cáo hoạt động">
+  <step>
+    Chọn thời gian cần xem:
+    - Nhấn vào biểu tượng <i class="fa-regular fa-calendar"></i>
+    - Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng thời gian đó
+  </step>
+
+  <step>
+    Xem các loại báo cáo về thông tin hoạt động:
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th> Mục báo cáo</th>
+          <th> Ý nghĩa</th>
+          <th> Xem chi tiết</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Đã thu</td>
+          <td>Tổng tiền đã thanh toán từ khách</td>
+          <td>
+            Nhấn biểu tượng <i class="fa-chisel fa-regular fa-user"></i>
+            bên phải để xem doanh thu theo từng nhân viên
+          </td>
+        </tr>
+        <tr>
+          <td>Đang phục vụ</td>
+          <td>Tổng tiền của các món chưa thanh toán/các bàn đang ngồi</td>
+          <td>
+            Nhấn biểu tượng <i class="fa-regular fa-bars"></i>
+            bên phải để xem chi tiết các món đang phục vụ
+          </td>
+        </tr>
+        <tr>
+          <td>Tổng doanh thu</td>
+          <td>Tổng tiền của các món/hoá đơn đã thanh toán</td>
+          <td>
+            Nhấn biểu tượng <i class="fa-regular fa-trophy"></i>
+            bên phải để xem chi tiết doanh số/số lượng món đã bán
+          </td>
+        </tr>
+        <tr>
+          <td>Tổng huỷ</td>
+          <td>Tổng tiền của các món bị huỷ</td>
+          <td>
+            Nhấn biểu tượng <i class="fa-regular fa-bars"></i>
+            bên phải để xem món nào bị huỷ
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </step>
+
+  <step>
+    Xem lịch sử hóa đơn: ở phía dưới màn hình, chọn ngày cụ thể để xem chi tiết các hóa đơn trong ngày đó.
+  </step>
+
+  <step>
+    Xuất báo cáo ra file Excel: nhấn vào biểu tượng <i class="fa-regular fa-file-xmark"></i> để tải báo cáo về máy dưới dạng bảng tính.
+  </step>
+
+  <step>
+    In tổng kết bán hàng: chọn biểu tượng <i class="fa-regular fa-print"></i> để in tổng kết bán hàng.
+  </step>
+</how>
+
+<app-general-instructions></app-general-instructions>

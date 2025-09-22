@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 24px 10px 24px 10px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 0 10px 3px #00000026;
+}
+
+:host * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:host > .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+:host > .body {
+  border-top: 1px solid #e6e6e6;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+:host > .body > *:not(:last-child) {
+  margin-bottom: 10px;
+}

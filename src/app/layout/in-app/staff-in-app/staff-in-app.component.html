@@ -1,100 +1,42 @@
-<div class="guide-container">
-  <div class="description">
-    <p>
-       Tính năng Khởi tạo nhân sự giúp bạn thêm mới nhân
-      viên, thiết lập <strong>mã PIN</strong> đăng nhập và
-      <strong>phân quyền</strong> theo vai trò.(Lưu ý: Nếu là cửa hàng mới, cần
-      tạo tài khoản <strong>Quản lý</strong> đầu tiên.)
-    </p>
-  </div>
-  <div class="section in-app">
-    <app-step-box>
-      <h3 header>Thêm nhân viên mới</h3>
-      <i icon class="fa-solid fa-chevron-down"></i>
-      <div class="modal">
-        <div class="row">
-          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 1:</b> Nhấn vào dấu
-            <strong><i class="fa-solid fa-plus"></i></strong> để
-            <b>thêm nhân viên mới</b>.
-          </div>
-        </div>
-        <!-- <div class="row">
-      <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-      <div class="line">
-        <b>Bước 3:</b> Màn hình sẽ hiển thị QR để nhân viên có thể quét và tải App về
-        máy, sau đó ấn vào biểu tượng
-        <strong><i class="fa-regular fa-pen-to-square"></i></strong>.
-      </div>
-    </div> -->
-        <div class="row">
-          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 2:</b> Nhập thông tin nhân viên: <strong>Họ tên</strong>,
-            <strong>mã PIN</strong>, và <strong>phân quyền</strong> (Lưu ý: Nếu
-            là cửa hàng mới, cần tạo tài khoản <strong>Quản lý</strong> đầu
-            tiên).
-          </div>
-        </div>
+<desc>
+  Thiết lập nhân sự giúp bạn thêm mới thông tin về nhân viên và phân quyền theo vai trò.
+</desc>
 
-        <div class="row">
-          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 3:</b> Nhấn biểu tượng
-            <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
-            tất.
-          </div>
-        </div>
-      </div>
-    </app-step-box>
-  </div>
+<how name="Thêm nhân viên mới">
+  <step>
+    Nhấn vào dấu <i class="fa-solid fa-plus"></i> để thêm nhân viên mới
+  </step>
 
-  <div class="section in-app">
-    <app-step-box>
-      <h3 header>Chỉnh sửa nhân viên</h3>
-      <i icon class="fa-solid fa-chevron-down"></i>
-      <div class="modal">
-        <div class="row">
-          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 1:</b> Chọn nhân viên muốn sửa, sau đó nhập lại các thông
-            tin rồi ấn
-            <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
-            tất.
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 2:</b> Nếu muốn xóa nhân viên, ấn nhân viên cần xóa rồi nhấn
-            biểu tượng <strong><i class="fa-solid fa-trash"></i></strong>.
-          </div>
-        </div>
-      </div>
-    </app-step-box>
-  </div>
+  <step>
+    Nhập thông tin nhân viên:
+    <b>Họ tên</b>,
+    <b>mã PIN</b>,
+    <b>phân quyền</b>
+  </step>
 
-  <div class="section in-app">
-    <app-step-box>
-      <h3 header>Tìm kiếm nhân sự</h3>
-      <i icon class="fa-solid fa-chevron-down"></i>
-      <div class="modal">
-        <div class="row">
-          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 1:</b> Chọn biểu tượng
-            <strong><i class="fa-solid fa-magnifying-glass"></i></strong>.
-          </div>
-        </div>
-        <div class="row">
-          <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div>
-          <div class="line">
-            <b>Bước 2:</b> Nhập <b>tên nhân sự</b> để tìm kiếm.
-          </div>
-        </div>
-      </div>
-    </app-step-box>
-  </div>
-  <app-general-instructions></app-general-instructions>
-</div>
+  <step>
+    Nhấn biểu tượng <i class="fa-solid fa-floppy-disk"></i> để hoàn tất
+  </step>
+</how>
+
+<how name="Chỉnh sửa nhân viên">
+  <step>
+    Chọn nhân viên muốn sửa, sau đó nhập lại các thông tin rồi ấn <i class="fa-solid fa-floppy-disk"></i> để hoàn tất
+  </step>
+
+  <step>
+    Nếu muốn xóa nhân viên, ấn nhân viên cần xóa rồi nhấn biểu tượng <i class="fa-solid fa-trash"></i>
+  </step>
+</how>
+
+<how name="Tìm kiếm nhân sự">
+  <step>
+    Chọn biểu tượng <i class="fa-solid fa-magnifying-glass"></i>
+  </step>
+
+  <step>
+    Nhập <b>tên nhân sự</b> để tìm kiếm
+  </step>
+</how>
+
+<app-general-instructions></app-general-instructions>
