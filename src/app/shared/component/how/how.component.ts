@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ContentChildren, Input, QueryList } from '@angular/core';
+import { AfterViewInit, Component, ContentChildren, EventEmitter, Input, Output, QueryList } from '@angular/core';
 import { StepComponent } from '../step/step.component';
 
 @Component({
@@ -20,7 +20,12 @@ export class HowComponent implements AfterViewInit {
   @Input()
   public expanded: boolean = false;
 
+  @Input()
+  public showIndex:boolean = true;
+
   ngAfterViewInit(): void {
-    this.steps.forEach((step, index) => step.index = index + 1);
+    if(this.showIndex === true){
+      this.steps.forEach((step, index) => step.index = index + 1);
+    }
   }
 }

@@ -12,6 +12,46 @@
   padding-right: 10px; */
   padding: 10px;
 }
+.guide-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table header */
+.guide-container table thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.guide-container table thead th {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* Table body */
+.guide-container table tbody tr {
+  background-color: #f9f9f9;
+  transition: background 0.3s;
+}
+
+.guide-container table tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.guide-container table tbody tr:hover {
+  background-color: #e0f0ff;
+}
+
+.guide-container table tbody td {
+  padding: 10px 15px;
+  vertical-align: top;
+}
 .guide-container h2 {
   text-align: center;
   text-transform: uppercase;
@@ -21,56 +61,17 @@
   padding: 14px;
 }
 
-step b, step strong, step i.fa-solid, step i.fa-regular {
+step b, step strong {
   color: #fd7e14 !important;
   text-transform: uppercase;
   margin: auto 2px;
 }
 
-step ul {
-
+step ul li{
   list-style: none;
-}
-
-.section {
-  margin: 24px 10px 24px 10px;
-  padding: 20px 20px 20px 20px;
-  border-radius: 6px;
-  background: wheat;
-}
-.description {
-  margin: 24px 10px 24px 10px;
-  padding: 20px 20px 20px 20px;
-  border-radius: 6px;
-}
-.in-app {
-  background-color: white;
-  box-shadow: 0 0 10px 3px #00000026;
-}
-
-.section .modal {
-  line-height: 20px;
-}
-
-.section h3 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.section .row {
-  display: flex;
-  gap: 8px;
   margin-top: 12px;
 }
 
-.section .row .icon {
-  color: orange;
-}
-.note {
-  font-style: italic;
-  font-weight: 400;
-  margin-top: 16px;
-}
 step table {
   width: 100%;
   border-collapse: collapse;
@@ -111,6 +112,45 @@ step table tbody td {
   padding: 10px 15px;
   vertical-align: top;
 }
+.section {
+  margin: 24px 10px 24px 10px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+  background: wheat;
+}
+.description {
+  margin: 24px 10px 24px 10px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+}
+.in-app {
+  background-color: white;
+  box-shadow: 0 0 10px 3px #00000026;
+}
+
+.section .modal {
+  line-height: 20px;
+}
+
+.section h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.section .row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.section .row .icon {
+  color: orange;
+}
+.note {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 16px;
+}
 .show-image {
   font-style: italic;
 }
@@ -144,6 +184,9 @@ step table tbody td {
     font-size: 12px;
   }
 
+  step{
+    font-size: 12px;
+  }
   .section h3 {
     font-size: 0.8rem;
     text-transform: uppercase;

@@ -1,93 +1,116 @@
 <desc>
-  Hướng dẫn nhân viên các thao tác liên quan đến bán hàng như tạo, sửa, thêm khuyến mãi và thanh toán hoá đơn.
+  Hướng dẫn nhân viên các thao tác liên quan đến bán hàng như tạo, sửa, thêm
+  khuyến mãi và thanh toán hoá đơn.
 </desc>
+
+<how name="Mô tả chức năng" [expanded]="true" [showIndex]="true">
+  <step>Nút <b><i class="fa-regular fa-chart-pie"></i></b>: Xem báo cáo bán hàng</step>
+  <step>Nút <b><i class="fa-regular fa-bell"></i></b>: Xem thông báo</step>
+  <step>Nút <b><i class="fa-solid fa-microphone"></i></b>: Sử dụng micro</step>
+  <step>Nút <b><i class="fa-solid fa-files"></i></b>: Xem các bàn được chọn</step>
+  <step>Nút <b><i class="fa-regular fa-square-1"></i></b>: Các bàn trong cửa hàng</step>
+  <step>Nút <b><i class="fa-regular fa-undo"></i></b>: Xoá gợi ý tìm kiếm bàn</step>
+
+</how>
 
 <how name="Thao tác gọi món">
   <step>
-    <b>Tạo hóa đơn mới</b>:
-    Chọn một bàn trống
-    -> Thêm món
-    -> Nhấn <i class="fa-regular fa-floppy-disk"></i>
+    <b>Tạo hóa đơn mới</b>: Chọn một bàn trống -> Thêm món -> Nhấn
+    <b><i class="fa-regular fa-floppy-disk"></i></b>
   </step>
 
   <step>
-    <b>Chỉnh sửa hóa đơn</b>:
-    Chọn bàn đang có hóa đơn
-    -> Nhấn biểu tượng <i class="fa-regular fa-pen"></i>
-    -> Sửa món (ấn <i class="fa-solid fa-plus"></i> để thêm món)
-    -> Nhấn <i class="fa-regular fa-floppy-disk"></i>
+    <b>Chỉnh sửa hóa đơn</b>: Chọn bàn đang có hóa đơn -> Nhấn
+    <b><i class="fa-regular fa-pen"></i></b> -> Sửa món (ấn
+    <b><i class="fa-solid fa-plus"></i></b> để thêm món) -> Nhấn
+    <b><i class="fa-regular fa-floppy-disk"></i></b>
   </step>
 
   <step>
-    <b>Xem tổng hóa đơn</b>: Nhấn vào bàn hoặc hóa đơn để xem chi tiết tổng tiền, số lượng món, và trạng thái thanh toán
+    <b>Xem tổng hóa đơn</b>: Nhấn vào bàn hoặc hóa đơn để xem chi tiết tổng
+    tiền, số lượng món, và trạng thái thanh toán
   </step>
 </how>
 
 <how name="Thêm chiết khấu và phụ phí">
+  <step> Chọn bàn cần thao tác trên giao diện phần mềm </step>
+
   <step>
-    Chọn bàn cần thao tác trên giao diện phần mềm
+    Chọn <b><i class="fa-regular fa-plus-minus"></i></b> ở món muốn thêm khuyến mãi/phụ thu hoặc
+    chọn vào <b> <i class="fa-regular fa-plus-minus"></i>Thêm khuyến mãi</b>,
+    <b>phụ thu</b> để áp dụng cho cả hoá đơn.
   </step>
 
   <step>
-    Nhấn vào mục <i class="fa-solid fa-plus"></i><b>Khuyến mãi</b>, <b>Phụ thu</b> cho món hoặc bàn
+    Nhập thông tin cần thêm, ví dụ: phí phục vụ, giảm giá món hoặc giảm tổng hóa
+    đơn,... và ấn  <b><i class="fa-regular fa-floppy-disk"></i></b> để áp dụng thay đổi.
   </step>
 
   <step>
-    Nhập thông tin cần thêm, ví dụ: phí phục vụ, giảm giá món hoặc giảm tổng hóa đơn
+    Nhấn <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất thao
+    tác.
   </step>
 
   <step>
-    Nhấn <b>Cập nhật</b> để áp dụng thay đổi
-  </step>
-
-  <step>
-    Nhấn biểu tượng <i class="fa-regular fa-floppy-disk"></i> để hoàn tất thao tác
-  </step>
-
-  <step>
-    Để xoá khuyến mãi/phụ thu:
-    - Nhấn biểu tượng <i class="fa-solid fa-trash"></i> ở ghi chú khuyến mãi/phụ thu
-    - Chọn biểu tượng <i class="fa-regular fa-floppy-disk"></i> để hoàn tất
+    Để xoá khuyến mãi/phụ thu: - Nhấn
+    <b><i class="fa-solid fa-xmark"></i></b> ở ghi chú khuyến mãi/phụ thu - Chọn biểu
+    tượng <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất
   </step>
 </how>
 
 <how name="Thao tác thanh toán">
+  <step> Chọn bàn cần thanh toán trên giao diện phần mềm </step>
+
   <step>
-    Chọn bàn cần thanh toán trên giao diện phần mềm
+    Nhấn vào nút <b><i class="fa-regular fa-cash-register"></i> </b>và chọn
+    <b>Tính tiền</b>
   </step>
 
   <step>
-    Nhấn vào nút <i class="fa-solid fa-dollar-sign"></i> và chọn <b>Tính tiền</b>
+    Đối với các phương thức thanh toán khác tiền mặt như <b>QR ngân hàng</b>,
+    <b>Ví điện tử,...</b> thì chọn phương thức tương ứng và nhấn
+    <b><i class="fa-solid fa-check"></i></b> để xác nhận giao dịch
   </step>
 
   <step>
-    Chọn phương thức thanh toán:
-    <ul>
-      <li>-<b>Tiền mặt</b>: chọn tiền mặt</li>
-      <li>-<b>Grab</b>, <b>QR ngân hàng</b>, <b>Ví điện tử</b>: chọn phương thức tương ứng và nhấn xác nhận giao dịch
-    </ul>
+    Khi thanh toán thành công, hệ thống sẽ tự động in mã QR theo phương thức
+    thanh toán (nếu có) trên hoá đơn
+  </step>
+</how>
+
+<how name="Xuất hoá đơn điện tử">
+  <step>
+    Thiết lập các thông tin liên quan đến xuất hoá đơn điện tử trong mục
+    <b>Cấu hình cửa hàng</b>
   </step>
 
   <step>
-    Khi thanh toán thành công, hệ thống sẽ tự động in mã QR theo phương thức thanh toán (nếu có) trên hoá đơn
+    Chọn hoá đơn trong lịch sử hoá đơn hoặc ngay khi thanh toán, chọn
+    <b><i class="fa-regular fa-circle-arrow-up"></i></b>.
   </step>
 
   <step>
-    Hoàn tất thanh toán: trạng thái hóa đơn sẽ chuyển sang <b>Đã thanh toán</b> và bàn sẽ được giải phóng cho khách tiếp theo
+    Chọn nút <b>Xuất hoá đơn</b> để có thể xuất hoá đơn điện tử.
+  </step>
+  <step>
+    Các hoá đơn đã xuất sẽ được lưu lại ở phần mềm của bên cung cấp dịch vụ.
   </step>
 </how>
 
 <how name="Các thao tác khác">
   <step>
-    <b>Xem lịch sử bàn</b>: <b>Nhấn giữ</b> bàn đang có hoá đơn để xem lịch sử trong ngày
+    <b>Xem lịch sử bàn</b>: <b>Nhấn giữ</b> bàn đang có hoá đơn để xem lịch sử
+    trong ngày
   </step>
 
   <step>
-    <b>Tách/Gộp bàn</b>: <b>Nhấn giữ</b> bàn đang có hoá đơn và <b>di chuyển</b> sang khu vực khác
+    <b>Tách/Gộp bàn</b>: <b>Nhấn giữ</b> bàn đang có hoá đơn và
+    <b>di chuyển</b> sang khu vực khác
   </step>
 
   <step>
-    <b>Xem doanh số</b>: Chọn biểu tượng <i class="fa-light fa-chart-pie"></i> để xem <b>Doanh số bán hàng</b>
+    <b>Xem doanh số</b>: Chọn
+    <i class="fa-light fa-chart-pie"></i> để xem <b>Doanh số bán hàng</b>
   </step>
 
   <step>

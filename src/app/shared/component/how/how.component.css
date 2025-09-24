@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -32,4 +32,10 @@
 
 :host > .body > *:not(:last-child) {
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+
+  :host > .name {
+    font-size: 0.7rem;
+  }
 }

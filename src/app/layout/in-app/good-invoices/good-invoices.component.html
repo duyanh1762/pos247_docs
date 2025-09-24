@@ -1,51 +1,36 @@
-<desc>Nhập,xuất hàng hoá từ các đối tác, đảm bảo nhập hàng đầy đủ, chính xác và kịp thời.</desc>
+<desc>Nhập, xuất hàng hoá từ các đối tác, đảm bảo nhập hàng đầy đủ và chính xác.</desc>
 
-<how name="Tạo đơn nhập hàng">
-  <step>Chọn biểu tượng <b><i class="fa-solid fa-plus"></i></b> và chọn <b>Nhập hàng</b>.</step>
-  <step>Chọn <b>Đối tác</b> mà cửa hàng muốn nhập hàng.</step>
-  <step>Nhấn <b><i class="fa-solid fa-plus"></i></b> để bắt đầu lập đơn nhập.</step>
-  <step>Chọn <b>Hàng mới hoặc các lựa chọn khác</b> rồi chọn các mặt hàng từ <b>Danh sách hàng hóa</b>.</step>
-  <step>Điền <b>Số lượng</b> và <b>Đơn giá</b> cho từng mặt hàng.</step>
-  <step>Chọn loại đơn <b>đã trả tiền</b> hoặc <b>chưa trả tiền</b>.</step>
-  <step>Nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu đơn nhập.</step>
-  <step>Để xóa một mặt hàng khỏi đơn, chọn biểu tượng <b><i class="fa-solid fa-trash"></i></b> bên cạnh mặt hàng đó.</step>
+<how name="Mô tả chức năng" [expanded]="true" [showIndex]="true">
+  <step>Nút <b><i class="fa-solid fa-plus"></i></b>: Thêm mới đơn.</step>
+  <step>Nút <b><i class="fa-solid fa-magnifying-glass"></i></b>: Tìm kiếm đơn.</step>
+  <step>Nút <b><i class="fa-regular fa-copy"></i></b>: Xem danh sách đơn xuất nhập và hàng sử dụng.</step>
+  <step>Nút <b><i class="fa-regular fa-boxes-stacked"></i></b>: Xem danh sách hàng hoá theo phân loại.</step>
+  <step>Biểu tượng <b><i class="fa-solid fa-pen-to-square"></i></b>: Trạng thái có thể chỉnh sửa.</step>
+  <step>Biểu tượng <b><i class="fa-solid fa-lock"></i></b>: Trạng thái đã khoá.</step>
+  <step>Biểu tượng <b><i class="fa-solid fa-circle-check"></i></b>: Trạng thái đã xác nhận.</step>
+  <step>Biểu tượng <b><i class="fa-regular fa-chevron-right"></i></b>: Danh sách chi tiết đang đóng.</step>
+  <step>Biểu tượng <b><i class="fa-regular fa-chevron-down"></i></b>: Danh sách chi tiết đang mở.</step>
 </how>
 
-<how name="Quản lý đơn nhập">
-  <step>Để sửa đơn: Chọn <b>đơn hàng</b> hoặc biểu tượng <b><i class="fa-solid fa-pen-to-square"></i></b>, chỉnh sửa và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b>.</step>
-  <step>Để xóa đơn: Chọn <b>đơn hàng</b> hoặc biểu tượng <b><i class="fa-solid fa-pen-to-square"></i></b>, sau đó chọn <b><i class="fa-solid fa-trash"></i></b>.</step>
-  <step>Để khóa đơn: Chọn <b>đơn hàng</b> và nhấn <b><i class="fa-solid fa-lock"></i></b>.</step>
-  <step>Để xác nhận đơn: Chọn <b>đơn hàng</b> hoặc biểu tượng <b><i class="fa-solid fa-pen-to-square"></i></b>, sau đó chọn <b><i class="fa-solid fa-check"></i></b>.</step>
-  <step>Các đơn sau khi khóa sẽ không thể sửa hoặc xóa được.</step>
+<how name="Tạo đơn nhập xuất hàng">
+  <step>Chọn  <b><i class="fa-solid fa-plus"></i></b> và chọn <b>Nhập hàng</b> hoặc <b>Xuất hàng</b>.</step>
+  <step>Chọn <b>Đối tác</b> mà cửa hàng muốn nhập hoặc xuất hàng.</step>
+  <step>Nhấn <b><i class="fa-solid fa-plus"></i></b> để bắt đầu lập đơn nhập hoặc xuất hàng.</step>
 </how>
 
-<how name="Tạo đơn xuất hàng">
-  <step>Chọn biểu tượng <b><i class="fa-solid fa-plus"></i></b> và chọn <b>Xuất hàng</b>.</step>
-  <step>Chọn <b>Đối tác</b> mà cửa hàng muốn xuất hàng.</step>
-  <step>Nhấn <b><i class="fa-solid fa-plus"></i></b> để bắt đầu lập đơn xuất.</step>
-  <step>Chọn <b>Trả hàng hoặc các lựa chọn khác</b> rồi chọn các mặt hàng từ <b>Danh sách hàng hóa</b>.</step>
-  <step>Điền <b>Số lượng</b> và <b>Đơn giá</b> cho từng mặt hàng.</step>
-  <step>Chọn loại đơn <b>đã trả tiền</b> hoặc <b>chưa trả tiền</b>.</step>
-  <step>Nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu đơn xuất.</step>
-  <step>Để xóa một mặt hàng khỏi đơn, chọn biểu tượng <b><i class="fa-solid fa-trash"></i></b> bên cạnh mặt hàng đó.</step>
-</how>
-
-<how name="Quản lý đơn xuất">
-  <step>Để sửa đơn: Chọn <b>đơn hàng</b> hoặc biểu tượng <b><i class="fa-solid fa-pen-to-square"></i></b>, chỉnh sửa và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b>.</step>
-  <step>Để xóa đơn: Chọn <b>đơn hàng</b> hoặc biểu tượng <b><i class="fa-solid fa-pen-to-square"></i></b>, sau đó chọn <b><i class="fa-solid fa-trash"></i></b>.</step>
-  <step>Để khóa đơn: Chọn <b>đơn hàng</b> và nhấn <b><i class="fa-solid fa-lock"></i></b>.</step>
-  <step>Để xác nhận đơn: Chọn <b>đơn hàng</b> hoặc biểu tượng <b><i class="fa-solid fa-pen-to-square"></i></b>, sau đó chọn <b><i class="fa-solid fa-check"></i></b>.</step>
-  <step>Các đơn sau khi khóa sẽ không thể sửa hoặc xóa được.</step>
+<how name="Xem danh sách nhập xuất">
+  <step>Chọn  <b><i class="fa-regular fa-files"></i></b>.</step>
+  <step>Chọn <b>Nhập hàng</b> hoặc <b>Xuất hàng</b> để xem danh sách.</step>
+  <step>Chọn đơn trong danh sách để thực hiện các thao tác như sửa, khoá, xác nhận...</step>
 </how>
 
 <how name="Xem hàng sử dụng">
-  <step>Chọn biểu tượng <b><i class="fa-regular fa-files"></i></b>.</step>
+  <step>Chọn  <b><i class="fa-regular fa-files"></i></b>.</step>
   <step>Chọn mục <b>Sử dụng</b> và chọn cửa hàng để xem.</step>
-  <step>Theo dõi việc sử dụng hàng hóa giúp quản lý hiệu quả nguồn hàng trong cửa hàng.</step>
 </how>
 
 <how name="Xem xuất nhập tồn">
-  <step>Chọn biểu tượng <b><i class="fa-solid fa-boxes-stacked"></i></b> và chọn phân loại muốn xem.</step>
+  <step>Chọn  <b><i class="fa-solid fa-boxes-stacked"></i></b> và chọn phân loại muốn xem.</step>
   <step>Xem các thông tin về xuất-nhập-tồn hàng hoá:
     <ul>
       <li>- <b>Tồn kho:</b> Số lượng hàng còn lại trong kho (sau khi trừ đi số lượng hàng đã sử dụng cho chế biến)</li>
@@ -53,14 +38,7 @@
       <li>- <b>Chờ xuất:</b> Số lượng hàng xuất chưa xác nhận</li>
       <li>- <b>Ước tính còn:</b> Tồn kho + Chờ nhập - Chờ xuất</li>
     </ul>
-</step>
-  <step>Theo dõi số liệu xuất nhập tồn giúp kiểm soát tốt lượng hàng hóa và lập kế hoạch nhập hàng hiệu quả.</step>
-</how>
-
-<how name="Tìm kiếm phiếu">
-  <step>Chọn biểu tượng <b><i class="fa-solid fa-magnifying-glass"></i></b>.</step>
-  <step>Nhập <b>tên đối tác</b>, <b>nhân sự</b> hoặc <b>loại phiếu</b> để tìm kiếm.</step>
-  <step>Sử dụng tính năng tìm kiếm để dễ dàng tra cứu và quản lý các phiếu xuất nhập.</step>
+  </step>
 </how>
 
 <app-general-instructions></app-general-instructions>

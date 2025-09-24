@@ -57,6 +57,9 @@ import { MenuPoliciesInAppComponent } from './layout/in-app/menu-policies-in-app
 import { ExportPoliciesInAppComponent } from './layout/in-app/export-policies-in-app/export-policies-in-app.component';
 import { ExportPoliciesComponent } from './layout/create/export-policies/export-policies.component';
 import { FeeInAppComponent } from './layout/in-app/fee-in-app/fee-in-app.component';
+import { GoodInvoicesEditorComponent } from './layout/in-app/good-invoices-editor/good-invoices-editor.component';
+import { GoodCheckEditorComponent } from './layout/in-app/good-check-editor/good-check-editor.component';
+import { OutletOrderEditorComponent } from './layout/in-app/outlet-order-editor/outlet-order-editor.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -129,6 +132,9 @@ export const routes: Routes = [
   {path:"in-app/outlet/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
   {path:"in-app/outlet/export-policies",component:ExportPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách xuất hàng"}},
   {path:"in-app/outlet/fee-policies",component:FeeInAppComponent,data:{title:"Hướng dẫn thuế & phí"}},
+  {path:"in-app/inventory/good-invoice-editor",component:GoodInvoicesEditorComponent,data:{title:"Hướng dẫn tạo phiếu xuất/nhập hàng"}},
+  {path:"in-app/inventory/good-check-editor",component:GoodCheckEditorComponent,data:{title:"Hướng dẫn tạo phiếu kiểm kê"}},
+  {path:"in-app/outlet/outlet-order-editor",component:OutletOrderEditorComponent,data:{title:"Hướng dẫn order món"}},
 
   //in-app cho chuỗi cửa hàng
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
