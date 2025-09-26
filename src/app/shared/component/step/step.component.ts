@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'step',
@@ -12,5 +12,4 @@ export class StepComponent {
 
   @Input()
   public index?: number;
-
 }

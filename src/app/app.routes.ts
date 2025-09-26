@@ -60,6 +60,14 @@ import { FeeInAppComponent } from './layout/in-app/fee-in-app/fee-in-app.compone
 import { GoodInvoicesEditorComponent } from './layout/in-app/good-invoices-editor/good-invoices-editor.component';
 import { GoodCheckEditorComponent } from './layout/in-app/good-check-editor/good-check-editor.component';
 import { OutletOrderEditorComponent } from './layout/in-app/outlet-order-editor/outlet-order-editor.component';
+import { OrderDetailsComponent } from './layout/in-app/order-details/order-details.component';
+import { title } from 'process';
+import { CollectionsEditorComponent } from './layout/in-app/collections-editor/collections-editor.component';
+import { DebtsEditorComponent } from './layout/in-app/debts-editor/debts-editor.component';
+import { MenuEditorComponent } from './layout/in-app/menu-editor/menu-editor.component';
+import { FeeEditorComponent } from './layout/in-app/fee-editor/fee-editor.component';
+import { MenuPoliciesEditorComponent } from './layout/in-app/menu-policies-editor/menu-policies-editor.component';
+import { ExportPoliciesEditorComponent } from './layout/in-app/export-policies-editor/export-policies-editor.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -108,7 +116,7 @@ export const routes: Routes = [
   ]},
 
   //Hướng dẫn trong app
-  //in-app cho cửa hàng
+  //in-app store
   {path:"in-app/outlet/workspace",component:WorkspaceComponent,data:{title:"Hướng dẫn bán hàng"}},
   {path:"in-app/outlet/monitor",component:MonitorComponent,data:{title:"Hướng dẫn chế biến"}},
   {path:"in-app/outlet/payments",component:PaymentsComponent,data:{title:"Hướng dẫn thu chi"}},
@@ -136,7 +144,16 @@ export const routes: Routes = [
   {path:"in-app/inventory/good-check-editor",component:GoodCheckEditorComponent,data:{title:"Hướng dẫn tạo phiếu kiểm kê"}},
   {path:"in-app/outlet/outlet-order-editor",component:OutletOrderEditorComponent,data:{title:"Hướng dẫn order món"}},
 
-  //in-app cho chuỗi cửa hàng
+  //Bổ sung thêm
+  {path:"in-app/order-details",component:OrderDetailsComponent,data:{title:"Chi tiết lịch sử hoá đơn"}},
+  {path:"in-app/collections-editor",component:CollectionsEditorComponent,data:{title:"Hướng dẫn xử lý hoá đơn trong chốt ca"}},
+  {path:"in-app/debts-editor",component:DebtsEditorComponent,data:{title:"Hướng dẫn xử lý công nợ, đặt cọc"}},
+  {path:"in-app/menu-editor",component:MenuEditorComponent,data:{title:"Hướng dẫn cấu hình món, lựa chọn"}},
+  {path:"in-app/fee-editor",component:FeeEditorComponent,data:{title:"Hướng dẫn đanh sách áp dụng thuế phí"}},
+  {path:"in-app/menu-policies-editor",component:MenuPoliciesEditorComponent,data:{title:"Hướng dẫn đanh sách áp dụng chương trình, chính sách"}},
+  {path:"in-app/export-policies-editor",component:ExportPoliciesEditorComponent,data:{title:"Hướng dẫn đanh sách áp dụng xuất hàng"}},
+
+  //in-app admin
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},
   {path:"in-app/utils/qr-scanner",component:QrScannerComponent,data:{title:"Hướng dẫn quét QR"}},
   {path:"in-app/account",component:AccountComponent,data:{title:"Hướng dẫn tài khoản"}},
@@ -145,7 +162,6 @@ export const routes: Routes = [
   {path:"in-app/partners",component:PartnerInAppComponent,data:{title:"Hướng dẫn quản lý đối tác"}},
   {path:"in-app/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
   {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý hàng hoá"}},
-
 
 
   {path:"",redirectTo:"home",pathMatch:"full"},

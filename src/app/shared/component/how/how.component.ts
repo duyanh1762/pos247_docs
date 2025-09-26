@@ -25,7 +25,9 @@ export class HowComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     if(this.showIndex === true){
-      this.steps.forEach((step, index) => step.index = index + 1);
+      this.steps.forEach((step, index) => {
+        step.index = index + 1;
+      });
     }
   }
 }
