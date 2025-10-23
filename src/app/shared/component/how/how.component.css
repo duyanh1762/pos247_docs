@@ -33,9 +33,11 @@
 :host > .body > *:not(:last-child) {
   margin-bottom: 10px;
 }
+
 @media (max-width: 768px) {
 
   :host > .name {
     font-size: 0.7rem;
   }
 }
+

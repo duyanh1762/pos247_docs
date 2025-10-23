@@ -3,7 +3,7 @@
 <how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">
   <step>Nút <b><i class="fa-regular fa-magnifying-glass"></i></b>: Tìm kếm hàng hoá.</step>
   <step>Nút <b><i class="fa-solid fa-plus"></i></b>: Thêm mới hàng hoá.</step>
-  <step>Nút <b><i class="fa-regular fa-floppy-disk"></i></b>: Lưu hàng hoá.</step>
+  <step>Nút <b><i class="fa-solid fa-floppy-disk"></i></b>: Lưu lại các thao tác.</step>
   <step>Nút <b><i class="fa-regular fa-gear"></i></b>: Chỉnh sửa, xoá mặt hàng, nhóm hàng hoá.</step>
   <step>Nút <b><i class="fa-solid fa-trash"></i></b>: Xoá sản phẩm.</step>
   <step>Nút <b><i class="fa-solid fa-arrow-left"></i></b>: Hoàn tác.</step>
@@ -11,6 +11,12 @@
   <step>Biểu tượng <b><i class="fa-solid fa-chevron-right"></i></b>: Danh sách chi tiết đang đóng.</step>
   <step>Biểu tượng <b><i class="fa-solid fa-chevron-down"></i></b>: Danh sách chi tiết đang mở.</step>
   <step>Biểu tượng <b><i class="fa-solid fa-lock"></i></b>: Thể hiện đây là hàng hoá trong chính sách chung.</step>
+</how>
+
+<how name="Lưu ý về hàng hoá" >
+  <step>Hàng hoá được mô tả theo cấp độ như sau: <b>Nhóm hàng hoá</b> <i class="fa-regular fa-arrow-right"></i> <b>Mặt hàng (chủng loại)</b> <i class="fa-regular fa-arrow-right"></i> <b>Sản phẩm</b>.</step>
+  <step>Một <b>nhóm hàng hoá</b> (VD: Cà phê) sẽ bao gồm nhiều <b>mặt hàng (chủng loại)</b> (VD: Cà phê bột, cà phê Arabica,...).</step>
+  <step>Một <b>mặt hàng (chủng loại)</b> (VD: Cà phê bột) sẽ bao gồm nhiều <b>sản phẩm</b> (VD: Cà phê bột hãng A, cà phê bột hãng B,...).</step>
 </how>
 
 <how name="Thêm mới mặt hàng">
@@ -28,19 +34,26 @@
   <step>Chọn  <b><i class="fa-solid fa-xmark"></i></b> và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.</step>
 </how>
 
+<how name="Chỉnh sửa nhóm, mặt hàng">
+  <step>Chọn <b><i class="fa-regular fa-gear"></i></b> của nhóm, mặt hàng muốn sửa.</step>
+  <step>Chọn Chỉnh sửa/xoá nhóm, mặt hàng.</step>
+  <step>Nhấn <b><i class="fa-solid fa-check"></i></b> để xác nhận.</step>
+  <step>Chọn  <b><i class="fa-solid fa-xmark"></i></b> và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.</step>
+</how>
+
 <how name="Chỉnh sửa sản phẩm">
   <step>Để sửa thông tin:
      Chọn <b>nhóm hàng</b>
-    -> Chọn <b>mặt hàng (chủng loại)</b>
-    -> Chọn <b>sản phẩm</b> cần sửa
-    -> Sửa thông tin và nhấn <b><i class="fa-solid fa-check"></i></b>
-    -> Chọn  <b><i class="fa-solid fa-xmark"></i></b> và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.</step>
+    <i class="fa-regular fa-arrow-right"></i> Chọn <b>mặt hàng (chủng loại)</b>
+    <i class="fa-regular fa-arrow-right"></i> Chọn <b>sản phẩm</b> cần sửa
+    <i class="fa-regular fa-arrow-right"></i> Sửa thông tin và nhấn <b><i class="fa-solid fa-check"></i></b>
+    <i class="fa-regular fa-arrow-right"></i> Chọn  <b><i class="fa-solid fa-xmark"></i></b> và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.</step>
   <step>Để xoá hàng hoá:
     Chọn <b>nhóm hàng</b>
-    -> Chọn <b>mặt hàng (chủng loại)</b>
-    -> Chọn <b>sản phẩm</b> cần xoá
-    -> Nhấn <b><i class="fa-solid fa-trash"></i></b>
-    -> Chọn  <b><i class="fa-solid fa-xmark"></i></b> và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.</step>
+    <i class="fa-regular fa-arrow-right"></i> Chọn <b>mặt hàng (chủng loại)</b>
+    <i class="fa-regular fa-arrow-right"></i> Chọn <b>sản phẩm</b> cần xoá
+    <i class="fa-regular fa-arrow-right"></i> Nhấn <b><i class="fa-solid fa-trash"></i></b>
+    <i class="fa-regular fa-arrow-right"></i> Chọn  <b><i class="fa-solid fa-xmark"></i></b> và nhấn <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.</step>
 </how>
 
 <app-general-instructions></app-general-instructions>

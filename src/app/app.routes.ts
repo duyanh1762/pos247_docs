@@ -67,6 +67,8 @@ import { MenuEditorComponent } from './layout/in-app/menu-editor/menu-editor.com
 import { FeeEditorComponent } from './layout/in-app/fee-editor/fee-editor.component';
 import { MenuPoliciesEditorComponent } from './layout/in-app/menu-policies-editor/menu-policies-editor.component';
 import { ExportPoliciesEditorComponent } from './layout/in-app/export-policies-editor/export-policies-editor.component';
+import { AffiliateComponent } from './layout/in-app/affiliate/affiliate.component';
+import { AcknowledgeBrokerComponent } from './layout/in-app/acknowledge-broker/acknowledge-broker.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -161,6 +163,8 @@ export const routes: Routes = [
   {path:"in-app/partners",component:PartnerInAppComponent,data:{title:"Hướng dẫn quản lý đối tác"}},
   {path:"in-app/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
   {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý hàng hoá"}},
+  {path:"in-app/affiliate",component:AffiliateComponent,data:{title:"Hướng dẫn chia sẻ doanh thu"}},
+  {path:"in-app/utils/acknowledge-broker",component:AcknowledgeBrokerComponent,data:{title:"Hướng dẫn xác nhận người giới thiệu"}},
 
 
   {path:"",redirectTo:"home",pathMatch:"full"},

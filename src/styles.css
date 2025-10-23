@@ -112,6 +112,9 @@ step table tbody td {
   padding: 10px 15px;
   vertical-align: top;
 }
+.video > .body{
+  padding: 20px 0px 0px 0px !important;
+}
 .section {
   margin: 10px 10px 24px 10px;
   padding: 20px 20px 20px 20px;
