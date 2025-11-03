@@ -1,9 +1,26 @@
 <div class="guide-container">
   <h2>7. Khởi tạo hàng hóa</h2>
   <p>
-    <strong>Mô tả:</strong>Thiết lập danh sách hàng hóa để quản lý kinh doanh
+    <strong>Mô tả:</strong> Thiết lập danh sách hàng hóa để quản lý kinh doanh
     hiệu quả, bao gồm thông tin tên, đơn vị tính và giá bán.
   </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>VIDEO HƯỚNG DẪN</h3>
+      <h3 icon class="btn-image"><i class="fa-solid fa-image"></i> Xem clip</h3>
+      <div class="modal video">
+        <iframe
+          src="https://www.youtube.com/embed/KL5GxCMj2zs?si=HpLbY_hOEcFWuDOb"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </app-step-box>
+  </div>
 
   <div class="section">
     <app-step-box>
@@ -24,18 +41,18 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1.1: Để tạo thực đơn cho chuỗi cửa hàng, chọn biểu tượng
+            Bước 1.1: Để tạo hàng hoá chung cho chuỗi cửa hàng, chọn biểu tượng
             <strong><i class="fa-solid fa-grid"></i></strong> góc phải trên
             cùng, chọn <b>Chính sách chung</b> và chọn
-            <strong>Thực đơn</strong>.
+            <strong>Hàng hoá</strong>.
           </div>
         </div>
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 1.2: Để tạo thực đơn cho cửa hàng, chọn biểu tượng
+            Bước 1.2: Để tạo hàng hoá cho cửa hàng, chọn biểu tượng
             <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
-            cùng, chọn <b>Quản lý</b> sau đó truy cập <strong>Thực đơn</strong>.
+            cùng, chọn <b>Quản lý</b> sau đó truy cập <strong>Hàng hoá</strong>.
           </div>
         </div>
       </div>
@@ -43,14 +60,14 @@
   </div>
   <div class="section">
     <app-step-box>
-      <h3 header>b. Thêm mới mặt hàng/sản phẩm</h3>
+      <h3 header>b. Tạo mặt hàng/sản phẩm</h3>
       <h3
         icon
         class="btn-image"
         (click)="
           emitShowImageEvent(
             'assets/images/create-goods-2.png',
-            'Ảnh thêm mới hàng hoá'
+            'Ảnh thêm mới sản phẩm'
           )
         "
       >
@@ -68,7 +85,8 @@
         <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
-            Bước 2: Nhấn <b><i class="fa-solid fa-check"></i></b> để xác nhận.
+            Bước 2: Nhấn <b><i class="fa-regular fa-floppy-disk"></i></b> để Lưu
+            lại.
           </div>
         </div>
         <div class="row">
@@ -78,17 +96,17 @@
             <b>Danh mục sản phẩm</b>, chọn
             <b><i class="fa-solid fa-plus"></i></b> để thêm sản phẩm của mặt
             hàng( ví dụ Bột Cacao sẽ gồm Bột Cacao A, Bột Cacao B,...) và chọn
-            <b><i class="fa-solid fa-check"></i></b> để xác nhận.
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để Lưu lại.
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="icon"><i class="fas fa-hand-point-right"></i></div>
           <div class="line">
             Bước 4: Nhấn biểu tượng
             <b><i class="fa-solid fa-floppy-disk"></i></b> để lưu lại toàn bộ
             thao tác.
           </div>
-        </div>
+        </div> -->
       </div>
     </app-step-box>
   </div>
@@ -113,9 +131,8 @@
           <div class="line">
             Bước 1: Để sửa thông tin, chọn <b>nhóm hàng</b>, chọn
             <b>mặt hàng(chủng loại)</b> rồi chọn <b>sản phẩm</b> muốn sửa, sau
-            đó sửa lại thông tin mặt hàng và ấn
-            <b><i class="fa-solid fa-check"></i></b> rồi chọn
-            <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.
+            đó sửa lại thông tin sản phẩm và ấn
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để Lưu lại thay đổi
           </div>
         </div>
         <div class="row">
@@ -123,8 +140,8 @@
           <div class="line">
             Bước 2: Để xoá hàng hoá, chọn <b>nhóm hàng</b>, chọn
             <b>mặt hàng(chủng loại)</b> rồi chọn <b>sản phẩm</b> muốn xoá, sau
-            đó ấn biểu tượng <b><i class="fa-solid fa-trash"></i></b> rồi chọn
-            <b><i class="fa-solid fa-floppy-disk"></i></b> để hoàn tất.
+            đó ấn biểu tượng <b><i class="fa-solid fa-trash"></i></b> để hoàn
+            tất.
           </div>
         </div>
 
