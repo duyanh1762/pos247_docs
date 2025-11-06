@@ -221,7 +221,6 @@ step table tbody td {
     font-weight: 400;
   }
 }
-
 @media (max-width: 480px) {
   .guide-container {
     padding: 10px;
