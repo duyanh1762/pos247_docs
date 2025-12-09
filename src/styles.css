@@ -120,7 +120,8 @@ step table tbody td {
   margin: 10px 10px 24px 10px;
   padding: 20px 20px 20px 20px;
   border-radius: 6px;
-  background: wheat;
+  background-color: white;
+  box-shadow: 0 0 10px 3px #00000026;
 }
 .description {
   margin: 24px 10px 24px 10px;
@@ -139,9 +140,10 @@ step table tbody td {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .video iframe {
-  width: 84%;
+  width:70%;
   height: 400px;
 }
 .section h3 {
@@ -161,7 +163,7 @@ step table tbody td {
 .note {
   font-style: italic;
   font-weight: 400;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .show-image {
   font-style: italic;

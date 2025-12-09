@@ -69,6 +69,7 @@ import { MenuPoliciesEditorComponent } from './layout/in-app/menu-policies-edito
 import { ExportPoliciesEditorComponent } from './layout/in-app/export-policies-editor/export-policies-editor.component';
 import { AffiliateComponent } from './layout/in-app/affiliate/affiliate.component';
 import { AcknowledgeBrokerComponent } from './layout/in-app/acknowledge-broker/acknowledge-broker.component';
+import { InstructionComponent } from './shared/instruction/instruction.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -153,6 +154,7 @@ export const routes: Routes = [
   {path:"in-app/fee-editor",component:FeeEditorComponent,data:{title:"Hướng dẫn đanh sách áp dụng thuế phí"}},
   {path:"in-app/menu-policies-editor",component:MenuPoliciesEditorComponent,data:{title:"Hướng dẫn đanh sách áp dụng chương trình, chính sách"}},
   {path:"in-app/export-policies-editor",component:ExportPoliciesEditorComponent,data:{title:"Hướng dẫn đanh sách áp dụng xuất hàng"}},
+  {path:"in-app/instruction",component:InstructionComponent,data:{title:"Hướng dẫn đanh sách áp dụng xuất hàng"}},
 
   //in-app admin
   {path:"in-app/outlets",component:OutletsComponent,data:{title:"Hướng dẫn khởi tạo cửa hàng"}},

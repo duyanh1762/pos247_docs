@@ -1,0 +1,25 @@
+<div class="guide-overlay">
+  <div class="guide-box">
+    <p class="title" [innerHTML]="currentStep.title"></p>
+
+    <div class="content-box">
+      <p
+        class="content"
+        *ngFor="let i of currentStep.content"
+        [innerHTML]="i"
+      ></p>
+    </div>
+
+    <div class="buttons">
+      <button (click)="back()" [disabled]="currentIndex === 0">
+        <i class="fa-regular fa-arrow-left"></i>
+      </button>
+      <button (click)="close()"><i class="fa-regular fa-xmark"></i></button>
+      <button (click)="next()" [disabled]="currentIndex === steps.length - 1">
+        <i class="fa-regular fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <p class="step-count">{{ currentIndex + 1 }} / {{ steps.length }}</p>
+  </div>
+</div>

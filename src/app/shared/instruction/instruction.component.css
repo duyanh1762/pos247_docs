@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.guide-box {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 24px;
+  border-radius: 12px;
+  width: 360px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  margin-top: 20px;
+}
+button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+
+  /* background: #fd7e14; */
+  color: #fd7e14;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:disabled {
+  /* background: #ccc; */
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.step-count {
+  margin-top: 12px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.content {
+  margin-top: 10px;
+}
+.content-box {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 260px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+.content i {
+  color: #fd7e14 !important;
+}
+.accent-color {
+  color: #fd7e14;
+}
+.title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+::ng-deep b i {
+  color: #fd7e14 !important;
+  font-size: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+::ng-deep .warning {
+  color: red !important;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 14px;
+  }
+  .content {
+    font-size: 12px;
+  }
+  .content-box {
+    height: 180px;
+  }
+}
