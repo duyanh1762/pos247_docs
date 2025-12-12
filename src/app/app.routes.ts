@@ -70,6 +70,9 @@ import { ExportPoliciesEditorComponent } from './layout/in-app/export-policies-e
 import { AffiliateComponent } from './layout/in-app/affiliate/affiliate.component';
 import { AcknowledgeBrokerComponent } from './layout/in-app/acknowledge-broker/acknowledge-broker.component';
 import { InstructionComponent } from './shared/instruction/instruction.component';
+import { ReportActivityGroupComponent } from './layout/in-app/report-activity-group/report-activity-group.component';
+import { ReportFinanceGroupComponent } from './layout/in-app/report-finance-group/report-finance-group.component';
+import { ReportGoodsGroupComponent } from './layout/in-app/report-goods-group/report-goods-group.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -145,6 +148,9 @@ export const routes: Routes = [
   {path:"in-app/inventory/good-invoice-editor",component:GoodInvoicesEditorComponent,data:{title:"Hướng dẫn tạo phiếu xuất/nhập hàng"}},
   {path:"in-app/inventory/good-check-editor",component:GoodCheckEditorComponent,data:{title:"Hướng dẫn tạo phiếu kiểm kê"}},
   {path:"in-app/outlet/outlet-order-editor",component:OutletOrderEditorComponent,data:{title:"Hướng dẫn order món"}},
+  {path:"in-app/outlet-group/reports/operation",component:ReportActivityGroupComponent,data:{title:"Hướng dẫn báo cáo hoạt động nhóm"}},
+  {path:"in-app/outlet-group/reports/finance",component:ReportFinanceGroupComponent,data:{title:"Hướng dẫn báo cáo tài chính nhóm"}},
+  {path:"in-app/outlet-group/reports/goods",component:ReportGoodsGroupComponent,data:{title:"Hướng dẫn báo cáo hàng hoá nhóm"}},
 
   //Bổ sung thêm
   {path:"in-app/order-details",component:OrderDetailsComponent,data:{title:"Chi tiết lịch sử hoá đơn"}},

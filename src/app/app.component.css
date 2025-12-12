@@ -1,16 +1,15 @@
-.popup-zalo {
+/* .popup-zalo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   position: fixed;
-  bottom: 200px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   color: blue;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   font-size: 40px;
   animation: pulse 1s infinite;
-  /* display: none; */
 }
 .popup-zalo a {
   width: 100%;
@@ -22,3 +21,18 @@
   height: 100%;
   border-radius: 50%;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+} */
