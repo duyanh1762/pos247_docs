@@ -2,8 +2,12 @@
   >Thiết lập danh sách món ăn, đồ uống hoặc sản phẩm mà cửa hàng cung cấp.</desc
 >
 
-<how name="Video hướng dẫn" [expanded]="true" class="video">
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="!isMobile">
 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/G79qAjz11rI?si=bK4Kndnae4W2RlFF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="isMobile">
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/jWTUCqA9W0g?si=_rfDXpkJP9ALBkyv"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </how>
 
 <how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">

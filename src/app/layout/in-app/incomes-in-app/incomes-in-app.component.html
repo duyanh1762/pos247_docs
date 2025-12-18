@@ -1,8 +1,13 @@
 <desc>Thiết lập thêm các đầu mục thu cho cửa hàng.</desc>
 
-<how name="Video hướng dẫn" [expanded]="true" class="video">
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="!isMobile">
 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/r5uvVzg94E0?si=fgx8EcvUMDpbJYt1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </how>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="isMobile">
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/vKRyicx2rgg?si=ZB6KrhJ5bA2lTlWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
 
 <how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">
 

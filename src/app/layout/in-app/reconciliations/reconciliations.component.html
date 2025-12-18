@@ -1,7 +1,11 @@
 <desc>Kiểm tra và quyết toán doanh số, thu chi theo tháng, đảm bảo số liệu chính xác và đầy đủ.</desc>
 
-<how name="Video hướng dẫn" [expanded]="true" class="video">
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="!isMobile">
   <iframe width="100%" height="auto" src="https://www.youtube.com/embed/OQHu8qGHFU8?si=YnyHlUrTPR0RZTOd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="isMobile">
+  <iframe width="100%" height="auto" src="https://www.youtube.com/embed/zkbCb9XEJOE?si=OM6wq7r1uRDXPc81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </how>
 
 <how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">

@@ -2,8 +2,12 @@
   Báo cáo chi tiết về hoạt động bán hàng, giúp theo dõi doanh thu và tình hình phục vụ.
 </desc>
 
-<how name="Video hướng dẫn" [expanded]="true" class="video">
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="!isMobile">
 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ZoiKQe8Et04?si=ATl6W4QYuVGIa1m9"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="isMobile">
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/_-Z-T7y_0bQ?si=eFE3YMoMdFi0GEZS"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </how>
 
 <how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">
@@ -13,6 +17,9 @@
   <step>Nút <b><i class="fa-regular fa-bars"></i></b>: Xem món đang phục vụ, món huỷ.</step>
   <step>Nút <b><i class="fa-regular fa-trophy"></i></b>: Xem xếp hạng món bán.</step>
   <step>Nút <b><i class="fa-regular fa-print"></i></b>: In báo cáo hoạt động</step>
+  <step>Nút <b><i class="fa-regular fa-chart-pie"></i></b>: Chọn loại báo cáo hoạt động.</step>
+  <step>Nút <b><i class="fa-regular fa-filter"></i></b>: Lọc dữ liệu.</step>
+
 </how>
 
 <how name="Xem báo cáo hoạt động">

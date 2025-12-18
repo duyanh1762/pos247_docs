@@ -1,7 +1,11 @@
 <desc>Khởi tạo và quản lý các đầu mục thuế phí cho cửa hàng.</desc>
 
-<how name="Video hướng dẫn" [expanded]="true" class="video">
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="!isMobile">
 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/In8Q9mtZODo?si=2r1_uBh2te4cgMpB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="isMobile">
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/WOzMmwJM0Uc?si=DGQSmhpnLPWgn9Mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </how>
 
 <how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">

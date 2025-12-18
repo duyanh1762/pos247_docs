@@ -3,14 +3,19 @@
   tồn kho, xuất nhập và sử dụng nguyên liệu.
 </desc>
 
-<how name="Video hướng dẫn" [expanded]="true" class="video">
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="!isMobile">
 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Se2FeDkVuLo?si=TWADkDRzev0iZ4Q1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="isMobile">
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/aThgAZuZCSU?si=OoDlDzsQ4HbnOCYH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </how>
 
 <how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">
   <step>Nút <b><i class="fa-regular fa-calendar"></i></b>: Chọn thời gian xem.</step>
   <step>Nút <b><i class="fa-regular fa-file-xmark"></i></b>: Xuất báo cáo dưới dạng excel.</step>
   <step>Nút <b><i class="fa-regular fa-chart-pie"></i></b>: Chọn loại báo cáo hàng hoá.</step>
+  <step>Nút <b><i class="fa-regular fa-filter"></i></b>: Lọc dữ liệu.</step>
 </how>
 
 
