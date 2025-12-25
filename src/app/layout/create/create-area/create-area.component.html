@@ -8,14 +8,10 @@
   <div class="section">
     <app-step-box>
       <h3 header>VIDEO HƯỚNG DẪN</h3>
-      <h3
-        icon
-        class="btn-image">
-        <i class="fa-solid fa-image"></i> Xem clip
-      </h3>
+      <h3 icon class="btn-image"><i class="fa-solid fa-image"></i> Xem clip</h3>
       <div class="modal video">
         <iframe
-          src="https://www.youtube.com/embed/ZXaO6lR_RqM?si=bnFqWeEsporMJAZO"
+          src="https://www.youtube.com/embed/jZIizu3jnpM?si=luHnYUD5L7hUaR3n"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -43,7 +39,6 @@
       </h3>
       <div class="modal">
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
           <div class="line">
             <b>Bước 1:</b> Chọn biểu tượng
             <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
@@ -52,22 +47,19 @@
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
           <div class="line">
-            <b>Bước 2:</b> Chọn biểu tượng <b><i class="fa-regular fa-plus"></i></b> để
-            <b>thêm khu vực</b>, nhập tên khu vực (ví dụ:
-            <i>Tầng 1, Sân vườn...</i>).
+            <b>Bước 2:</b> Chọn biểu tượng
+            <b><i class="fa-regular fa-plus"></i></b> để <b>thêm khu vực</b>,
+            nhập tên khu vực (ví dụ: <i>Tầng 1, Sân vườn...</i>).
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
           <div class="line">
-            <b>Bước 3:</b> Nhấn <b><i class="fa-regular fa-floppy-disk"></i></b> để lưu
-            khu vực.
+            <b>Bước 3:</b> Nhấn
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để lưu khu vực.
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div> -->
           <div class="line">
             <b>Bước 4:</b> Nhấn biểu tượng
             <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
@@ -95,7 +87,6 @@
       </h3>
       <div class="modal">
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
           <div class="line">
             <b>Bước 1:</b> Chọn khu vực vừa tạo, chọn biểu tượng
             <b><i class="fa-regular fa-plus"></i></b> và chọn
@@ -104,14 +95,12 @@
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
           <div class="line">
-            <b>Bước 2:</b> Nhấn <b><i class="fa-regular fa-floppy-disk"></i></b> để lưu
-            bàn.
+            <b>Bước 2:</b> Nhấn
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để lưu bàn.
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div> -->
           <div class="line">
             <b>Bước 3:</b> Nhấn biểu tượng
             <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
@@ -124,10 +113,52 @@
 
   <div class="section">
     <app-step-box>
-      <h3 header>c. Chỉnh sửa khu vực/bàn</h3>
+      <h3 header>c. In mã QR cho bàn</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-arena-3.png',
+            'Ảnh In mã QR bàn'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
       <div class="modal">
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
+          <div class="line">
+            <b>Bước 1:</b> Chọn biểu tượng
+            <b><i class="fa-regular fa-print"></i></b> ở góc dưới cùng bên phải
+            để bắt đầu.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Chọn biểu tượng
+            <b><i class="fa-regular fa-palette"></i></b> để chính sửa thông tin
+            sẽ hiển thị trên ảnh QR. Sau đó chọn
+            <b><i class="fa-regular fa-grid"></i></b> để chọn các bàn muốn in.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Chọn biểu tượng
+            <b><i class="fa-regular fa-print"></i></b> ở góc dưới cùng bên trái
+            để xem thông tin bản in và in. Bạn cũng có thể chia sẻ file in dưới
+            dạng PDF cho người khác.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>d. Chỉnh sửa khu vực/bàn</h3>
+      <div class="modal">
+        <div class="row">
           <div class="line">
             <b>Bước 1:</b> Để sửa khu vực/bàn, chọn biểu tượng
             <b><i class="fa-regular fa-pen"></i></b> của khu vực/bàn đó, sau đó
@@ -136,21 +167,18 @@
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
           <div class="line">
             <b>Bước 2:</b> Để xoá khu vực, chọn biểu tượng
             <b><i class="fa-solid fa-trash"></i></b> của khu vực đó.
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fas fa-hand-point-right"></i></div> -->
           <div class="line">
             <b>Bước 3:</b> Để xoá bàn, chọn biểu tượng
             <b><i class="fa-solid fa-xmark"></i></b> của bàn đó.
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div> -->
           <div class="line">
             <b>Bước 4:</b> Nhấn biểu tượng
             <strong><i class="fa-solid fa-floppy-disk"></i></strong> để hoàn
@@ -160,12 +188,12 @@
       </div>
     </app-step-box>
   </div>
+
   <div class="section">
     <app-step-box>
-      <h3 header>d. Các thao tác khác</h3>
+      <h3 header>e. Các thao tác khác</h3>
       <div class="modal">
         <div class="row">
-          <!-- <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div> -->
           <div class="line">
             Chọn biểu tượng
             <strong><i class="fa-solid fa-arrow-left"></i></strong> để trở về
@@ -173,7 +201,6 @@
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div> -->
           <div class="line">
             Chọn biểu tượng
             <strong><i class="fa-solid fa-arrow-right"></i></strong> để hoàn tác
@@ -181,7 +208,6 @@
           </div>
         </div>
         <div class="row">
-          <!-- <div class="icon"><i class="fa-solid fa-hand-point-right"></i></div> -->
           <div class="line">
             Chọn biểu tượng
             <strong><i class="fa-solid fa-sparkles"></i></strong> để hỏi hoặc

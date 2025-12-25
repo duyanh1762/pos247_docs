@@ -73,6 +73,8 @@ import { InstructionComponent } from './shared/instruction/instruction.component
 import { ReportActivityGroupComponent } from './layout/in-app/report-activity-group/report-activity-group.component';
 import { ReportFinanceGroupComponent } from './layout/in-app/report-finance-group/report-finance-group.component';
 import { ReportGoodsGroupComponent } from './layout/in-app/report-goods-group/report-goods-group.component';
+import { CustomerInAppComponent } from './layout/in-app/customer-in-app/customer-in-app.component';
+import { CustomerComponent } from './layout/create/customer/customer.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -97,6 +99,7 @@ export const routes: Routes = [
     {path:"incomes",data:{title:"Khởi tạo nguồn thu"},component:CreateIncomeComponent},
     {path:"menu-policies",data:{title:"Khởi tạo chính sách giá"},component:MenuPoliciesComponent},
     {path:"export-policies",data:{title:"Khởi tạo chính sách xuất hàng"},component:ExportPoliciesComponent},
+    {path:"customers",data:{title:"Khởi tạo khách hàng"},component:CustomerComponent}
   ]},
   {path:"home/operate",component:LayoutComponent,data:{title:"Hướng dẫn vận hành"},children:[
     {path:"login",data:{title:"Đăng nhập hệ thống"},component:LoginComponent},
@@ -145,6 +148,7 @@ export const routes: Routes = [
   {path:"in-app/outlet/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
   {path:"in-app/outlet/export-policies",component:ExportPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách xuất hàng"}},
   {path:"in-app/outlet/fee-policies",component:FeeInAppComponent,data:{title:"Hướng dẫn thuế & phí"}},
+  {path:"in-app/outlet/customers",component:CustomerInAppComponent,data:{title:"Hướng dẫn quản lý khác hàng"}},
   {path:"in-app/inventory/good-invoice-editor",component:GoodInvoicesEditorComponent,data:{title:"Hướng dẫn tạo phiếu xuất/nhập hàng"}},
   {path:"in-app/inventory/good-check-editor",component:GoodCheckEditorComponent,data:{title:"Hướng dẫn tạo phiếu kiểm kê"}},
   {path:"in-app/outlet/outlet-order-editor",component:OutletOrderEditorComponent,data:{title:"Hướng dẫn order món"}},

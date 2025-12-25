@@ -1,0 +1,197 @@
+<div class="guide-container">
+  <h2>12. Khởi tạo Khách hàng</h2>
+  <p>
+    <strong>Mô tả:</strong> Tính năng Khởi tạo Khách hàng giúp bạn quản lý
+    <b>Khách hàng</b> và các <b>Chính sách</b> liên quan đến dịch vụ cửa hàng
+    dành cho khách hàng.
+  </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>VIDEO HƯỚNG DẪN</h3>
+      <h3 icon class="btn-image"><i class="fa-solid fa-image"></i> Xem clip</h3>
+      <div class="modal video">
+        <iframe
+          src="https://www.youtube.com/embed/njEXLuYC7Vk?si=PmjwRzSZbN-26EmQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>a. Thêm khách hàng mới</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-customers-1.png',
+            'Ảnh thêm mới khách hàng'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b> sau đó truy cập
+            <strong>Khách hàng</strong>.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Nhấn vào dấu
+            <strong><i class="fa-solid fa-plus"></i></strong> và chọn
+            <b>Tạo khách hàng</b> để <b>thêm khách hàng mới</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Nhập thông tin khách hàng trong biểu mẫu và lựa chọn
+            chính sách phù hợp.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="line">
+            <b>Bước 4:</b> Nhấn biểu tượng
+            <strong><i class="fa-regular fa-floppy-disk"></i></strong> để hoàn
+            tất.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Chỉnh sửa khách hàng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-customers-2.png',
+            'Ảnh chỉnh sửa khách hàng'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Chọn chính sách chứa khách hàng muốn sửa/xoá, sau đó
+            tìm đến khách hàng đó, chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn thao tác theo nhu
+            cầu.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Sau khi thao tác xong, hãy ấn
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên khách hàng.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>c. Thêm chính sách mới</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-customers-3.png',
+            'Ảnh thao tác với chính sách'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Quản lý</b> sau đó truy cập
+            <strong>Khách hàng</strong>.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Nhấn vào dấu
+            <strong><i class="fa-solid fa-plus"></i></strong> và chọn
+            <b>Tạo chính sách</b> để <b>thêm chính sách mới</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Nhập thông tin chính sách trong biểu mẫu.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="line">
+            <b>Bước 4:</b> Nhấn biểu tượng
+            <strong><i class="fa-regular fa-floppy-disk"></i></strong> để hoàn
+            tất.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>d. Chỉnh sửa chính sách</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-customers-3.png',
+            'Ảnh thao tác với chính sách'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Chọn chính sách muốn sửa, sau đó chọn biểu tượng
+            <b><i class="fa-regular fa-gear"></i></b> và chọn <b>Chính sửa</b>
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Sau khi cập nhật lại thông tin chính sách, hãy ấn
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+</div>
