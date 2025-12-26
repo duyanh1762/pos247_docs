@@ -75,6 +75,9 @@ import { ReportFinanceGroupComponent } from './layout/in-app/report-finance-grou
 import { ReportGoodsGroupComponent } from './layout/in-app/report-goods-group/report-goods-group.component';
 import { CustomerInAppComponent } from './layout/in-app/customer-in-app/customer-in-app.component';
 import { CustomerComponent } from './layout/create/customer/customer.component';
+import { title } from 'process';
+import { RetailGoodsComponent } from './layout/operate/retail-goods/retail-goods.component';
+import { RetailGoodsInappComponent } from './layout/in-app/retail-goods-inapp/retail-goods-inapp.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -99,7 +102,9 @@ export const routes: Routes = [
     {path:"incomes",data:{title:"Khởi tạo nguồn thu"},component:CreateIncomeComponent},
     {path:"menu-policies",data:{title:"Khởi tạo chính sách giá"},component:MenuPoliciesComponent},
     {path:"export-policies",data:{title:"Khởi tạo chính sách xuất hàng"},component:ExportPoliciesComponent},
-    {path:"customers",data:{title:"Khởi tạo khách hàng"},component:CustomerComponent}
+    {path:"customers",data:{title:"Khởi tạo khách hàng"},component:CustomerComponent},
+      //Retail
+    {path:"retail-goods",data:{title:" Khời tạo hàng hoá(cửa hàng bán lẻ)"},component: RetailGoodsComponent},
   ]},
   {path:"home/operate",component:LayoutComponent,data:{title:"Hướng dẫn vận hành"},children:[
     {path:"login",data:{title:"Đăng nhập hệ thống"},component:LoginComponent},
@@ -177,7 +182,8 @@ export const routes: Routes = [
   {path:"in-app/goods",component:GoodsInAppComponent,data:{title:"Hướng dẫn quản lý hàng hoá"}},
   {path:"in-app/affiliate",component:AffiliateComponent,data:{title:"Hướng dẫn chia sẻ doanh thu"}},
   {path:"in-app/utils/acknowledge-broker",component:AcknowledgeBrokerComponent,data:{title:"Hướng dẫn xác nhận người giới thiệu"}},
-
+  //Retail
+  {path:"in-app/retail/goods",data:{title:" Khời tạo hàng hoá(cửa hàng bán lẻ)"},component: RetailGoodsInappComponent},
 
   {path:"",redirectTo:"home",pathMatch:"full"},
   {path:"**",component:DocsNotfoundComponent},

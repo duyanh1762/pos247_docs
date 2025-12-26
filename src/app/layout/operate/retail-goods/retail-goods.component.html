@@ -1,0 +1,139 @@
+<div class="guide-container">
+  <h2>7. Khởi tạo hàng hóa (Bán lẻ)</h2>
+  <p>
+    <strong>Mô tả:</strong> Thiết lập danh sách hàng hóa để quản lý kinh doanh
+    hiệu quả
+  </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>VIDEO HƯỚNG DẪN</h3>
+      <h3 icon class="btn-image"><i class="fa-solid fa-image"></i> Xem clip</h3>
+      <div class="modal video">
+        <iframe
+          src="https://www.youtube.com/embed/HZAqUwLwqC0?si=Ih3esvbrcYbhnTXG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>a. Truy cập hàng hoá</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-retail-goods-1.png',
+            'Ảnh truy cập hàng hoá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1.1:</b> Để tạo hàng hoá chung cho chuỗi cửa hàng, chọn biểu
+            tượng <strong><i class="fa-solid fa-grid"></i></strong> góc phải
+            trên cùng, chọn <b>Chính sách chung</b> và chọn
+            <strong>Hàng hoá</strong>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 1.2:</b> Để tạo hàng hoá riêng từng cửa hàng, chọn biểu
+            tượng <strong><i class="fa-solid fa-bars"></i></strong> góc trái
+            trên cùng, chọn <b>Quản lý</b> sau đó truy cập
+            <strong>Hàng hoá</strong>.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Tạo hàng hoá</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-retail-goods-2.png',
+            'Ảnh thao tác với hàng hoá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Nhấn nút <b><i class="fa-solid fa-plus"></i></b> để
+            thêm mới một hàng hoá.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Nhập các thông tin về mặt hàng đó.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Nhấn
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để Lưu lại.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+  <div class="section">
+    <app-step-box>
+      <h3 header>c. Chỉnh sửa hàng hoá</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/create-retail-goods-2.png',
+            'Ảnh thao tác với hàng hoá'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Để sửa thông tin, chọn hàng hoá muốn sửa trong danh
+            sách.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Cập nhật lại thông tin hàng hoá.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Nhấn
+            <b><i class="fa-regular fa-floppy-disk"></i></b> để Lưu lại.
+          </div>
+        </div>
+        <div class="note">
+          <p>
+            (<b>Lưu ý:</b> Ấn vào biểu tượng
+            <b><i class="fa-solid fa-magnifying-glass"></i></b> để tìm kiếm
+            nhanh theo tên sản phẩm.)
+          </p>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+</div>
