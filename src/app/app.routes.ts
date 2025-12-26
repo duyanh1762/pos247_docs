@@ -148,7 +148,7 @@ export const routes: Routes = [
   {path:"in-app/outlet/menu-policies",component:MenuPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách giá"}},
   {path:"in-app/outlet/export-policies",component:ExportPoliciesInAppComponent,data:{title:"Hướng dẫn chính sách xuất hàng"}},
   {path:"in-app/outlet/fee-policies",component:FeeInAppComponent,data:{title:"Hướng dẫn thuế & phí"}},
-  {path:"in-app/outlet/customers",component:CustomerInAppComponent,data:{title:"Hướng dẫn quản lý khác hàng"}},
+  {path:"in-app/outlet/customers",component:CustomerInAppComponent,data:{title:"Hướng dẫn quản lý khách hàng"}},
   {path:"in-app/inventory/good-invoice-editor",component:GoodInvoicesEditorComponent,data:{title:"Hướng dẫn tạo phiếu xuất/nhập hàng"}},
   {path:"in-app/inventory/good-check-editor",component:GoodCheckEditorComponent,data:{title:"Hướng dẫn tạo phiếu kiểm kê"}},
   {path:"in-app/outlet/outlet-order-editor",component:OutletOrderEditorComponent,data:{title:"Hướng dẫn order món"}},
