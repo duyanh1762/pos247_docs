@@ -1,0 +1,67 @@
+<desc>
+  Các thao tác liên quan đến bán hàng như tạo, sửa, thêm khuyến mãi và thanh
+  toán hoá đơn.
+</desc>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="!isMobile">
+  <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Dne3tZ4nQXk?si=gknJiYWOJTQ7Q1sb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
+<how name="Video hướng dẫn" [expanded]="true" class="video" *ngIf="isMobile">
+  <iframe width="100%" height="auto" src="https://www.youtube.com/embed/k0pWl4xuKY8?si=ZHThB_VBmPkrbpRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</how>
+
+<how name="Mô tả chức năng" [expanded]="true" [showIndex]="false">
+  <step>Nút <b><i class="fa-regular fa-chart-pie"></i></b>: Xem báo cáo bán hàng</step>
+  <step>Nút <b><i class="fas fa-magnifying-glass"></i></b>: Tìm kiếm hàng hoá</step>
+  <step>Nút <b><i class="fal fa-user-crown"></i></b>: Chọn khách hàng cho hoá đơn</step>
+  <step>Nút <b><i class="fal fa-file-plus"></i></b>: Tạo hoá đơn ở tab mới</step>
+  <step>Nút <b><i class="fal fa-plus"></i></b>: Tăng số lượng sản phẩm</step>
+  <step>Nút <b><i class="fal fa-minus"></i></b>: Giảm số lượng sản phẩm</step>
+  <step>Nút <b><i class="fal fa-cash-register"></i></b>: Tính tiền đơn hàng</step>
+  <step>Nút <b><i class="fas fa-trash"></i></b>: Xoá đơn hàng hiện tại</step>
+  <step>Biểu tượng <b><i class="fal fa-sigma"></i></b>: Tổng tiền của mặt hàng</step>
+</how>
+
+<how name="Thao tác tạo hoá đơn">
+  <step>Chọn 1 mặt hàng trên màn hình để thêm vào hoá đơn</step>
+  <step>Nếu muốn tạo đơn hàng mới khi đơn hàng cũ chưa kết thúc, chọn biểu tượng <b><i class="fal fa-file-plus"></i></b> để tạo</step>
+  <step>Để quay lại các đơn cũ, chọn vào <b>Đơn hàng #...</b> và chọn đơn hàng cũ muốn xử lý</step>
+</how>
+
+
+<how name="Thao tác thanh toán">
+  <step>
+    Nhấn vào nút <b><i class="fa-regular fa-cash-register"></i> </b> để tính tiền
+  </step>
+
+  <step>
+    Đối với các phương thức thanh toán khác tiền mặt như <b>QR ngân hàng</b>,
+    <b>Ví điện tử,...</b> thì chọn phương thức tương ứng và nhấn
+    <b><i class="fa-solid fa-check"></i></b> để xác nhận giao dịch
+  </step>
+
+  <step>
+    Khi thanh toán thành công, hệ thống sẽ tự động in mã QR theo phương thức
+    thanh toán (nếu có) trên hoá đơn
+  </step>
+</how>
+
+<how name="Xuất hoá đơn điện tử">
+  <step>
+    Thiết lập các thông tin liên quan đến xuất hoá đơn điện tử trong mục
+    <b>Cấu hình</b>
+  </step>
+
+  <step>
+    Chọn hoá đơn trong lịch sử hoá đơn hoặc ngay khi thanh toán, chọn
+    <b><i class="fa-regular fa-circle-arrow-up"></i></b>.
+  </step>
+
+  <step> Chọn nút <b>Xuất hoá đơn</b> để có thể xuất hoá đơn điện tử. </step>
+  <step>
+    Các hoá đơn đã xuất sẽ được lưu lại ở phần mềm của bên cung cấp dịch vụ.
+  </step>
+</how>
+
+<app-general-instructions></app-general-instructions>

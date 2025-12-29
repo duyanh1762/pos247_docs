@@ -78,6 +78,8 @@ import { CustomerComponent } from './layout/create/customer/customer.component';
 import { title } from 'process';
 import { RetailGoodsComponent } from './layout/operate/retail-goods/retail-goods.component';
 import { RetailGoodsInappComponent } from './layout/in-app/retail-goods-inapp/retail-goods-inapp.component';
+import { RetailOrderComponent } from './layout/operate/retail-order/retail-order.component';
+import { RetailOrderInAppComponent } from './layout/in-app/retail-order-in-app/retail-order-in-app.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -104,7 +106,7 @@ export const routes: Routes = [
     {path:"export-policies",data:{title:"Khởi tạo chính sách xuất hàng"},component:ExportPoliciesComponent},
     {path:"customers",data:{title:"Khởi tạo khách hàng"},component:CustomerComponent},
       //Retail
-    {path:"retail-goods",data:{title:" Khời tạo hàng hoá(cửa hàng bán lẻ)"},component: RetailGoodsComponent},
+    {path:"retail-goods",data:{title:" Khời tạo hàng hoá (bán lẻ)"},component: RetailGoodsComponent},
   ]},
   {path:"home/operate",component:LayoutComponent,data:{title:"Hướng dẫn vận hành"},children:[
     {path:"login",data:{title:"Đăng nhập hệ thống"},component:LoginComponent},
@@ -120,7 +122,9 @@ export const routes: Routes = [
     {path:"export-bill",data:{title:"Quy trình xuất hoá đơn điện tử"},component:ExportBillsComponent},
     {path:"good-invoices",data:{title:"Quy trình xuất/nhập hàng"},component:IeActivityComponent},
     {path:"debts",data:{title:"Quy trình theo dõi công nợ"},component:DebtsComponent},
-    {path:"check-invetory",data:{title:"Quy trình kiểm kê"},component:CheckInventoryComponent}
+    {path:"check-invetory",data:{title:"Quy trình kiểm kê"},component:CheckInventoryComponent},
+    //Retail
+    {path:"retail-order",data:{title:"Quy trình bán hàng (bán lẻ)"},component: RetailOrderComponent},
   ]},
   {path:"home/report",component:LayoutComponent,data:{title:"Hướng dẫn báo cáo"},children:[
     {path:"operation",data:{title:"Báo cáo hoạt động"},component:ActivityComponent},
@@ -183,7 +187,8 @@ export const routes: Routes = [
   {path:"in-app/affiliate",component:AffiliateComponent,data:{title:"Hướng dẫn chia sẻ doanh thu"}},
   {path:"in-app/utils/acknowledge-broker",component:AcknowledgeBrokerComponent,data:{title:"Hướng dẫn xác nhận người giới thiệu"}},
   //Retail
-  {path:"in-app/retail/goods",data:{title:" Khời tạo hàng hoá(cửa hàng bán lẻ)"},component: RetailGoodsInappComponent},
+  {path:"in-app/retail/goods",data:{title:"Khời tạo hàng hoá(bán lẻ)"},component: RetailGoodsInappComponent},
+  {path:"in-app/retail/order",data:{title:"Tạo hoá đơn(bán lẻ)"},component: RetailOrderInAppComponent},
 
   {path:"",redirectTo:"home",pathMatch:"full"},
   {path:"**",component:DocsNotfoundComponent},

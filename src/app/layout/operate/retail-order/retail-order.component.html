@@ -1,0 +1,185 @@
+<div class="guide-container">
+  <h2>13. Quy trình thao tac với đơn hàng (Bán lẻ)</h2>
+  <p>
+    <strong>Mô tả:</strong>Hướng dẫn nhân viên các thao tác liên quan đến đơn
+    hàng và quản lý đơn hàng một cách nhanh chóng và chính xác.
+  </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>VIDEO HƯỚNG DẪN</h3>
+      <h3 icon class="btn-image"><i class="fa-solid fa-image"></i> Xem clip</h3>
+      <div class="modal video">
+        <iframe
+          src="https://www.youtube.com/embed/Dne3tZ4nQXk?si=gknJiYWOJTQ7Q1sb"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>a. Truy cập Bán hàng</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/retail-order-1.png',
+            'Ảnh truy cập bán hàng'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng, chọn <b>Vận hành</b> sau đó truy cập
+            <strong>Bán hàng</strong>.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Thao tác tạo hoá đơn</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="emitShowImageEvent('assets/images/retail-order-2.png', 'Ảnh thao tác hoá đơn')"
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Chọn 1 mặt hàng trên màn hình để thêm vào hoá đơn.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Nếu muốn tạo đơn hàng mới khi đơn hàng cũ chưa kết
+            thúc, chọn biểu tượng <b><i class="fal fa-file-plus"></i></b> để
+            tạo.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Để quay lại các đơn cũ, chọn vào
+            <b>Đơn hàng #...</b> và chọn đơn hàng cũ muốn xử lý.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>c. Thanh toán hoá đơn</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="emitShowImageEvent('assets/images/retail-order-3.png', 'Ảnh thanh toán hoá đơn')"
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Nhấn vào nút
+            <b><i class="fa-regular fa-cash-register"></i> </b> để tính tiền.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Đối với các phương thức thanh toán khác tiền mặt như
+            <b>QR ngân hàng</b>, <b>Ví điện tử,...</b> thì chọn phương thức
+            tương ứng và nhấn <b><i class="fa-solid fa-check"></i></b> để xác
+            nhận giao dịch.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Khi thanh toán thành công, hệ thống sẽ tự động in mã
+            QR theo phương thức thanh toán (nếu có) trên hoá đơn.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>d. Xuất hoá đơn điện tử</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="emitShowImageEvent('assets/images/retail-order-3.png', 'Ảnh thanh toán hoá đơn')"
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Thiết lập các thông tin liên quan đến xuất hoá đơn
+            điện tử trong mục <b>Cấu hình</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Chọn hoá đơn trong lịch sử hoá đơn hoặc ngay khi
+            thanh toán, chọn
+            <b><i class="fa-regular fa-circle-arrow-up"></i></b>..
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 3:</b> Chọn nút <b>Xuất hoá đơn</b> để có thể xuất hoá đơn
+            điện tử. Các hoá đơn đã xuất sẽ được lưu lại ở phần mềm của bên cung
+            cấp dịch vụ.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>e. Các thao tác khác</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent('assets/images/retail-order-4.png', 'Ảnh thao tác khác')
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+          <div class="line">
+            <b>Bước 1:</b> Chọn biểu tượng
+            <b><i class="fa-light fa-chart-pie"></i></b> để xem chi tiết
+            <b>Hoạt động bán hàng</b>.
+          </div>
+        </div>
+        <div class="row">
+          <div class="line">
+            <b>Bước 2:</b> Chọn biểu tượng
+            <b><i class="fal fa-file-plus"></i></b> để lọc hàng hoá theo nhóm.
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+</div>
