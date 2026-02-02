@@ -4,7 +4,7 @@ import { AfterViewInit, Component, Input } from '@angular/core';
 @Component({
   selector: 'step',
   standalone: true,
-  imports: [NgIf,NgFor],
+  imports: [NgIf],
   templateUrl: './step.component.html',
   styleUrl: './step.component.css'
 })
