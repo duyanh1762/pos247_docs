@@ -1,24 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { HowComponent } from '../../../shared/component/how/how.component';
+
 import { GeneralInstructionsComponent } from '../general-instructions/general-instructions.component';
 import { StepComponent } from '../../../shared/component/step/step.component';
-import { HowComponent } from '../../../shared/component/how/how.component';
 import { DescComponent } from '../../../shared/component/desc/desc.component';
 import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-collections',
+  selector: 'app-bookings-in-app',
   standalone: true,
-  imports: [
-    GeneralInstructionsComponent,
-    StepComponent,
-    HowComponent,
-    DescComponent,
-    NgIf,
-  ],
-  templateUrl: './collections.component.html',
-  styleUrl: './collections.component.css',
+  imports: [HowComponent, StepComponent, GeneralInstructionsComponent, DescComponent, NgIf],
+  templateUrl: './bookings-in-app.component.html',
+  styleUrl: './bookings-in-app.component.css'
 })
-export class CollectionsComponent implements OnInit {
+export class BookingsInAppComponent {
+
   constructor() {}
 
   isMobile: boolean = false;
@@ -31,11 +27,10 @@ export class CollectionsComponent implements OnInit {
     } else {
       this.detectByUserAgentFallback();
     }
-
-    console.log(this.isMobile);
   }
 
   detectByUserAgentFallback() {
     this.isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   }
+
 }

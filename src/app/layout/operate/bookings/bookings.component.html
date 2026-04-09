@@ -1,0 +1,97 @@
+<div class="guide-container">
+  <h2>15. Quy trình đặt bàn</h2>
+  <p>
+    <strong>Mô tả:</strong> Hướng dẫn nhân viên cách đặt bàn trước cho khách khi có yêu cầu.
+  </p>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>VIDEO HƯỚNG DẪN</h3>
+      <h3 icon class="btn-image"><i class="fa-solid fa-image"></i> Xem clip</h3>
+      <div class="modal video">
+        <iframe
+          src="https://www.youtube.com/embed/1ujInz2NOy4?si=dDgULaANp-lHizPO"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>a. Truy cập mục Đặt bàn</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/bookings-1.png',
+            'Ảnh truy cập đăt bàn.'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+
+          <div class="line">
+            <b>Bước 1:</b> Chọn biểu tượng
+            <strong><i class="fa-solid fa-bars"></i></strong> góc trái trên
+            cùng,chọn <b>Vận hành</b> sau đó truy cập <strong>Đặt bàn</strong> (nếu không có, bạn cần vào mục Cấu hình để bật chức năng).
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+  <div class="section">
+    <app-step-box>
+      <h3 header>b. Hướng dẫn thao tác</h3>
+      <h3
+        icon
+        class="btn-image"
+        (click)="
+          emitShowImageEvent(
+            'assets/images/bookings-2.png',
+            'Ảnh thao tác đặt bàn.'
+          )
+        "
+      >
+        <i class="fa-solid fa-image"></i> Xem ảnh
+      </h3>
+      <div class="modal">
+        <div class="row">
+
+          <div class="line">
+            <b>Bước 1:</b> Nhấn vào khoảng thời gian của bàn muốn đặt.
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="line">
+            <b>Bước 2:</b> Nhập thông tin như khách hàng, thời gian,.. ở mục <b><i class="fal fa-file-lines"></i> Chi tiết</b> và món đặt trước ở mục <b><i class="fal fa-utensils"></i> Đặt món</b> theo yêu cầu.
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="line">
+            <b>Bước 3:</b> Nhấn nút <b><i class="fa-regular fa-floppy-disk"></i></b> để
+            lưu đặt bàn.
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="line">
+            <b>Bước 4:</b> Để xoá phiếu đặt, chọn phiếu muốn xoá và chọn biểu tượng <b><i class="fas fa-trash"></i></b> và xác nhận để hoàn tất
+          </div>
+        </div>
+      </div>
+    </app-step-box>
+  </div>
+
+</div>

@@ -80,6 +80,8 @@ import { RetailGoodsComponent } from './layout/operate/retail-goods/retail-goods
 import { RetailGoodsInappComponent } from './layout/in-app/retail-goods-inapp/retail-goods-inapp.component';
 import { RetailOrderComponent } from './layout/operate/retail-order/retail-order.component';
 import { RetailOrderInAppComponent } from './layout/in-app/retail-order-in-app/retail-order-in-app.component';
+import { BookingsInAppComponent } from './layout/in-app/bookings-in-app/bookings-in-app.component';
+import { BookingsComponent } from './layout/operate/bookings/bookings.component';
 
 export interface Point extends Routes {
   readonly name: string;
@@ -123,6 +125,7 @@ export const routes: Routes = [
     {path:"good-invoices",data:{title:"Quy trình xuất/nhập hàng"},component:IeActivityComponent},
     {path:"debts",data:{title:"Quy trình theo dõi công nợ"},component:DebtsComponent},
     {path:"check-invetory",data:{title:"Quy trình kiểm kê"},component:CheckInventoryComponent},
+    {path:"bookings",data:{title:"Quy trình đặt bàn"},component:BookingsComponent},
     //Retail
     {path:"retail-order",data:{title:"Quy trình bán hàng (bán lẻ)"},component: RetailOrderComponent},
   ]},
@@ -164,6 +167,7 @@ export const routes: Routes = [
   {path:"in-app/outlet-group/reports/operation",component:ReportActivityGroupComponent,data:{title:"Hướng dẫn báo cáo hoạt động nhóm"}},
   {path:"in-app/outlet-group/reports/finance",component:ReportFinanceGroupComponent,data:{title:"Hướng dẫn báo cáo tài chính nhóm"}},
   {path:"in-app/outlet-group/reports/goods",component:ReportGoodsGroupComponent,data:{title:"Hướng dẫn báo cáo hàng hoá nhóm"}},
+  {path:"in-app/outlet/bookings",component:BookingsInAppComponent,data:{title:"Hướng dẫn đặt bàn và tiếp nhận"}},
 
   //Bổ sung thêm
   {path:"in-app/order-details",component:OrderDetailsComponent,data:{title:"Chi tiết lịch sử hoá đơn"}},
