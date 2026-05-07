@@ -14,7 +14,6 @@ import { NgIf } from '@angular/common';
     StepComponent,
     HowComponent,
     DescComponent,
-    NoteComponent,
     NgIf,
   ],
   templateUrl: './debts-in-app.component.html',

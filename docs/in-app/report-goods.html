@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn báo cáo hàng hóa - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-boxes-stacked"></i>
+          Báo cáo hàng hóa
+        </div>
+
+        <h3>Báo cáo tồn kho và xuất nhập hàng hóa</h3>
+
+        <p>
+          Báo cáo chi tiết về hàng hóa, theo dõi
+          tồn kho, xuất nhập và sử dụng nguyên liệu.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- VIDEO DESKTOP -->
+
+      <div class="panel video-desktop">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/Se2FeDkVuLo?si=TWADkDRzev0iZ4Q1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VIDEO MOBILE -->
+
+      <div class="panel video-mobile">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/aThgAZuZCSU?si=OoDlDzsQ4HbnOCYH"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn thời gian xem
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file-xmark"></i>
+            </div>
+
+            <div>
+              <span>
+                Xuất báo cáo dưới dạng excel
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chart-pie"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn loại báo cáo hàng hoá
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-filter"></i>
+            </div>
+
+            <div>
+              <span>
+                Lọc dữ liệu
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- XEM BÁO CÁO HÀNG HÓA -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Xem báo cáo hàng hóa</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn
+                <b><i class="fa-regular fa-calendar"></i></b>,
+                chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng thời gian đó
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chart-column"></i>
+            </div>
+
+            <div>
+              <span>
+                Xem các thông tin chính:
+              </span>
+
+              <table border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                  <tr>
+                    <th>Đầu mục</th>
+                    <th>Ý nghĩa</th>
+                    <th>Chi tiết</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Tồn và nhập</td>
+                    <td>Tổng tiền hàng còn trong kho và hàng mới nhập về</td>
+                    <td>
+                      Nhấn <b><i class="fa-regular fa-bars"></i></b> bên phải để xem chi tiết
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Xuất và sử dụng</td>
+                    <td>
+                      Tổng tiền hàng đã xuất ra hoặc dùng để pha chế, chế biến theo công thức
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>Còn lại</td>
+                    <td>
+                      Số lượng hàng còn lại sau khi trừ phần đã xuất và sử dụng.
+                      Tính bằng: Tồn + Nhập – Xuất – Sử dụng
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chart-pie"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn kiểu báo cáo: Ấn vào
+                <b><i class="fa-light fa-chart-pie"></i></b>
+                và chọn kiểu báo cáo bạn muốn xem:
+              </span>
+
+              <ul>
+                <li>
+                  <b>Xuất nhập theo ngày</b>: Xem chi tiết hàng ra vào theo từng ngày
+                </li>
+
+                <li>
+                  <b>Xuất nhập theo đối tác</b>: Xem hàng ra vào theo từng nhà cung cấp
+                </li>
+
+                <li>
+                  <b>Xuất nhập tồn theo hàng hóa</b>: Xem chi tiết từng mặt hàng
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-warehouse"></i>
+            </div>
+
+            <div>
+              <span>
+                Trong báo cáo xuất nhập tồn:
+              </span>
+
+              <ul>
+                <li><b>Xuất</b>: Hàng đã trả về nhà cung cấp</li>
+                <li><b>Nhập</b>: Hàng mới nhập vào</li>
+                <li><b>Tồn</b>: Hàng còn lại trong kho</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-table-list"></i>
+            </div>
+
+            <div>
+              <span>
+                Xem chi tiết từng dòng dữ liệu: ở phía dưới màn hình,
+                chọn vào dòng dữ liệu để xem chi tiết.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file-xmark"></i>
+            </div>
+
+            <div>
+              <span>
+                Xuất báo cáo ra file Excel:
+                nhấn vào <b><i class="fa-regular fa-file-xmark"></i></b>
+                để tải báo cáo về máy dưới dạng bảng tính.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>

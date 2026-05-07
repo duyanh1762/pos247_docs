@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn cấu hình cửa hàng - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-shop"></i>
+          Cấu hình cửa hàng
+        </div>
+
+        <h3>Cấu hình và quản lý thông tin cửa hàng</h3>
+
+        <p>
+          Cấu hình thông tin cho phép quản trị viên thiết lập và quản lý các dữ liệu cơ bản của cửa hàng. Việc cấu hình đầy đủ và chính xác giúp đồng bộ thông tin trên hệ thống, hỗ trợ in hóa đơn, hiển thị trên ứng dụng bán hàng cũng như kết nối với các kênh bán hàng khác. Đây là bước quan trọng để cửa hàng hoạt động thống nhất, chuyên nghiệp và tạo trải nghiệm tin cậy cho khách hàng.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- MÔ TẢ CHỨC NĂNG CHÍNH -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng chính</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-shop"></i>
+            </div>
+
+            <div>
+              <span>
+                Cài đặt cửa hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-key"></i>
+            </div>
+
+            <div>
+              <span>
+                Phân quyền tài khoản.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-mobile"></i>
+            </div>
+
+            <div>
+              <span>
+                Cài đặt thiết bị.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div>
+              <span>
+                Cài đặt tài nguyên cửa hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-qrcode"></i>
+            </div>
+
+            <div>
+              <span>
+                Cài đặt QR thanh toán.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-link"></i>
+            </div>
+
+            <div>
+              <span>
+                Cài đặt phương thức/liên kết thanh toán.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-bank"></i>
+            </div>
+
+            <div>
+              <span>
+                Cài đặt xuất hoá đơn điện tử.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <div>
+              <span>
+                Xoá dữ liệu cửa hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Thêm mới.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-floppy-disk"></i>
+            </div>
+
+            <div>
+              <span>
+                Lưu lại.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ MỤC IN ẤN -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả mục in ấn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div>
+              <span>
+                In tem dán/phiếu pha chế sau khi có order.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-cash-register"></i>
+            </div>
+
+            <div>
+              <span>
+                In tem dán/phiếu pha chế sau khi thanh toán đơn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-ban"></i>
+            </div>
+
+            <div>
+              <span>
+                Không in tem dán/phiếu pha chế.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ MỤC MẪU HOÁ ĐƠN -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả mục mẫu hoá đơn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị mã hoá đơn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị thu ngân.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-sign-in"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị thời gian vào.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-sign-out"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị thời gian ra.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ MỤC MẪU TEM DÁN -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả mục mẫu tem dán</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              #
+            </div>
+
+            <div>
+              <span>
+                Hiển thị số thứ tự món trong ngày.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị mã hoá đơn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-location"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị bàn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị thời gian.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-utensils"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị món.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-sticky-note"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị ghi chú.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-sort-numeric-up"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị thứ tự món trong hoá đơn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-cash-register"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị giá món.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ PHÁT ÂM THANH -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả Phát âm thanh</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div>
+              <span>
+                Phát thông báo order.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-message"></i>
+            </div>
+
+            <div>
+              <span>
+                Hiển thị thông báo văn bản.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-microphone"></i>
+            </div>
+
+            <div>
+              <span>
+                Đàm thoại.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-dollar"></i>
+            </div>
+
+            <div>
+              <span>
+                Phát thông báo thanh toán.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ NHẬN THÔNG BÁO -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả Nhận thông báo</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhận thông báo order.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-mug-saucer"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhận thông báo món.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-cash-register"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhận thông báo tính tiền.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file-import"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhận thông báo nhập hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-shopping-cart"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhận thông báo xuất hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-plus-minus"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhận thông báo thu chi.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>

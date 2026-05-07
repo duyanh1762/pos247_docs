@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn chức năng kiểm kê hàng hoá - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-boxes-stacked"></i>
+          Kiểm kê hàng hoá
+        </div>
+
+        <h3>Kiểm kê hàng hoá tại cửa hàng</h3>
+
+        <p>
+          Theo dõi tồn kho, kiểm kê thực tế và đối chiếu chênh lệch hàng hoá
+          nhằm đảm bảo số lượng chính xác trong quá trình vận hành cửa hàng.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- VIDEO DESKTOP -->
+
+      <div class="panel video-desktop">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/JZYXEAv_ckc?si=behBaWhmHQQ0nSqS"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VIDEO MOBILE -->
+
+      <div class="panel video-mobile">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/CjFug1GTeHs?si=KKY8MAvEDgb0cNQY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Tạo mới phiếu hoặc truy cập phiếu hiện có.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+              <span>
+                Tìm kiếm đơn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn thời gian kiểm.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chevron-right"></i>
+            </div>
+
+            <div>
+              <span>
+                Danh sách chi tiết đang đóng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chevron-down"></i>
+            </div>
+
+            <div>
+              <span>
+                Danh sách chi tiết đang mở.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TẠO PHIẾU KIỂM HÀNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Tạo phiếu kiểm hàng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-regular fa-calendar"></i></b> để chọn thời gian kiểm theo ngày, tuần hoặc tháng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-solid fa-plus"></i></b> để bắt đầu kiểm hàng.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CÁC THAO TÁC KHÁC -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Các thao tác khác</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-solid fa-plus"></i></b> để truy cập phiếu kiểm hiện tại nếu có.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-search"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-solid fa-search"></i></b> để tìm kiếm trong danh sách phiếu kiểm.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-box"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b>mặt hàng</b> để xem chi tiết kiểm kê.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GIẢI THÍCH CÁC THUẬT NGỮ -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Giải thích các thuật ngữ</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-box"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Tồn đầu:</b> Số lượng hàng hoá còn lại trong kho/cửa hàng tại thời điểm bắt đầu kỳ kiểm kê. Đây là số liệu được chuyển từ cuối kỳ kiểm kê trước.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-arrow-down"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Nhập hàng:</b> Số lượng hàng hoá mà cửa hàng nhận thêm trong kỳ kiểm kê (từ nhà cung cấp, kho tổng).
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-arrow-up"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Xuất hàng:</b> Số lượng hàng hoá xuất ra trong kỳ (trả hàng, chuyển đi cửa hàng khác, xuất cho mục đích khác).
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-utensils"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Sử dụng:</b> Số lượng hàng hoá được sử dụng cho mục đích chế biến món theo công thức.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-trash"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Huỷ hàng:</b> Số lượng hàng bị loại bỏ do hư hỏng, hết hạn, hoặc không còn sử dụng được.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-calculator"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Ước tính còn:</b> Số lượng hàng hoá còn lại theo tính toán của hệ thống vào cuối kỳ.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-clipboard-check"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Kiểm thực tế:</b> Số lượng hàng hoá được nhân viên kiểm kê thực tế tại cửa hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-scale-balanced"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Chênh lệch:</b> Sự khác biệt giữa số lượng ước tính và thực tế.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-function"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Công thức tính toán:</b>
+                <ul>
+                  <li>
+                    a. Ước tính còn = Tồn đầu + Nhập hàng - Xuất hàng - Huỷ hàng - Sử dụng
+                  </li>
+
+                  <li>
+                    b. Chênh lệch = Kiểm thực tế - Ước tính còn
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>
+`

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn chức năng đặt hàng - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Đặt hàng
+        </div>
+
+        <h3>Đặt hàng từ các đối tác, đảm bảo nhập hàng đầy đủ, chính xác và kịp thời.</h3>
+
+        <p>
+          Hỗ trợ tạo, quản lý và tìm kiếm đơn đặt hàng với các đối tác cung cấp
+          hàng hoá cho cửa hàng.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- TẠO ĐƠN ĐẶT HÀNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Tạo đơn đặt hàng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-hand-pointer"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b>Đối tác</b> mà cửa hàng muốn đặt hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhấn <b>Tạo đơn</b> để bắt đầu lập đơn hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-box"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn các mặt hàng cần đặt từ danh sách.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-hashtag"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhập <b>số lượng</b> cho từng mặt hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhấn <b><i class="fa-regular fa-floppy-disk"></i></b> để lưu đơn đặt hàng.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- QUẢN LÝ ĐƠN ĐẶT HÀNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Quản lý đơn đặt hàng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <div>
+              <span>
+                Để xoá đơn đặt: Chọn đơn cần xóa, sau đó nhấn
+                <b><i class="fa-solid fa-trash"></i></b>.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <div>
+              <span>
+                Để theo dõi trạng thái: Kiểm tra thông tin cập nhật tự động từ hệ thống.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TÌM KIẾM -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Tìm kiếm</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+              <span>
+                Để tìm đơn đặt hàng: Chọn
+                <b><i class="fa-solid fa-magnifying-glass"></i></b>
+                trong màn hình quản lý đơn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+              <span>
+                Để tìm mặt hàng: Chọn
+                <b><i class="fa-solid fa-magnifying-glass"></i></b>
+                trong màn hình đặt hàng.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>

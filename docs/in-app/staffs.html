@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn quản lý nhân sự - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-regular fa-users"></i>
+          Nhân sự
+        </div>
+
+        <h3>Thiết lập và phân quyền nhân sự</h3>
+
+        <p>
+          Thiết lập nhân sự, thêm mới thông tin về nhân viên và phân quyền theo vai trò.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- VIDEO DESKTOP -->
+
+      <div class="panel video-desktop">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/njEXLuYC7Vk?si=PmjwRzSZbN-26EmQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VIDEO MOBILE -->
+
+      <div class="panel video-mobile">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/vFsUGAH37fY?si=6EnB-uz0KmU8M3ON"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+              <span>
+                Tìm kếm nhân sự
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Thêm mới nhân sự
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+
+            <div>
+              <span>
+                Lưu nhân sự
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <div>
+              <span>
+                Xoá nhân sự
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-user-tie"></i>
+            </div>
+
+            <div>
+              <span>
+                Quyền quản lý
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-cash-register"></i>
+            </div>
+
+            <div>
+              <span>
+                Quyền thu ngân
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-shield"></i>
+            </div>
+
+            <div>
+              <span>
+                Quyền bảo vệ
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-blender"></i>
+            </div>
+
+            <div>
+              <span>
+                Quyền pha chế
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div>
+              <span>
+                Quyền phục vụ
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- THÊM NHÂN VIÊN -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Thêm nhân viên mới</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhấn vào dấu <b><i class="fa-solid fa-plus"></i></b>
+                để thêm nhân viên mới
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-id-card"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhập thông tin nhân viên:
+                <b>Họ tên</b>,
+                <b>mã PIN</b>,
+                <b>phân quyền</b>
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhấn <b><i class="fa-regular fa-floppy-disk"></i></b>
+                để hoàn tất
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CHỈNH SỬA NHÂN VIÊN -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Chỉnh sửa nhân viên</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-pen"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn nhân viên muốn sửa, sau đó nhập lại các thông tin rồi ấn
+                <b><i class="fa-regular fa-floppy-disk"></i></b>
+                để hoàn tất
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <div>
+              <span>
+                Nếu muốn xóa nhân viên, ấn nhân viên cần xóa rồi nhấn
+                <b><i class="fa-solid fa-trash"></i></b>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>

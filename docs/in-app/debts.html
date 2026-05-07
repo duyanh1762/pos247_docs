@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn chức năng công nợ & đặt cọc - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-wallet"></i>
+          Công nợ & Đặt cọc
+        </div>
+
+        <h3>Theo dõi và xử lý công nợ, đặt cọc của cửa hàng trong quá trình vận hành.</h3>
+
+        <p>
+          Hỗ trợ theo dõi công nợ, đặt cọc, lịch sử giao dịch và xử lý các phiếu
+          chờ duyệt của cửa hàng và đối tác.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- VIDEO DESKTOP -->
+
+      <div class="panel video-desktop">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/TS9NPBHF_Tc?si=EyeoY4G3DVmQazrc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VIDEO MOBILE -->
+
+      <div class="panel video-mobile">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/s0x1fuO5v3Y?si=KgAaMGqzjfDaYFvX"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+              <span>
+                Tìm kiếm đối tác.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-user-tie"></i>
+            </div>
+
+            <div>
+              <span>
+                Sắp xếp theo đối tác.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-circle-minus"></i>
+            </div>
+
+            <div>
+              <span>
+                Sắp xếp theo chi.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-circle-plus"></i>
+            </div>
+
+            <div>
+              <span>
+                Sắp xếp theo thu.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-sigma"></i>
+            </div>
+
+            <div>
+              <span>
+                Sắp xếp theo đối tác.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-store"></i>
+            </div>
+
+            <div>
+              <span>
+                Thể hiện đối tượng là cửa hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+
+            <div>
+              <span>
+                Thể hiện đối tượng là đối tác.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- XEM THÔNG TIN CÔNG NỢ -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Xem thông tin công nợ</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-wallet"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b>Công nợ</b> để xem danh sách công nợ của cửa hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-list"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b>Đối tác</b> và chọn
+                <b><i class="fa-solid fa-list"></i></b>
+                để xem thông tin công nợ.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-pen"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-regular fa-pen"></i></b>
+                để điểu chỉnh công nợ.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-solid fa-clock-rotate-left"></i></b>
+                để xem lịch sử công nợ.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-gear"></i>
+            </div>
+
+            <div>
+              <span>
+                Với phiếu trả nợ/thu nợ đang chờ duyệt, bạn có thể:
+              </span>
+
+              <ul>
+                <li>
+                  -Chọn <b><i class="fa-regular fa-gear"></i></b>
+                  và chọn <b>Xác nhận</b> để xác nhận
+                </li>
+
+                <li>
+                  -Chọn <b><i class="fa-regular fa-gear"></i></b>
+                  và chọn <b>Khoá phiếu</b> để khóa
+                </li>
+
+                <li>
+                  -Chọn <b><i class="fa-regular fa-gear"></i></b>
+                  và chọn <b>Xoá phiếu</b> để xóa
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- XEM THÔNG TIN ĐẶT CỌC -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Xem thông tin đặt cọc</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-money-bill"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b>Đặt cọc</b> để xem chi tiết các khoản cọc của cửa hàng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-list"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b>Đối tác</b> và chọn
+                <b><i class="fa-solid fa-list"></i></b>
+                để xem thông tin đặt cọc.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-pen"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-regular fa-pen"></i></b>
+                để điều chỉnh tiền cọc.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-solid fa-clock-rotate-left"></i></b>
+                để xem lịch sử đặt cọc.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-gear"></i>
+            </div>
+
+            <div>
+              <span>
+                Với phiếu hoàn tiền cọc/trừ tiền cọc đang chờ duyệt, bạn có thể:
+              </span>
+
+              <ul>
+                <li>
+                  -Chọn <b><i class="fa-regular fa-gear"></i></b>
+                  và chọn <b>Xác nhận</b> để xác nhận
+                </li>
+
+                <li>
+                  -Chọn <b><i class="fa-regular fa-gear"></i></b>
+                  và chọn <b>Khoá phiếu</b> để khóa
+                </li>
+
+                <li>
+                  -Chọn <b><i class="fa-regular fa-gear"></i></b>
+                  và chọn <b>Xoá phiếu</b> để xóa
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>

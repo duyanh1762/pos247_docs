@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn công nợ - đặt cọc - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          Công nợ / Đặt cọc
+        </div>
+
+        <h3>Giải thích ký hiệu</h3>
+
+        <p>
+          Một số thông tin , diễn giải về các ký hiệu và nút bấm trong xử lý công nợ, đặt cọc.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="grid">
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-list"></i>
+            </div>
+            <div>
+              <span>Xem thông tin công nợ, đặt cọc</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-history"></i>
+            </div>
+            <div>
+              <span>Xem lịch sử công nợ, đặt cọc</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-pen"></i>
+            </div>
+            <div>
+              <span>Điều chỉnh hoặc xử lý công nợ, đặt cọc</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-gear"></i>
+            </div>
+            <div>
+              <span>Sửa, khoá hoặc xác nhận phiếu thu, chi cho công nợ, đặt cọc</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div><span>Chọn menu để mở chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div><span>Chọn biểu tượng hỏi để xem hướng dẫn chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+            <div><span>Chọn để xem cửa hàng, tài khoản và chính sách.</span></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed = body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove("fa-chevron-up", "fa-chevron-down");
+        icon.classList.add(isCollapsed ? "fa-chevron-down" : "fa-chevron-up");
+      }
+    }
+  </script>
+
+</body>
+</html>

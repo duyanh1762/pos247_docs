@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn chức năng bán hàng - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-cash-register"></i>
+          Bán hàng
+        </div>
+
+        <h3>Các thao tác bán hàng và thanh toán hóa đơn</h3>
+
+        <p>
+          Các thao tác liên quan đến bán hàng như tạo, sửa, thêm khuyến mãi và thanh
+          toán hoá đơn.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- VIDEO DESKTOP -->
+
+      <div class="panel video-desktop">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/TcHqnDNY8wo?si=HPVMZZ5S6vLjyGLz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VIDEO MOBILE -->
+
+      <div class="panel video-mobile">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/hr9gJVrQf10?si=f3qrakKvKMcIf5_W"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chart-pie"></i>
+            </div>
+
+            <div>
+              <span>
+                Xem báo cáo bán hàng
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div>
+              <span>
+                Xem thông báo
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+
+            <div>
+              <span>
+                Sử dụng micro
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-files"></i>
+            </div>
+
+            <div>
+              <span>
+                Xem các bàn được chọn
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-square-1"></i>
+            </div>
+
+            <div>
+              <span>
+                Các bàn trong cửa hàng
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-undo"></i>
+            </div>
+
+            <div>
+              <span>
+                Xoá gợi ý tìm kiếm bàn
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fal fa-user-chef"></i>
+            </div>
+
+            <div>
+              <span>
+                Mở màn hình chế biến phụ
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- THAO TÁC GỌI MÓN -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Thao tác gọi món</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Tạo hóa đơn mới</b>: Chọn một bàn trống
+                <i class="fa-regular fa-arrow-right"></i> Thêm món
+                <i class="fa-regular fa-arrow-right"></i> Nhấn
+                <b><i class="fa-regular fa-floppy-disk"></i></b>
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-pen"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Chỉnh sửa hóa đơn</b>: Chọn bàn đang có hóa đơn
+                <i class="fa-regular fa-arrow-right"></i> Nhấn
+                <b><i class="fa-regular fa-pen"></i></b>
+                <i class="fa-regular fa-arrow-right"></i> Sửa món (ấn
+                <b><i class="fa-solid fa-plus"></i></b> để thêm món)
+                <i class="fa-regular fa-arrow-right"></i> Nhấn
+                <b><i class="fa-regular fa-floppy-disk"></i></b>
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file-invoice"></i>
+            </div>
+
+            <div>
+              <span>
+                <b>Xem tổng hóa đơn</b>: Nhấn vào bàn hoặc hóa đơn để xem chi tiết tổng
+                tiền, số lượng món, và trạng thái thanh toán
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- THÊM CHIẾT KHẤU -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Thêm chiết khấu và phụ phí</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-table"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn bàn cần thao tác trên giao diện phần mềm
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-plus-minus"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn <b><i class="fa-regular fa-plus-minus"></i></b> ở món muốn thêm khuyến
+                mãi/phụ thu hoặc chọn vào
+                <b><i class="fa-regular fa-plus-minus"></i>Thêm khuyến mãi</b>,
+                <b>phụ thu</b> để áp dụng cho cả hoá đơn.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhập thông tin cần thêm, ví dụ: phí phục vụ, giảm giá món hoặc giảm tổng hóa
+                đơn,... và ấn <b><i class="fa-regular fa-floppy-disk"></i></b> để áp dụng
+                thay đổi.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhấn <b><i class="fa-regular fa-floppy-disk"></i></b> để hoàn tất thao tác.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- THANH TOÁN -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Thao tác thanh toán</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-cash-register"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn bàn cần thanh toán trên giao diện phần mềm
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-cash-register"></i>
+            </div>
+
+            <div>
+              <span>
+                Nhấn vào nút <b><i class="fa-regular fa-cash-register"></i></b> và chọn
+                <b>Tính tiền</b>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>

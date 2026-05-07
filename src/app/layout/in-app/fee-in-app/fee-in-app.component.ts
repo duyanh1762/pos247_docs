@@ -11,12 +11,10 @@ import { NgIf } from '@angular/common';
   selector: 'app-fee-in-app',
   standalone: true,
   imports: [
-    StepBoxComponent,
     GeneralInstructionsComponent,
     HowComponent,
     StepComponent,
     DescComponent,
-    NoteComponent,
     NgIf,
   ],
   templateUrl: './fee-in-app.component.html',

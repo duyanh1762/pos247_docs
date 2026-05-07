@@ -9,7 +9,7 @@ interface StepContent {
 @Component({
   selector: 'app-instruction',
   standalone: true,
-  imports: [NgIf, NgFor],
+  imports: [NgFor],
   templateUrl: './instruction.component.html',
   styleUrl: './instruction.component.css',
 })

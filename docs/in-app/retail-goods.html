@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn hàng hóa - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-boxes-stacked"></i>
+          Hàng hóa
+        </div>
+
+        <h3>Thiết lập danh sách hàng hóa</h3>
+
+        <p>
+          Thiết lập danh sách hàng hóa để quản lý kinh doanh hiệu quả
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="grid">
+
+      <!-- VIDEO DESKTOP -->
+      <div class="panel video-desktop">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/HZAqUwLwqC0?si=Ih3esvbrcYbhnTXG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- VIDEO MOBILE -->
+      <div class="panel video-mobile">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/dTMA9JjdqZs?si=fZqrX0HE8qcmVFgj"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div><span>Tạo mới hàng hoá.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div><span>Tìm kiếm hàng hoá.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+            <div><span>Lưu lại thông tin.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-gear"></i>
+            </div>
+            <div><span>Chỉnh sửa, xoá nhóm.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+            <div><span>Xoá hàng hoá.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chevron-right"></i>
+            </div>
+            <div><span>Danh sách hàng hoá đang đóng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chevron-down"></i>
+            </div>
+            <div><span>Danh sách hàng hoá đang mở.</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TẠO MỚI HÀNG HÓA -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Tạo mới hàng hoá</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div>
+              <span>Nhấn nút <b><i class="fas fa-plus"></i></b> để thêm mới một hàng hoá (Có thể chọn Quét mã vạch hoặc tạo thủ công).</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-barcode"></i>
+            </div>
+            <div>
+              <span>Nhập các thông tin về mặt hàng đó (Có thể lấy dữ liệu các mặt hàng có sẵn bằng cách quét mã vạch).</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+            <div>
+              <span>Nhấn <b><i class="fal fa-floppy-disk"></i></b> để Lưu lại.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CHỈNH SỬA HÀNG HÓA -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Chỉnh sửa hàng hoá</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-pen"></i>
+            </div>
+            <div>
+              <span>Để sửa thông tin, chọn hàng hoá muốn sửa trong danh sách.</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div>
+              <span>Cập nhật lại thông tin hàng hoá.</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+            <div>
+              <span>Nhấn <b><i class="fal fa-floppy-disk"></i></b> để Lưu lại.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- THAO TÁC KHÁC -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Các thao tác khác</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-search"></i>
+            </div>
+            <div>
+              <span>Chọn tìm kiếm để tìm kiếm hàng hoá theo tên.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div><span>Chọn menu để mở chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div><span>Chọn biểu tượng hỏi để xem hướng dẫn chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+            <div><span>Chọn để xem cửa hàng, tài khoản và chính sách.</span></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed = body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove("fa-chevron-up", "fa-chevron-down");
+        icon.classList.add(isCollapsed ? "fa-chevron-down" : "fa-chevron-up");
+      }
+    }
+  </script>
+
+</body>
+</html>

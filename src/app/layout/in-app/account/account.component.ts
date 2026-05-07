@@ -11,7 +11,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   standalone: true,
   imports: [
     GeneralInstructionsComponent,
-    IconHelpComponent,
     HowComponent,
     StepComponent,
     DescComponent,

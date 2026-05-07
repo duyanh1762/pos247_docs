@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn quét QR - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-qrcode"></i>
+          Quét QR
+        </div>
+
+        <h3>Quét mã QR liên kết</h3>
+
+        <p>
+          Chức năng cho phép người dùng quét mã QR để liên kết với nhân sự hoặc cửa hàng.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="grid">
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <div>
+              <span>Đảo chiều máy ảnh</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-light fa-image"></i>
+            </div>
+            <div>
+              <span>Truy cập thư viện ảnh</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div>
+              <span>Đóng máy ảnh</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- QUÉT QR -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Quét mã QR</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div>
+              <span>Cho phép phần mềm truy cập <b>Camera/Máy ảnh</b> trên thiết bị.</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-qrcode"></i>
+            </div>
+            <div>
+              <span>Quét mã QR của <b>nhân sự/cửa hàng</b> hiển thị trên thiết bị khác đang sử dụng phần mềm.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div><span>Chọn menu để mở chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div><span>Chọn biểu tượng hỏi để xem hướng dẫn chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+            <div><span>Chọn để xem cửa hàng, tài khoản và chính sách.</span></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed = body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove("fa-chevron-up", "fa-chevron-down");
+        icon.classList.add(isCollapsed ? "fa-chevron-down" : "fa-chevron-up");
+      }
+    }
+  </script>
+
+</body>
+</html>

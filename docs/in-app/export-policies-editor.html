@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn chính sách xuất hàng - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-solid fa-right-left"></i>
+          Xuất hàng
+        </div>
+
+        <h3>Giải thích ký hiệu</h3>
+
+        <p>
+          Một số thông tin , diễn giải về các ký hiệu và nút bấm trong danh sách áp dụng chính sách xuất hàng giữa các cửa hàng.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="grid">
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-boxes-stacked"></i>
+            </div>
+            <div>
+              <span>Danh sách hàng hoá</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-user-tie"></i>
+            </div>
+            <div>
+              <span>Danh sách cửa hàng, đối tác</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </div>
+            <div>
+              <span>Tìm kếm hàng hoá, cửa hàng</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div>
+              <span>Thêm hàng hoá, cửa hàng vào danh sách</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </div>
+            <div>
+              <span>Lưu danh sách hàng hoá, cửa hàng đã chọn</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+            <div>
+              <span>Xoá hàng hoá, cửa hàng đã chọn</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-list"></i>
+            </div>
+            <div>
+              <span>Xem danh sách hàng hoá, đối tác đã chọn</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div>
+              <span>Hoàn tác</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div>
+              <span>Làm lại</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div><span>Chọn menu để mở chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div><span>Chọn biểu tượng hỏi để xem hướng dẫn chức năng.</span></div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+            <div><span>Chọn để xem cửa hàng, tài khoản và chính sách.</span></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed = body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove("fa-chevron-up", "fa-chevron-down");
+        icon.classList.add(isCollapsed ? "fa-chevron-down" : "fa-chevron-up");
+      }
+    }
+  </script>
+
+</body>
+</html>

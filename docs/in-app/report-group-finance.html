@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hướng dẫn báo cáo tài chính - POS247</title>
+
+  <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="hero-left">
+
+        <div class="badge">
+          <i class="fa-regular fa-chart-pie"></i>
+          Báo cáo tài chính nhóm
+        </div>
+
+        <h3>Theo dõi doanh thu, chi phí và công nợ</h3>
+
+        <p>
+          Báo cáo tài chính về doanh thu, chi phí, công nợ và các khoản thu chi khác.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="grid">
+
+      <!-- VIDEO -->
+
+      <div class="panel">
+
+        <div class="panel-header">
+          <h4>Video hướng dẫn</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </div>
+
+        <div class="panel-body">
+
+          <div class="video-card">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/jUTDCAwbZO4?si=qnp97D74V6Wm9Rmp"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÔ TẢ CHỨC NĂNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Mô tả chức năng</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-up"></i>
+          </span>
+        </div>
+
+        <div class="panel-body card-grid">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn thời gian xem.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file-xmark"></i>
+            </div>
+
+            <div>
+              <span>
+                Xuất báo cáo dưới dạng excel.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-filter"></i>
+            </div>
+
+            <div>
+              <span>
+                Lọc dữ liệu theo phương thức thanh toán.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-chart-pie"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn loại báo cáo tài chính.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- XEM BÁO CÁO -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Xem báo cáo tài chính</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn ngày bắt đầu và ngày kết thúc để xem báo cáo trong khoảng thời gian đó
+              </span>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+
+            <table border="1" cellspacing="0" cellpadding="5">
+              <thead>
+                <tr>
+                  <th>Đầu mục</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>Doanh thu</td>
+
+                  <td>
+                    Tổng tiền thu được từ bán hàng và các phiếu thu
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Chi phí & Công nợ trong kỳ</td>
+
+                  <td>
+                    Tổng tiền đã chi và các khoản nợ như lương, tiền hàng chưa thanh toán
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Còn lại</td>
+
+                  <td>
+                    Số tiền còn lại sau khi lấy Doanh thu trừ Chi phí & Công nợ
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-filter"></i>
+            </div>
+
+            <div>
+              <span>
+                Lọc theo hình thức thanh toán: nhấn vào
+                <b><i class="fa-regular fa-filter"></i></b>
+                để chọn cách thanh toán mà bạn muốn xem (tiền mặt, VietQR, chuyển khoản, v.v.).
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-light fa-chart-pie"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn kiểu báo cáo tài chính bằng cách ấn vào
+                <b><i class="fa-light fa-chart-pie"></i></b>
+              </span>
+
+              <ul>
+                <li><b>Thu chi theo ngày</b>: Xem thu và chi từng ngày</li>
+                <li><b>Thu chi theo đối tác</b>: Xem thu và chi theo đối tác</li>
+                <li><b>Thu chi theo chốt ca</b>: Xem thu và chi theo từng ca làm việc trong ngày</li>
+                <li><b>Thu chi theo hạng mục</b>: Xem thu và chi theo từng loại hoạt động (bán hàng, dịch vụ…)</li>
+                <li><b>Công nợ</b>: Xem các khoản chưa thanh toán</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-circle-info"></i>
+            </div>
+
+            <div>
+              <span>
+                Ý nghĩa các từ khoá:
+              </span>
+
+              <ul>
+                <li><b>Phát sinh</b>: khoản chi/công nợ phát sinh ngoài kế hoạch</li>
+                <li><b>Định kỳ</b>: khoản chi/công nợ phải trả đều đặn (như tiền thuê, lương…)</li>
+                <li><b>Tồn đọng</b>: Nợ từ kỳ trước chưa trả</li>
+                <li><b>Đã trả</b>: Khoản nợ đã thanh toán</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-regular fa-file-xmark"></i>
+            </div>
+
+            <div>
+              <span>
+                Xuất báo cáo ra file Excel: nhấn vào
+                <b><i class="fa-regular fa-file-xmark"></i></b>
+                để tải báo cáo về máy dưới dạng bảng tính.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- HƯỚNG DẪN CHUNG -->
+
+      <div class="panel">
+
+        <div class="panel-header" onclick="toggleSection(this)">
+          <h4>Hướng dẫn chung</h4>
+
+          <span class="pill">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <div class="panel-body collapsed">
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn menu để mở chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn biểu tượng hỏi để xem hướng dẫn chức năng.
+              </span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="list-icon">
+              <i class="fa-solid fa-grid"></i>
+            </div>
+
+            <div>
+              <span>
+                Chọn để xem cửa hàng, tài khoản và chính sách.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const body = header.nextElementSibling;
+
+      if (!body) return;
+
+      const icon = header.querySelector("i");
+
+      body.classList.toggle("collapsed");
+
+      const isCollapsed =
+        body.classList.contains("collapsed");
+
+      if (icon) {
+        icon.classList.remove(
+          "fa-chevron-up",
+          "fa-chevron-down"
+        );
+
+        icon.classList.add(
+          isCollapsed
+            ? "fa-chevron-down"
+            : "fa-chevron-up"
+        );
+      }
+    }
+  </script>
+</body>
+</html>
