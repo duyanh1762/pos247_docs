@@ -276,41 +276,55 @@
 
     .table-wrapper {
       width: 100%;
+      margin-top: 14px;
+
       border: 1px solid var(--border);
-      border-radius: 16px;
-      background: var(--card);
+      border-radius: 18px;
+
+      background: #fff;
       overflow: hidden;
     }
 
     .table-wrapper table {
       width: 100%;
       border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .table-wrapper thead {
+      background: #f8fbff;
     }
 
     .table-wrapper th,
     .table-wrapper td {
-      padding: 12px 14px;
-      text-align: left;
-      border-bottom: 1px solid #eef2f8;
-      font-size: 0.95rem;
+      padding: 14px 16px;
 
-      /* giúp tránh vỡ layout */
+      text-align: left;
+      vertical-align: top;
+
+      border-bottom: 1px solid #eef2f8;
+
+      font-size: 0.95rem;
+      line-height: 1.65;
+
       word-break: break-word;
-      white-space: normal;
     }
 
     .table-wrapper th {
-      background: #f7faff;
       color: var(--text);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .table-wrapper td {
       color: var(--muted);
     }
 
-    .table-wrapper tr:hover td {
-      background: rgba(63, 142, 252, 0.05);
+    .table-wrapper tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .table-wrapper tbody tr:hover td {
+      background: rgba(63, 142, 252, 0.04);
     }
 
     /* mặc định desktop */
@@ -330,6 +344,11 @@
 
       .video-mobile {
         display: block;
+      }
+      .table-wrapper th,
+      .table-wrapper td {
+        padding: 12px;
+        font-size: 0.9rem;
       }
     }
 

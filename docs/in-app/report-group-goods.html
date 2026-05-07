@@ -172,7 +172,7 @@
 
           <div class="list-item">
             <div class="list-icon">
-              <i class="fa-regular fa-table"></i>
+              <i class="fa-regular fa-chart-column"></i>
             </div>
 
             <div>
@@ -180,37 +180,45 @@
                 Xem các thông tin chính:
               </span>
 
-              <table border="1" cellspacing="0" cellpadding="5">
-                <thead>
-                  <tr>
-                    <th>Đầu mục</th>
-                    <th>Ý nghĩa</th>
-                    <th>Chi tiết</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Tồn và nhập</td>
-                    <td>Tổng tiền hàng còn trong kho và hàng mới nhập về</td>
-                    <td>
-                      Nhấn <b><i class="fa-regular fa-bars"></i></b> bên phải để xem chi tiết
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Xuất và sử dụng</td>
-                    <td>Tổng tiền hàng đã xuất ra hoặc dùng để pha chế, chế biến theo công thức</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Còn lại</td>
-                    <td>
-                      Số lượng hàng còn lại sau khi trừ phần đã xuất và sử dụng.
-                      Tính bằng: Tồn + Nhập – Xuất – Sử dụng
-                    </td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-wrapper">
+                <table border="1" cellspacing="0" cellpadding="5">
+                  <thead>
+                    <tr>
+                      <th>Đầu mục</th>
+                      <th>Ý nghĩa</th>
+                      <th>Chi tiết</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Tồn và nhập</td>
+                      <td>Tổng tiền hàng còn trong kho và hàng mới nhập về</td>
+                      <td>
+                        Nhấn <b><i class="fa-regular fa-bars"></i></b> bên phải để xem chi tiết
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Xuất và sử dụng</td>
+                      <td>
+                        Tổng tiền hàng đã xuất ra hoặc dùng để pha chế, chế biến theo công thức
+                      </td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td>Còn lại</td>
+                      <td>
+                        Số lượng hàng còn lại sau khi trừ phần đã xuất và sử dụng.
+                        Tính bằng: Tồn + Nhập – Xuất – Sử dụng
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
             </div>
           </div>
 
